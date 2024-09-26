@@ -411,7 +411,9 @@
   
   @media (max-width: 1330px) {
   
-  
+  #nbend, #tl, #diffy {
+    display: none;
+  }
     .overview-content-header {
       font: bold;
       font-size: 30px;

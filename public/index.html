@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./styles.css">
-    <title>Daisy Design</title>
+    <title>FullClear</title>
 </head>
 <body>
     <div class="navbar bg-base-100">
@@ -57,11 +57,12 @@
           </ul>
         </div>
        
-        <div class="navbar-end ">
-            <select data-choose-theme class="select">
+        <div class="navbar-end">
+            <select data-choose-theme class="select" id="nbend">
                 <option value="light">Light</option>
                 <option value="retro">Retro</option>
                 <option value="corporate">Corporate</option>
+                <option value="cupcake">Cupcake</option>
               </select>
               <a class="min-w-10"> </a>
           <a class="btn btn-primary" href="./contact.html">Free Cost Proposal</a>
@@ -97,7 +98,7 @@
 
 
 
-      <ul class="timeline justify-center align-middle flex my-20">
+      <ul class="timeline justify-center align-middle flex my-20" id="tl">
         <li>
           <div class="timeline-start timeline-box">Gather design requirements</div>
           <div class="timeline-middle">
@@ -184,7 +185,79 @@
       </ul>
 
 
-      <div class="diff aspect-[16/5] my-20">
+      <div class="info">
+        <div class="infotitle">
+          <h3>Full. Clear. Solutions.</h3>
+        </div>
+        <div class="infoimage">
+          <div>
+            <img class=secondIcon src="images/eyeglasses.jpg" alt="hello" />
+            <p>
+              Smart, uniquely prescribed solutions that are precise and
+              affordable.
+            </p>
+          </div>
+          <div>
+            <img class=secondIcon src="images/lightbulb.jpg" alt="hello" />
+            <p>
+              Sparks of inspiration and insight that will keep your business
+              thriving.
+            </p>
+          </div>
+          <div>
+            <img class=secondIcon src="images/waterglass.png" alt="hello" />
+            <p>A splash of flavor will set you apart from others.</p>
+          </div>
+          <div>
+            <img class=secondIcon src="images/connections.jpg" alt="hello" />
+            <p>Connections drive business opportunity and growth.</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="quote">
+        <div class="quoteflex">
+          <div class="shaqquote">
+            <p>
+              <em>"Aristotle once said that excellence is not a singular act, but a
+                habit. You are what you repeatedly do."</em>
+            </p>
+          </div>
+          <div class="shaq">
+            <p><strong>- Shaquille O'Neal</strong></p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="testimonial-section">
+        <h2>What Clients Say About Working with Full Clear Solutions on OneStream</h2>
+        <div class="testimonial-container">
+          <div class="testimonial" id="testimonial1">
+            <p>"Working with Full Clear Solutions on OneStream was a seamless experience. Highly recommend!"</p>
+            <span>- Client A</span>
+          </div>
+          <div class="testimonial" id="testimonial2">
+            <p>"Efficient, reliable, and highly knowledgeable in OneStream. Amazing support!"</p>
+            <span>- Client B</span>
+          </div>
+          <div class="testimonial" id="testimonial3">
+            <p>"Transformed our financial processes using OneStream. Great to work with."</p>
+            <span>- Client C</span>
+          </div>
+          <div class="testimonial" id="testimonial4">
+            <p>"Transformed our financial processes using OneStream. Great to work with."</p>
+            <span>- Client E</span>
+          </div>
+          <div class="testimonial" id="testimonial5">
+            <p>"Transformed our financial processes using OneStream. Great to work with."</p>
+            <span>- Client F</span>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="diff aspect-[16/9] " id="diffy">
         <div class="diff-item-1">
           <div class="bg-primary text-primary-content grid place-content-center text-9xl font-black">
             FULLCLEAR
@@ -249,4 +322,5 @@
       </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
+<script src="script.js" cache="true"></script>
 </html>
