@@ -408,6 +408,9 @@
   /* Mobile responsiveness ... */
   
   @media (max-width: 1330px) {
+    .content p {
+        width: auto;
+      }
   
   #tl, #diffy, #freecostproposal {
     display: none;
