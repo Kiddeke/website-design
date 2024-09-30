@@ -208,7 +208,7 @@
     justify-content: center;
     align-items: center;
     line-height: 25px;
-    color: #696969;
+   
   }
   
   .overview-content-signup {
@@ -239,8 +239,7 @@
   }
   
   .signuptop:hover {
-    color: #316afa;
-    background-color: #f9faf8;
+    
   }
   
   .signuptop:active {
@@ -288,6 +287,10 @@
     max-width: 200px;
   }
   
+  .secondIcon {
+    display:inline;
+  }
+
   /* quote section */
   .quote {
     display: flex;
