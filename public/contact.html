@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./styles.css">
-    <title>Document</title>
+    <title>FullClear</title>
+    
 </head>
 <body>
 
@@ -120,9 +121,29 @@
       </div>
 
 
-
-
-
+<div class="flex justify-center align-middle">
+      <form action="https://kilkykmryiwkmahvfjdy.supabase.co" method="POST">
+        <label for="name">*Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">*Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="company">*Company:</label>
+        <input type="company" id="company" name="company" required><br><br>
+        
+        <label for="country">*Country:</label>
+        <select id="country" name="country" required>
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="uk">UK</option>
+            <!-- Add more options here -->
+        </select><br><br>
+        
+        <input type="submit" value="Submit"><br><br>
+    </form>
+</div>
+      
 
 
 
