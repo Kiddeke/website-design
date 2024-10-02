@@ -57,6 +57,7 @@
           </ul>
         </div>
        
+        
         <div class="navbar-end">
           <div class="dropdown dropdown-end">
               <div tabindex="0" role="button" class="btn m-1">
@@ -69,8 +70,8 @@
                   viewBox="0 0 2048 2048">
                   <path d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
                 </svg>
-              </div>
-              <ul tabindex="0" class="dropdown-content bg-base-300 rounded-box z-[1] w-52 p-2 shadow-2xl">
+              </div tabindex="0" role="button">
+              <ul tabindex="0" role="button" class="dropdown-content bg-base-300 rounded-box z-[1] w-52 p-2 shadow-2xl">
                 <li>
                   <input
                   type="radio"
@@ -400,4 +401,5 @@
 </body>
 <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
 <script src="script.js" cache="true"></script>
+<script>  document.addEventListener('touchstart', function(){})</script>
 </html>
