@@ -4305,9 +4305,6 @@ html {
 .max-w-10 {
   max-width: 2.5rem;
 }
-.max-w-64 {
-  max-width: 16rem;
-}
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
