@@ -1,30 +1,4 @@
-  document.addEventListener('DOMContentLoaded', () => {
-    const testimonialSection = document.querySelector('.testimonial-section');
-    const testimonialContainer = testimonialSection.querySelector('.testimonial-container');
 
-    let isScrolling;
-    /**
-     * Automatically scrolls the testimonials container to the right every 1.5 seconds,
-     * wrapping around to the start when the end is reached.
-     */
-    function autoScrollTestimonials() {
-      const scrollInterval = setInterval(() => {
-        const container = testimonialSection.querySelector('.testimonial-container');
-
-        // Scroll the container to the right by 300 pixels, smoothly
-        container.scrollBy({ left: 200, behavior: 'smooth' });
-
-        // If we've reached the end, wrap around to the start
-        if (container.scrollLeft + container.clientWidth >= container.scrollWidth) {
-          container.scrollTo({ left: 0, behavior: 'smooth' });
-        }
-      }, 1500); // Scroll every 1.5 seconds
-    }
-
-   
-
-    autoScrollTestimonials();
-  });
 
   const mediaQuery = window.matchMedia("(max-width: 800px)");
   function handleTabletChange(e) {
