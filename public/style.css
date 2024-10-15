@@ -4284,6 +4284,9 @@ html {
 .w-52 {
   width: 13rem;
 }
+.w-auto {
+  width: auto;
+}
 .w-full {
   width: 100%;
 }
