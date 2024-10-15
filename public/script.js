@@ -1,4 +1,4 @@
-  const mediaQuery = window.matchMedia("(max-width: 800px)");
+const mediaQuery = window.matchMedia("(max-width: 800px)");
   function handleTabletChange(e) {
     // Check if the media query is true
     if (e.matches) {
