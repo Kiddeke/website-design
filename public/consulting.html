@@ -5,10 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/Clear Vision.png" />
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css?v=4" type="text/css" rel="stylesheet" />
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./style.css?v=4">
     <link rel="stylesheet" href="./styles.css?v=4">
     <title>Full Clear Solutions</title>
 </head>
+<style>
+  [x-cloak] {
+      display: none !important;
+  }
+</style>
 <body tabindex="0">
     <div class="navbar bg-base-100">
         <div class="navbar-start">
@@ -127,392 +135,185 @@
       <div class="badge badge-accent mx-16 my-1">OneStream Admin</div>
       </div> -->
 
-      <div class="content">
-        <div class="overview">
-          <div class="overview-content">
-            <div class="overview-content-header">
-              <strong>Empower financial clarity to enable instant results and unlock analysis power.</strong>
-            </div>
-            <div class="overview-content-tagline">
-              <p class = "my-5">
-                Full Clear Solutions has experience working with prominent companies such as Mattress Firm, GDIT, Capital One,
-                and Lockheed Martin. Our expertise lies in serving as a OneStream Admin and Solutions Architect, and I am
-                also AWS Solutions Architect Certified.
-              </p>
-            </div>
-            <div class="overview-content-signup">
-              <a class="btn btn-primary" href="./contact.html">Contact</a>
-            </div>
-          </div>
-          <div class="overview-content-image">
-            <img src="images/cover_image.jpg" alt="hello" />
-          </div>
-        </div>
-      </div>
-
-
-     <!--  <div class="mockup-browser bg-base-300 border">
-        <div class="mockup-browser-toolbar ">
-          <div class="input">https://company.onestreamcloud.com/onesteramcloud</div>
-        </div>
-        <div class="bg-base-200 flex justify-center px-4 py-16"><div class="overflow-x-auto">
-            <table class="table table-xs">
-              <thead>
-                <tr>
-                  <th></th>
-                  <th>Name</th>
-                  <th>Job</th>
-                  <th>company</th>
-                  <th>location</th>
-                  <th>Last Login</th>
-                  <th>Favorite Color</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th>1</th>
-                  <td>Cy Ganderton</td>
-                  <td>Quality Control Specialist</td>
-                  <td>Littel, Schaden and Vandervort</td>
-                  <td>Canada</td>
-                  <td>12/16/2020</td>
-                  <td>Blue</td>
-                </tr>
-                <tr>
-                  <th>2</th>
-                  <td>Hart Hagerty</td>
-                  <td>Desktop Support Technician</td>
-                  <td>Zemlak, Daniel and Leannon</td>
-                  <td>United States</td>
-                  <td>12/5/2020</td>
-                  <td>Purple</td>
-                </tr>
-                <tr>
-                  <th>3</th>
-                  <td>Brice Swyre</td>
-                  <td>Tax Accountant</td>
-                  <td>Carroll Group</td>
-                  <td>China</td>
-                  <td>8/15/2020</td>
-                  <td>Red</td>
-                </tr>
-                <tr>
-                  <th>4</th>
-                  <td>Marjy Ferencz</td>
-                  <td>Office Assistant I</td>
-                  <td>Rowe-Schoen</td>
-                  <td>Russia</td>
-                  <td>3/25/2021</td>
-                  <td>Crimson</td>
-                </tr>
-                <tr>
-                  <th>5</th>
-                  <td>Yancy Tear</td>
-                  <td>Community Outreach Specialist</td>
-                  <td>Wyman-Ledner</td>
-                  <td>Brazil</td>
-                  <td>5/22/2020</td>
-                  <td>Indigo</td>
-                </tr>
-                <tr>
-                  <th>6</th>
-                  <td>Irma Vasilik</td>
-                  <td>Editor</td>
-                  <td>Wiza, Bins and Emard</td>
-                  <td>Venezuela</td>
-                  <td>12/8/2020</td>
-                  <td>Purple</td>
-                </tr>
-                <tr>
-                  <th>7</th>
-                  <td>Meghann Durtnal</td>
-                  <td>Staff Accountant IV</td>
-                  <td>Schuster-Schimmel</td>
-                  <td>Philippines</td>
-                  <td>2/17/2021</td>
-                  <td>Yellow</td>
-                </tr>
-                <tr>
-                  <th>8</th>
-                  <td>Sammy Seston</td>
-                  <td>Accountant I</td>
-                  <td>O'Hara, Welch and Keebler</td>
-                  <td>Indonesia</td>
-                  <td>5/23/2020</td>
-                  <td>Crimson</td>
-                </tr>
-                <tr>
-                  <th>9</th>
-                  <td>Lesya Tinham</td>
-                  <td>Safety Technician IV</td>
-                  <td>Turner-Kuhlman</td>
-                  <td>Philippines</td>
-                  <td>2/21/2021</td>
-                  <td>Maroon</td>
-                </tr>
-                <tr>
-                  <th>10</th>
-                  <td>Zaneta Tewkesbury</td>
-                  <td>VP Marketing</td>
-                  <td>Sauer LLC</td>
-                  <td>Chad</td>
-                  <td>6/23/2020</td>
-                  <td>Green</td>
-                </tr>
-                <tr>
-                  <th>11</th>
-                  <td>Andy Tipple</td>
-                  <td>Librarian</td>
-                  <td>Hilpert Group</td>
-                  <td>Poland</td>
-                  <td>7/9/2020</td>
-                  <td>Indigo</td>
-                </tr>
-                <tr>
-                  <th>12</th>
-                  <td>Sophi Biles</td>
-                  <td>Recruiting Manager</td>
-                  <td>Gutmann Inc</td>
-                  <td>Indonesia</td>
-                  <td>2/12/2021</td>
-                  <td>Maroon</td>
-                </tr>
-                <tr>
-                  <th>13</th>
-                  <td>Florida Garces</td>
-                  <td>Web Developer IV</td>
-                  <td>Gaylord, Pacocha and Baumbach</td>
-                  <td>Poland</td>
-                  <td>5/31/2020</td>
-                  <td>Purple</td>
-                </tr>
-                <tr>
-                  <th>14</th>
-                  <td>Maribeth Popping</td>
-                  <td>Analyst Programmer</td>
-                  <td>Deckow-Pouros</td>
-                  <td>Portugal</td>
-                  <td>4/27/2021</td>
-                  <td>Aquamarine</td>
-                </tr>
-                <tr>
-                  <th>15</th>
-                  <td>Moritz Dryburgh</td>
-                  <td>Dental Hygienist</td>
-                  <td>Schiller, Cole and Hackett</td>
-                  <td>Sri Lanka</td>
-                  <td>8/8/2020</td>
-                  <td>Crimson</td>
-                </tr>
-                <tr>
-                  <th>16</th>
-                  <td>Reid Semiras</td>
-                  <td>Teacher</td>
-                  <td>Sporer, Sipes and Rogahn</td>
-                  <td>Poland</td>
-                  <td>7/30/2020</td>
-                  <td>Green</td>
-                </tr>
-                <tr>
-                  <th>17</th>
-                  <td>Alec Lethby</td>
-                  <td>Teacher</td>
-                  <td>Reichel, Glover and Hamill</td>
-                  <td>China</td>
-                  <td>2/28/2021</td>
-                  <td>Khaki</td>
-                </tr>
-                <tr>
-                  <th>18</th>
-                  <td>Aland Wilber</td>
-                  <td>Quality Control Specialist</td>
-                  <td>Kshlerin, Rogahn and Swaniawski</td>
-                  <td>Czech Republic</td>
-                  <td>9/29/2020</td>
-                  <td>Purple</td>
-                </tr>
-                <tr>
-                  <th>19</th>
-                  <td>Teddie Duerden</td>
-                  <td>Staff Accountant III</td>
-                  <td>Pouros, Ullrich and Windler</td>
-                  <td>France</td>
-                  <td>10/27/2020</td>
-                  <td>Aquamarine</td>
-                </tr>
-                <tr>
-                  <th>20</th>
-                  <td>Lorelei Blackstone</td>
-                  <td>Data Coordiator</td>
-                  <td>Witting, Kutch and Greenfelder</td>
-                  <td>Kazakhstan</td>
-                  <td>6/3/2020</td>
-                  <td>Red</td>
-                </tr>
-              </tbody>
-            </table>
-          </div></div>
-      </div>-->
 
 
 
-      <ul class="timeline justify-center align-middle flex my-20" id="tl">
-        <li>
-          <div class="timeline-start timeline-box">Gather design requirements</div>
-          <div class="timeline-middle">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              class="text-primary h-5 w-5">
-              <path
-                fill-rule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                clip-rule="evenodd" />
-            </svg>
-          </div>
-          <hr class="bg-primary" />
-        </li>
-        <li>
-          <hr class="bg-primary" />
-          <div class="timeline-middle">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              class="text-primary h-5 w-5">
-              <path
-                fill-rule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                clip-rule="evenodd" />
-            </svg>
-          </div>
-          <div class="timeline-end timeline-box">Build out templates</div>
-          <hr class="bg-primary" />
-        </li>
-        <li>
-          <hr class="bg-primary" />
-          <div class="timeline-start timeline-box">Initial design</div>
-          <div class="timeline-middle">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              class="text-primary h-5 w-5">
-              <path
-                fill-rule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                clip-rule="evenodd" />
-            </svg>
-          </div>
-          <hr />
-        </li>
-        <li>
-          <hr />
-          <div class="timeline-middle">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              class="h-5 w-5">
-              <path
-                fill-rule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                clip-rule="evenodd" />
-            </svg>
-          </div>
-          <div class="timeline-end timeline-box">Testing and UAT Cycles</div>
-          <hr />
-        </li>
-        <li>
-          <hr />
-          <div class="timeline-start timeline-box">Deploy to Prod</div>
-          <div class="timeline-middle">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              class="h-5 w-5">
-              <path
-                fill-rule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                clip-rule="evenodd" />
-            </svg>
-          </div>
-        </li>
-      </ul>
+ 
+        <!-- Layout -->
+        <div class="h-screen max-w-5xl px-2 py-3 mx-auto mt-32 tracking-wide md:px-4 md:mt-44">
 
-
-      <div class="info bg-base-100" >
-        <div class="infotitle my-3">
-          <h2>Full. Clear. Solutions.</h2>
-        </div>
-        <div class="infoimage">
-          <div>
-            <img class="secondIcon" src="images/eyeglasses.jpg" alt="hello" />
-            <p>
-              Smart, uniquely prescribed solutions that are precise and
-              affordable.
-            </p>
-          </div>
-          <div>
-            <img class="secondIcon" src="images/lightbulb.jpg" alt="hello" />
-            <p>
-              Sparks of inspiration and insight that will keep your business
-              thriving.
-            </p>
-          </div>
-          <div>
-            <img class="secondIcon" src="images/waterglass.png" alt="hello" />
-            <p>A splash of flavor will set you apart from others.</p>
-          </div>
-          <div>
-            <img class="secondIcon" src="images/connections.jpg" alt="hello" />
-            <p>Connections drive business opportunity and growth.</p>
-          </div>
-        </div>
-      </div>
+          
+        <!-- Title -->
+        <div class="flex justify-center text-3xl">FullClear Solutions Offerings</div>
+        
+        <!-- End Title -->
     
-      <div class="quote">
-        <div class="quoteflex">
-          <div class="shaqquote">
-            <p>
-              <em>"Aristotle once said that excellence is not a singular act, but a
-                habit. You are what you repeatedly do."</em>
-            </p>
+        <!-- Accordion -->
+        <div class="grid gap-3 py-8 text-lg leading-6 text-gray-800 md:gap-8 md:grid-cols-2">
+          <div class="flex items-center -space-x-4">
+            <img
+              alt="user 1"
+              src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80"
+              class="relative inline-block h-12 w-12 rounded-full border-2 border-white object-cover object-center hover:z-10 focus:z-10"
+            />
+            <img
+              alt="user 2"
+              src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1061&amp;q=80"
+              class="relative inline-block h-12 w-12 rounded-full border-2 border-white object-cover object-center hover:z-10 focus:z-10"
+            />
+            <img
+              alt="user 3"
+              src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1288&amp;q=80"
+              class="relative inline-block h-12 w-12 rounded-full border-2 border-white object-cover object-center hover:z-10 focus:z-10"
+            />
+            <img
+              alt="user 4"
+              src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1287&amp;q=80"
+              class="relative inline-block h-12 w-12 rounded-full border-2 border-white object-cover object-center hover:z-10 focus:z-10"
+            />
+            <img
+              alt="user 5"
+              src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1760&amp;q=80"
+              class="relative inline-block h-12 w-12 rounded-full border-2 border-white object-cover object-center hover:z-10 focus:z-10"
+            />
           </div>
-          <div class="shaq">
-            <p><strong>- Shaquille O'Neal</strong></p>
+          
+          <div class="w-full pt-5 px-4 mb-8 mx-auto ">
+              <div class="text-sm text-gray-700 py-1">
+                  Let our team transform your business.
+              </div>
           </div>
+            <div class="space-y-3">
+            <!-- 1 -->
+            <div x-data="accordion(1)" class="relative transition-all duration-700 border rounded-xl hover:shadow-2xl">
+                <div @click="handleClick()" class="w-full p-4 text-left cursor-pointer">
+                <div class="flex items-center justify-between">
+                    <span class="tracking-wide">OneStream Implementation Consulting</span>
+                    <span :class="handleRotate()" class="transition-transform duration-500 transform fill-current ">
+                    <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                    </svg>
+                    </span>
+                </div>
+                </div>
+    
+                <div x-ref="tab" :style="handleToggle()" class="relative overflow-hidden transition-all duration-700 max-h-0">
+                <div class="px-6 pb-4 text-gray-600">
+                  <h3 class="font-bold">Software Implementation Consulting</h3>
+                  <p>We specialize in implementing industry-leading software solutions like OneStream and Engage by Local Measure to help businesses optimize performance and drive efficiency. Our consultants work closely with your team to ensure a smooth and successful implementation, tailored to your specific operational needs.</p>
+                  <h4 class="font-bold">Process:</h4>
+                  <ul>
+                    <li><strong>Needs Assessment:</strong> Understand the client’s business requirements and goals.</li>
+                    <li><strong>Solution Design:</strong> Design a custom implementation strategy aligned with business objectives.</li>
+                    <li><strong>Integration:</strong> Seamlessly integrate the software into existing systems and workflows.</li>
+                    <li><strong>Testing and Optimization:</strong> Conduct rigorous testing (UAT, performance testing) to ensure the solution is operating as intended.</li>
+                    <li><strong>Training and Support:</strong> Provide user training and ongoing technical support to maximize solution adoption and effectiveness.</li>
+                  </ul>
+                  <p><strong>Benefits:</strong> Reduced operational inefficiencies, increased automation, and improved data accuracy.</p></div>
+                </div>
+            </div>
+            <!-- End 1 -->
+    
+            <!-- 2 -->
+            <div x-data="accordion(2)" class="relative transition-all duration-700 border rounded-xl hover:shadow-2xl">
+                <div @click="handleClick()" class="w-full p-4 text-left cursor-pointer">
+                <div class="flex items-center justify-between">
+                    <span class="tracking-wide">FP&A Consulting</span>
+                    <span :class="handleRotate()" class="transition-transform duration-500 transform fill-current ">
+                    <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                    </svg>
+                    </span>
+                </div>
+                </div>
+    
+                <div x-ref="tab" :style="handleToggle()" class="relative overflow-hidden transition-all duration-700 max-h-0">
+                <div class="px-6 pb-4 text-gray-600">
+                  <h3 class="font-bold">Financial Consulting</h3>
+                  <p>We offer specialized financial consulting services, helping businesses in the finance industry leverage technology for better financial reporting, planning, and analytics. Whether you need help with financial consolidations, budgeting, forecasting, or regulatory compliance, we can guide you through every step of the process.</p>
+                  <h4 class="font-bold">Services:</h4>
+                  <ul>
+                    <li><strong>Financial Planning & Analysis (FP&A):</strong> Improve budgeting and forecasting accuracy using advanced tools like OneStream.</li>
+                    <li><strong>Risk Management:</strong> Identify and mitigate financial risks through technology solutions.</li>
+                    <li><strong>Financial Reporting:</strong> Enhance the speed and accuracy of your financial close and reporting processes with automation tools.</li>
+                    <li><strong>Compliance & Regulatory Support:</strong> Ensure your financial systems meet regulatory standards like IFRS or GAAP.</li>
+                  </ul>
+                  <p><strong>Benefits:</strong> Increased financial transparency, better forecasting accuracy, and streamlined compliance.</p>
+                </div>
+                </div>
+            </div>
+            <!-- End 2 -->
+            </div>
+    
+            <div class="space-y-3">
+            <!-- 3 -->
+            <div x-data="accordion(3)" class="relative transition-all duration-700 border rounded-xl hover:shadow-2xl">
+                <div @click="handleClick()" class="w-full p-4 text-left cursor-pointer">
+                <div class="flex items-center justify-between">
+                    <span class="tracking-wide">Process Optimization</span>
+                    <span :class="handleRotate()" class="transition-transform duration-500 transform fill-current ">
+                    <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                    </svg>
+                    </span>
+                </div>
+                </div>
+    
+                <div x-ref="tab" :style="handleToggle()" class="relative overflow-hidden transition-all duration-700 max-h-0">
+                <div class="px-6 pb-4 text-gray-600">
+                  <h3 class="font-bold">Process Optimization</h3>
+                  <p>We help businesses streamline and optimize their internal processes, ensuring that technology is fully leveraged to reduce bottlenecks, improve performance, and increase profitability. Our process optimization services are tailored to the specific needs of your organization, identifying inefficiencies and deploying the right solutions to address them.</p>
+                  <h4 class="font-bold">Services:</h4>
+                  <ul>
+                    <li><strong>Process Mapping & Analysis:</strong> Analyze current processes to identify inefficiencies and areas for improvement.</li>
+                    <li><strong>Lean Six Sigma Consulting:</strong> Implement Lean Six Sigma methodologies to reduce waste and improve process quality.</li>
+                    <li><strong>Automation Implementation:</strong> Introduce automation solutions to handle repetitive tasks, reduce human error, and speed up workflows.</li>
+                    <li><strong>Performance Monitoring:</strong> Set up continuous monitoring systems to track performance and make ongoing improvements.</li>
+                  </ul>
+                  <p><strong>Benefits:</strong> Reduced operational costs, increased productivity, and faster delivery times.</p>
+                </div>
+                </div>
+            </div>
+            <!-- End 3 -->
+    
+            <!-- 4 -->
+            <div x-data="accordion(4)" class="relative transition-all duration-700 border rounded-xl hover:shadow-2xl">
+                <div @click="handleClick()" class="w-full p-4 text-left cursor-pointer">
+                <div class="flex items-center justify-between">
+                    <span class="tracking-wide">Digital Transformation Consulting</span>
+                    <span :class="handleRotate()" class="transition-transform duration-500 transform fill-current ">
+                    <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                    </svg>
+                    </span>
+                </div>
+                </div>
+    
+                <div x-ref="tab" :style="handleToggle()" class="relative overflow-hidden transition-all duration-700 max-h-0">
+                <div class="px-6 pb-4 text-gray-600">
+                  <h3 class="font-bold">Digital Transformation Consulting</h3>
+                  <p>We guide organizations through the complex journey of digital transformation, helping them adopt new technologies to improve competitiveness, efficiency, and customer satisfaction. Our team works with you to develop a strategic roadmap that aligns technology initiatives with business objectives.</p>
+                  <h4 class="font-bold">Services:</h4>
+                  <ul>
+                    <li><strong>Digital Strategy Development:</strong> Work with your leadership to define digital goals and create a transformation roadmap.</li>
+                    <li><strong>Cloud Solutions:</strong> Implement and optimize cloud technologies for better scalability, security, and cost management.</li>
+                    <li><strong>Data Analytics & Business Intelligence:</strong> Use data analytics tools to provide actionable insights and support decision-making.</li>
+                    <li><strong>Change Management:</strong> Facilitate organizational change with a focus on employee adoption and training, ensuring a smooth transition.</li>
+                  </ul>
+                  <p><strong>Benefits:</strong> Improved agility, enhanced customer experiences, and long-term scalability.</p>
+                </div>
+                </div>
+            </div>
+            <!-- End 4 -->
+            </div>
         </div>
-      </div>
-
-
-      <div class="testimonial-section">
-        <h2>What Clients Say About Working with Full Clear Solutions on OneStream</h2>
-        <div class="testimonial-container">
-          <div class="testimonial bg-accent text-accent-content" id="testimonial1">
-            <p class="max-w-64">"Working with Full Clear Solutions on OneStream was a seamless experience. Highly recommend!"</p>
-            <span></span>
-          </div>
-          <div class="testimonial bg-accent text-accent-content" id="testimonial2">
-            <p class="max-w-64">"Efficient, reliable, and highly knowledgeable in OneStream. Amazing support!"</p>
-            <span></span>
-          </div>
-          <div class="testimonial bg-accent text-accent-content" id="testimonial3">
-            <p class="max-w-64">"Transformed our financial processes using OneStream. Great to work with."</p>
-            <span></span>
-          </div>
-          <div class="testimonial bg-accent text-accent-content" id="testimonial4">
-            <p class="max-w-64">"I wanted to pass along some kudos to you. I have been told that you have been very helpful on providing the OneStream information to the audit team."</p>
-            <span></span>
-          </div>
-          <div class="testimonial bg-accent text-accent-content" id="testimonial5">
-            <p class="max-w-64">"Thanks for being on top of all the requests and assisting the team so they can complete the audit on time. Keep up the great work!"</p>
-            <span></span>
-          </div>
+        <!-- End Accordion -->
         </div>
-      </div>
+        <!-- End Layout -->
+    
+
+    
+    
 
 
 
@@ -609,6 +410,35 @@
         </div>
     </footer>
 </body>
+<script>
+  // Faq
+  document.addEventListener("alpine:init", () => {
+  Alpine.store("accordion", {
+      tab: 0
+  });
+
+  Alpine.data("accordion", (idx) => ({
+      init() {
+      this.idx = idx;
+      },
+      idx: -1,
+      handleClick() {
+      this.$store.accordion.tab =
+          this.$store.accordion.tab === this.idx ? 0 : this.idx;
+      },
+      handleRotate() {
+      return this.$store.accordion.tab === this.idx ? "-rotate-180" : "";
+      },
+      handleToggle() {
+      return this.$store.accordion.tab === this.idx
+          ? `max-height: ${this.$refs.tab.scrollHeight}px`
+          : "";
+      }
+  }));
+  });
+  //  end faq
+
+  </script>
 <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
 <script src="script.js" cache="true"></script>
