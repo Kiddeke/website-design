@@ -421,7 +421,7 @@
         width: auto;
       }
   
-  #tl, #diffy, #freecostproposal {
+  #diffy {
     display: none;
   }
     .overview-content-header {
@@ -441,18 +441,8 @@
     .quote {
       display: none;
     }
-    .overview-content-image {
-      display: none;
-    }
-    .expertise {
-      display: none;
-    }
     .signuptop {
       font-size: 25px;
-    }
-  
-    .header-contact{
-      display: none;
     }
     .testimonial-section .testimonial {
       flex: 0 0 50%;

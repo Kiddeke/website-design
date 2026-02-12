@@ -13,22 +13,22 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://www.fullclearsolutions.com/images/cover_image.webp">
 
-    <link rel="canonical" href="https://www.fullclearsolutions.com/blogpost5" />
-    <meta name="description" content="How to pull data from Azure Blob Storage into OneStream with reliable integration patterns and implementation guidance.">
+    <link rel="canonical" href="https://www.fullclearsolutions.com/about" />
+    <meta name="description" content="Meet Grant Deker and Full Clear Solutions, a OneStream-focused consulting partner for enterprise finance transformation.">
     <!-- seo:meta:start -->
-    <meta property="og:title" content="Full Clear Solutions - Azure Blob Blog - OneStream and Software Implementation Partner">
-    <meta property="og:description" content="How to pull data from Azure Blob Storage into OneStream with reliable integration patterns and implementation guidance.">
-    <meta property="og:url" content="https://www.fullclearsolutions.com/blogpost5">
-    <meta property="og:image" content="https://www.fullclearsolutions.com/images/coffee.webp">
-    <meta property="og:type" content="article">
-    <meta name="twitter:title" content="Full Clear Solutions - Azure Blob Blog - OneStream and Software Implementation Partner">
-    <meta name="twitter:description" content="How to pull data from Azure Blob Storage into OneStream with reliable integration patterns and implementation guidance.">
-    <meta name="twitter:image" content="https://www.fullclearsolutions.com/images/coffee.webp">
+    <meta property="og:title" content="About Full Clear Solutions - OneStream and Software Implementation Partner">
+    <meta property="og:description" content="Meet Grant Deker and Full Clear Solutions, a OneStream-focused consulting partner for enterprise finance transformation.">
+    <meta property="og:url" content="https://www.fullclearsolutions.com/about">
+    <meta property="og:image" content="https://www.fullclearsolutions.com/images/profilepic.jpeg">
+    <meta property="og:type" content="website">
+    <meta name="twitter:title" content="About Full Clear Solutions - OneStream and Software Implementation Partner">
+    <meta name="twitter:description" content="Meet Grant Deker and Full Clear Solutions, a OneStream-focused consulting partner for enterprise finance transformation.">
+    <meta name="twitter:image" content="https://www.fullclearsolutions.com/images/profilepic.jpeg">
     <!-- seo:meta:end -->
-    <title>Full Clear Solutions - Azure Blob Blog - OneStream and Software Implementation Partner</title>
+    <title>About Full Clear Solutions - OneStream and Software Implementation Partner</title>
 </head>
 <body tabindex="0">
-        <div class="navbar bg-base-100">
+    <div class="navbar bg-base-100">
         <div class="navbar-start">
           <details class="dropdown">
             <summary class="btn btn-ghost list-none">
@@ -105,108 +105,56 @@
       </div>
     </div>
 
-      <!-- 
-Install the "flowbite-typography" NPM package to apply styles and format the article content: 
 
-URL: https://flowbite.com/docs/components/typography/ 
--->
-
-<main class="pt-8 pb-16 lg:pt-16 lg:pb-24 antialiased">
-    <div class="flex justify-between px-4 mx-auto max-w-screen-xl ">
-        <article class="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
-            <header class="mb-4 lg:mb-6 not-format">
-                  <address class="flex items-center mb-6 not-italic not-format ">
-                    <div class="inline-flex items-center mr-3 text-sm font-bold">
-                        <img class="mr-4 w-16 h-16 rounded-full" src="./images/profilepic.jpeg" alt="Grant Deker" width="368" height="368" loading="eager" decoding="async">
-                        <div>
-                            <a href="#" rel="author" class="text-xl font-bolder ">Grant Deker</a>
-                            <h1 class="text-base font-bolder">OneStream Developer and Financial Consulant</h1>
-                            <p class="text-base"><time pubdate datetime="2022-02-08" title="February 8th, 2022">Oct 18, 2023</time></p>
-                        </div>
-                    </div>
-                </address>
-                <h2 class="mb-4 text-3xl font-extrabold leading-tight text-secondary-content lg:mb-6 lg:text-4xl">Nuances of Pulling Data from Azure Blobs into OneStream</h2>
-            </header>
-            
-
-            
-
-
-
-            
-            <p class="lead">OneStream’s integration capabilities with Azure Blob Storage allow organizations to pull vast amounts of data directly from cloud storage for processing and reporting. However, the process of connecting to Azure Blobs and importing data into OneStream requires careful configuration to ensure that data is pulled efficiently, accurately, and securely. In this article, we explore the nuances of pulling data from Azure Blobs into OneStream, including best practices for setup, troubleshooting, and optimization.</p>
-            
-            <img src="./images/coffee.webp" alt="Stock photo representing cloud data integration" width="933" height="1400" loading="lazy" decoding="async" />
-          
-            <h3>Understanding Azure Blob Storage</h3>
-            <p>Azure Blob Storage is Microsoft's object storage solution designed to store large amounts of unstructured data, such as images, videos, documents, and backups. It’s a popular choice for organizations that need to store data in the cloud and access it from various systems, including OneStream. Blobs are stored in containers, which function as directories within Azure Storage accounts. To access data in OneStream, you need to establish a secure connection to the relevant containers and ensure that the correct permissions are in place.</p>
-          
-            <h3>Setting Up OneStream to Connect to Azure Blob Storage</h3>
-            <p>Before pulling data from Azure Blobs into OneStream, there are several configuration steps you need to take to ensure a smooth data flow:</p>
-            <ul>
-              <li><strong>Azure Storage Account Setup:</strong> First, ensure that you have an active Azure Storage account and have created the appropriate containers to store your data. Each container can hold multiple blobs (files), and these should be organized in a way that simplifies data access and retrieval.</li>
-          
-              <li><strong>Authentication and Permissions:</strong> OneStream requires the necessary permissions to access your Azure Blob Storage. You can authenticate access via Shared Access Signatures (SAS), managed identities, or account keys. Be sure to follow security best practices by granting the minimum necessary permissions, such as "Read" access for the specific container from which OneStream will pull data.</li>
-          
-              <li><strong>Data Source Configuration in OneStream:</strong> Configure the data source in OneStream by providing the connection details for your Azure Blob Storage account. This includes the endpoint URL, container name, and the method of authentication. Test the connection to ensure that OneStream can successfully access the blob data.</li>
-            </ul>
-          
-            <h3>Best Practices for Pulling Data from Azure Blobs</h3>
-            <p>While setting up the connection is a critical first step, there are several best practices you should follow to ensure data is imported efficiently and accurately:</p>
-            
-            <ul>
-              <li><strong>Data Format Considerations:</strong> Ensure that the data stored in Azure Blobs is in a format compatible with OneStream, such as CSV or XML. Properly structured data will help avoid errors during the import process. Additionally, be mindful of data encoding settings, as improper encoding (e.g., special characters or line breaks) can lead to data integrity issues.</li>
-          
-              <li><strong>File Size and Chunking:</strong> Large files can be difficult to handle during the import process. If you’re dealing with very large blobs, consider splitting them into smaller chunks before pulling the data into OneStream. Azure Blob Storage supports block blobs, which allow you to upload large files in segments, making it easier to manage large datasets.</li>
-          
-              <li><strong>Handling Incremental Data Loads:</strong> When dealing with frequently updated data, incremental loading can be more efficient than reloading entire datasets. OneStream can pull only new or modified data from Azure Blobs, reducing the time and resources required for data integration.</li>
-          
-              <li><strong>Automating Data Pulls:</strong> Automate the process of pulling data from Azure Blob Storage into OneStream using scheduled jobs or workflows. This ensures that your data is always up-to-date without requiring manual intervention, particularly when dealing with high-frequency data updates.</li>
-            </ul>
-          
-            <h3>Troubleshooting Common Issues</h3>
-            <p>Pulling data from Azure Blobs into OneStream can occasionally present challenges. Here are some common issues and how to address them:</p>
-            
-            <ul>
-              <li><strong>Connection Errors:</strong> If OneStream is unable to connect to Azure Blob Storage, double-check your authentication credentials and permissions. Ensure that the container URL is correct and that your OneStream account has the necessary access rights. Additionally, check network configurations to ensure no firewalls are blocking the connection.</li>
-              
-              <li><strong>File Format Incompatibility:</strong> If you encounter errors during data import, verify that the file format in Azure Blob Storage matches OneStream’s supported formats. If necessary, convert the file to a compatible format, such as CSV, before attempting to pull the data.</li>
-              
-              <li><strong>Data Integrity Issues:</strong> Ensure that the data being pulled from Azure Blobs is complete and accurate. Implement checks within OneStream to validate the data during the import process. For instance, use data validation rules to identify discrepancies or missing records before they enter the system.</li>
-          
-              <li><strong>Slow Data Transfer Speeds:</strong> Data transfer from Azure Blob Storage to OneStream may be slow due to network latency or large file sizes. To mitigate this, optimize your network configurations, reduce file sizes through compression or chunking, and consider scheduling data pulls during off-peak hours to avoid network congestion.</li>
-            </ul>
-          
-            <h3>Optimizing Performance When Pulling Data from Azure Blobs</h3>
-            <p>For organizations dealing with large datasets or frequent data pulls, optimizing performance is critical. Here are some strategies to ensure efficient data integration:</p>
-            
-            <ul>
-              <li><strong>Use Parallel Processing:</strong> OneStream allows for parallel data processing, which can significantly reduce the time required to pull large datasets from Azure Blobs. By dividing the dataset into smaller pieces and processing them simultaneously, you can improve overall performance.</li>
-          
-              <li><strong>Leverage Azure’s Built-In Features:</strong> Azure Blob Storage offers features such as lifecycle management, which can automatically archive older data or delete unused files. Implementing these features can reduce the volume of data OneStream needs to process, thereby improving performance.</li>
-          
-              <li><strong>Compression and Encryption:</strong> Compressing large files before storing them in Azure Blobs can reduce the time it takes to pull the data into OneStream. Additionally, ensure that data is encrypted in transit to maintain security without compromising performance.</li>
-            </ul>
-          
-            <h3>Case Study: Optimizing Financial Data Imports with Azure Blobs</h3>
-            <p>A financial services firm experienced challenges with importing large datasets from Azure Blob Storage into OneStream, particularly around data transfer speeds and format incompatibility. By implementing incremental data loading, optimizing file formats, and leveraging parallel processing in OneStream, they were able to reduce their import time by 50%, improving overall efficiency in their financial reporting processes.</p>
-          
-            <h3>Conclusion</h3>
-            <p>Pulling data from Azure Blob Storage into OneStream offers significant advantages, especially for organizations managing large volumes of data. By understanding the nuances of authentication, data formats, and performance optimization, you can streamline the integration process and ensure reliable, timely data imports. Following these best practices will help you avoid common pitfalls and optimize your OneStream implementations for better performance and data accuracy.</p>
-
-  
-           
-                </article>
-            </section>
-        </article>
+<section class="container mx-auto px-6 py-12 lg:py-16">
+  <div class="card bg-base-100 shadow-xl">
+    <div class="card-body lg:flex lg:flex-row lg:gap-10">
+      <div class="flex justify-center lg:w-1/3">
+        <img src="./images/profilepic.jpeg" alt="Grant Deker, founder of Full Clear Solutions" class="h-56 w-56 rounded-2xl object-cover shadow-lg" width="368" height="368" loading="eager" decoding="async" />
+      </div>
+      <div class="space-y-4 lg:w-2/3">
+        <h1 class="text-4xl font-bold">Grant Deker</h1>
+        <p class="text-lg text-base-content/80">Founder, Full Clear Solutions</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="badge badge-accent badge-lg">OneStream Admin</span>
+        </div>
+        <p>
+          Grant is a finance technology consultant focused on OneStream delivery, FP&A modernization, and cloud-enabled process optimization.
+          He has supported Fortune 500 teams across implementation, enhancement, and long-term platform strategy.
+        </p>
+        <p>
+          Full Clear Solutions combines financial domain expertise with pragmatic engineering execution to shorten time-to-value,
+          improve data confidence, and create scalable operating models for enterprise finance organizations.
+        </p>
+      </div>
     </div>
-  </main>
-  
+  </div>
+</section>
 
+<section class="container mx-auto px-6 pb-14">
+  <div class="grid gap-6 md:grid-cols-3">
+    <div class="card bg-base-100 shadow-md">
+      <div class="card-body">
+        <h2 class="card-title">Core Focus</h2>
+        <p>OneStream implementation, optimization, and architecture guidance.</p>
+      </div>
+    </div>
+    <div class="card bg-base-100 shadow-md">
+      <div class="card-body">
+        <h2 class="card-title">Industry Profile</h2>
+        <p>Fortune 500 finance and IT organizations with complex close and planning requirements.</p>
+      </div>
+    </div>
+    <div class="card bg-base-100 shadow-md">
+      <div class="card-body">
+        <h2 class="card-title">Engagement Model</h2>
+        <p>Hands-on consulting with clear scopes, measurable milestones, and practical outcomes.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-
-
-        <footer class="bg-primary">
+      <footer class="bg-primary">
         <div class="container px-6 py-12 mx-auto">
             <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
                 <div class="sm:col-span-2">
