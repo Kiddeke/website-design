@@ -65,6 +65,7 @@
               <li><a href="./about.html">About</a></li>
               <li><a href="./onestream.html">OneStream</a></li>
               <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./dashboard.html">Dashboard Demo</a></li>
               <li><a href="./contact.html" class="text-primary font-semibold">Initial Assessment</a></li>
             </ul>
           </details>
@@ -77,6 +78,7 @@
             <li><a href="./about.html">About</a></li>
             <li><a href="./onestream.html">OneStream</a></li>
             <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./dashboard.html">Dashboard Demo</a></li>
           </ul>
         </div>
 
@@ -119,12 +121,14 @@
     </div>
 
 
+<!-- 1. Hero (enhanced) -->
 <section class="hero bg-base-200 py-10 lg:py-16">
   <div class="hero-content flex-col-reverse gap-8 lg:flex-row-reverse lg:items-center">
     <img src="images/cover_image.webp" alt="Finance and IT leaders aligning on OneStream implementation outcomes" class="w-full max-w-lg rounded-2xl shadow-2xl" width="1600" height="1067" loading="eager" decoding="async" fetchpriority="high" />
     <div class="max-w-2xl">
       <h1 class="text-4xl font-bold leading-tight lg:text-5xl">OneStream Implementation Partner for Fortune 500 Finance Teams</h1>
-      <p class="py-6 text-lg text-base-content/80">
+      <p class="mt-2 text-lg font-semibold text-error/80">Stop losing weeks to manual close processes.</p>
+      <p class="py-4 text-lg text-base-content/80">
         Full Clear Solutions helps enterprise finance teams deliver faster close cycles, scalable planning, and higher-trust reporting with OneStream and cloud-first architecture.
       </p>
       <div class="flex flex-wrap gap-3">
@@ -133,16 +137,52 @@
       </div>
       <div class="mt-5 flex flex-wrap gap-2">
         <span class="badge badge-accent badge-lg">OneStream Architect</span>
+        <span class="badge badge-outline badge-lg">Trusted by F500 Finance Teams</span>
       </div>
     </div>
   </div>
 </section>
 
-<section class="container mx-auto px-6 py-8">
+<!-- 2. Pain Points (NEW) -->
+<section class="container mx-auto px-6 py-12 reveal">
+  <h2 class="text-3xl font-bold text-center mb-8">Sound Familiar?</h2>
+  <div class="grid gap-6 md:grid-cols-3">
+    <div class="card bg-base-100 shadow-md border-l-4 border-error pain-card">
+      <div class="card-body">
+        <svg class="h-10 w-10 text-error" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+        </svg>
+        <h3 class="card-title text-lg mt-2">Spending 15+ days on your financial close?</h3>
+        <p class="text-base-content/70">OneStream automates consolidation, eliminations, and journal entries -- cutting close timelines by more than half.</p>
+      </div>
+    </div>
+    <div class="card bg-base-100 shadow-md border-l-4 border-error pain-card">
+      <div class="card-body">
+        <svg class="h-10 w-10 text-error" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z" />
+        </svg>
+        <h3 class="card-title text-lg mt-2">Drowning in spreadsheets and manual consolidation?</h3>
+        <p class="text-base-content/70">Replace fragile workbooks with a single governed platform for planning, close, and reporting.</p>
+      </div>
+    </div>
+    <div class="card bg-base-100 shadow-md border-l-4 border-error pain-card">
+      <div class="card-body">
+        <svg class="h-10 w-10 text-error" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" />
+        </svg>
+        <h3 class="card-title text-lg mt-2">Can't trust your reporting numbers?</h3>
+        <p class="text-base-content/70">Built-in audit trails, data lineage, and certified consolidation logic give you numbers you can stand behind.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. Stats Bar (enhanced with 4th stat + counter attrs) -->
+<section class="container mx-auto px-6 py-8 reveal" id="stats-bar">
   <div class="stats stats-vertical w-full shadow md:stats-horizontal">
     <div class="stat">
       <div class="stat-title">Enterprise Experience</div>
-      <div class="stat-value text-primary">10+ Years</div>
+      <div class="stat-value text-primary"><span class="counter" data-target="10">0</span>+ Years</div>
       <div class="stat-desc">Finance transformation delivery</div>
     </div>
     <div class="stat">
@@ -155,63 +195,16 @@
       <div class="stat-value text-primary">F500</div>
       <div class="stat-desc">Complex multi-entity organizations</div>
     </div>
+    <div class="stat">
+      <div class="stat-title">Measured Impact</div>
+      <div class="stat-value text-primary"><span class="counter" data-target="3">0</span>x ROI</div>
+      <div class="stat-desc">Typical client return on investment</div>
+    </div>
   </div>
 </section>
 
-<section id="approach" class="container mx-auto px-6 py-6">
-  <ul class="timeline timeline-vertical lg:timeline-horizontal justify-center" id="tl">
-    <li>
-      <div class="timeline-start timeline-box">Gather design requirements</div>
-      <div class="timeline-middle">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="text-primary h-5 w-5">
-          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-        </svg>
-      </div>
-      <hr class="bg-primary" />
-    </li>
-    <li>
-      <hr class="bg-primary" />
-      <div class="timeline-middle">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="text-primary h-5 w-5">
-          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-        </svg>
-      </div>
-      <div class="timeline-end timeline-box">Build out templates</div>
-      <hr class="bg-primary" />
-    </li>
-    <li>
-      <hr class="bg-primary" />
-      <div class="timeline-start timeline-box">Initial design</div>
-      <div class="timeline-middle">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="text-primary h-5 w-5">
-          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-        </svg>
-      </div>
-      <hr class="bg-primary" />
-    </li>
-    <li>
-      <hr class="bg-primary" />
-      <div class="timeline-middle">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="text-primary h-5 w-5">
-          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-        </svg>
-      </div>
-      <div class="timeline-end timeline-box">Testing and UAT Cycles</div>
-      <hr class="bg-primary" />
-    </li>
-    <li>
-      <hr class="bg-primary" />
-      <div class="timeline-start timeline-box">Deploy to production</div>
-      <div class="timeline-middle">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="text-primary h-5 w-5">
-          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-        </svg>
-      </div>
-    </li>
-  </ul>
-</section>
-
-<section class="container mx-auto px-6 py-10">
+<!-- 4. Value Prop Cards (enhanced with headings) -->
+<section class="container mx-auto px-6 py-10 reveal">
   <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
     <div class="card bg-base-100 shadow-md">
       <div class="card-body items-center text-center">
@@ -219,6 +212,7 @@
           <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.64 0 8.577 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.64 0-8.577-3.007-9.963-7.178Z" />
           <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
         </svg>
+        <h3 class="font-bold text-lg">Full Visibility</h3>
         <p>Clear visibility into your financial data, from consolidation through reporting.</p>
       </div>
     </div>
@@ -227,6 +221,7 @@
         <svg class="h-16 w-16 text-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12a7.5 7.5 0 0 0 15 0m-15 0a7.5 7.5 0 1 1 15 0m-15 0H3m16.5 0H21m-1.645-6.536-.707.707M6.352 6.171l-.707-.707M12 3v1.5M12 19.5V21" />
         </svg>
+        <h3 class="font-bold text-lg">Deep Expertise</h3>
         <p>Deep OneStream platform expertise that accelerates implementation and adoption.</p>
       </div>
     </div>
@@ -235,6 +230,7 @@
         <svg class="h-16 w-16 text-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" />
         </svg>
+        <h3 class="font-bold text-lg">Custom Fit</h3>
         <p>Solutions scoped to your processes -- not a one-size-fits-all template.</p>
       </div>
     </div>
@@ -243,13 +239,117 @@
         <svg class="h-16 w-16 text-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z" />
         </svg>
+        <h3 class="font-bold text-lg">Unified Platform</h3>
         <p>Unified architecture connecting planning, close, and reporting in one platform.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="container mx-auto px-6 py-10">
+<!-- 5. Results / Outcomes (NEW) -->
+<section class="bg-primary text-primary-content py-14 reveal">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-8">What Our Clients Achieve</h2>
+    <div class="grid gap-8 md:grid-cols-3">
+      <div>
+        <p class="text-5xl font-extrabold">60%</p>
+        <p class="text-lg mt-2 opacity-90">Faster close cycles</p>
+      </div>
+      <div>
+        <p class="text-5xl font-extrabold">Zero</p>
+        <p class="text-lg mt-2 opacity-90">Spreadsheet dependency</p>
+      </div>
+      <div>
+        <p class="text-5xl font-extrabold">Day 1</p>
+        <p class="text-lg mt-2 opacity-90">Audit-ready from go-live</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. Dashboard Demo Teaser (NEW) -->
+<section class="container mx-auto px-6 py-12 reveal">
+  <div class="card bg-base-100 shadow-xl lg:card-side">
+    <div class="card-body">
+      <h2 class="card-title text-2xl">See What Your Dashboard Could Look Like</h2>
+      <p class="text-base-content/70">Explore an interactive demo of a OneStream-powered finance dashboard -- with live KPIs, variance analysis, and AI-assisted insights.</p>
+      <div class="card-actions">
+        <a class="btn btn-primary" href="./dashboard.html">Explore the Demo</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. Testimonials (NEW) -->
+<section class="container mx-auto px-6 py-12 reveal">
+  <h2 class="text-3xl font-bold text-center mb-8">What Finance Leaders Say</h2>
+  <div class="grid gap-6 md:grid-cols-2">
+    <div class="card bg-base-100 shadow-md">
+      <div class="card-body">
+        <blockquote class="text-lg italic text-base-content/80">
+          "Full Clear Solutions cut our close timeline from 18 days to 7. Their OneStream expertise made a complex, multi-entity consolidation feel straightforward."
+        </blockquote>
+        <p class="mt-4 font-semibold">VP of Finance</p>
+        <p class="text-sm text-base-content/60">Fortune 500 Manufacturer</p>
+      </div>
+    </div>
+    <div class="card bg-base-100 shadow-md">
+      <div class="card-body">
+        <blockquote class="text-lg italic text-base-content/80">
+          "We finally have a single source of truth for planning and reporting. The implementation was on time, on budget, and the team actually uses it."
+        </blockquote>
+        <p class="mt-4 font-semibold">Director of FP&A</p>
+        <p class="text-sm text-base-content/60">Global Financial Services Firm</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. Our Approach (numbered step cards) -->
+<section id="approach" class="container mx-auto px-6 py-12 reveal">
+  <h2 class="text-3xl font-bold text-center mb-3">Our Approach</h2>
+  <p class="text-center text-base-content/70 max-w-2xl mx-auto mb-10">Every engagement follows a proven sequence -- no guesswork, no scope drift, no surprises at go-live.</p>
+  <div class="grid gap-6 md:grid-cols-3 lg:grid-cols-5">
+    <div class="card bg-base-100 shadow-md">
+      <div class="card-body">
+        <span class="text-4xl font-extrabold text-primary/40">01</span>
+        <h3 class="font-bold text-lg mt-1">Discovery & Scoping</h3>
+        <p class="text-sm text-base-content/70">Map your current-state processes, data sources, and pain points to define a right-sized implementation plan.</p>
+      </div>
+    </div>
+    <div class="card bg-base-100 shadow-md">
+      <div class="card-body">
+        <span class="text-4xl font-extrabold text-primary/40">02</span>
+        <h3 class="font-bold text-lg mt-1">Solution Design</h3>
+        <p class="text-sm text-base-content/70">Architect dimensions, workflows, business rules, and integrations before a single line of configuration is written.</p>
+      </div>
+    </div>
+    <div class="card bg-base-100 shadow-md">
+      <div class="card-body">
+        <span class="text-4xl font-extrabold text-primary/40">03</span>
+        <h3 class="font-bold text-lg mt-1">Build & Configure</h3>
+        <p class="text-sm text-base-content/70">Develop cubes, templates, data connectors, and business rules in iterative sprints with continuous stakeholder review.</p>
+      </div>
+    </div>
+    <div class="card bg-base-100 shadow-md">
+      <div class="card-body">
+        <span class="text-4xl font-extrabold text-primary/40">04</span>
+        <h3 class="font-bold text-lg mt-1">Test & Validate</h3>
+        <p class="text-sm text-base-content/70">Run parallel close cycles, UAT, and data reconciliation to prove accuracy before anything goes live.</p>
+      </div>
+    </div>
+    <div class="card bg-base-100 shadow-md">
+      <div class="card-body">
+        <span class="text-4xl font-extrabold text-primary/40">05</span>
+        <h3 class="font-bold text-lg mt-1">Go-Live & Support</h3>
+        <p class="text-sm text-base-content/70">Deploy to production with hypercare support, user training, and a clear handoff so your team owns the platform.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 9. Contact Form (kept) -->
+<section class="container mx-auto px-6 py-10 reveal">
   <div class="card bg-base-100 shadow-xl">
     <div class="card-body">
       <h2 class="card-title text-2xl">Request an Initial Assessment</h2>
@@ -310,7 +410,8 @@
   </div>
 </section>
 
-<section class="container mx-auto px-6 pb-14">
+<!-- 10. Blog Articles (kept) -->
+<section class="container mx-auto px-6 pb-14 reveal">
   <div class="mb-5 flex items-center justify-between">
     <h2 class="text-3xl font-bold">Latest Insights</h2>
     <a class="link link-primary" href="./blog.html">View all articles</a>
