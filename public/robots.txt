@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: 
-Disallow: /cgi-bin/
-Sitemap: https://fullclearsolutions.com/sitemap.xml
+Disallow:
+
+Sitemap: https://www.fullclearsolutions.com/sitemap.xml

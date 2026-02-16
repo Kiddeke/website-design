@@ -6,63 +6,83 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>https://fullclearsolutions.com/</loc>
-  <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+  <loc>https://www.fullclearsolutions.com/</loc>
+  <lastmod>2026-02-15T00:00:00+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://fullclearsolutions.com/consulting</loc>
-  <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+  <loc>https://www.fullclearsolutions.com/consulting</loc>
+  <lastmod>2026-02-15T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://fullclearsolutions.com/about</loc>
-  <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+  <loc>https://www.fullclearsolutions.com/about</loc>
+  <lastmod>2026-02-15T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://fullclearsolutions.com/technology</loc>
-  <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+  <loc>https://www.fullclearsolutions.com/onestream</loc>
+  <lastmod>2026-02-15T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://fullclearsolutions.com/onestream</loc>
-  <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+  <loc>https://www.fullclearsolutions.com/blog</loc>
+  <lastmod>2026-02-15T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://fullclearsolutions.com/blog</loc>
-  <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+  <loc>https://www.fullclearsolutions.com/contact</loc>
+  <lastmod>2026-02-15T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://fullclearsolutions.com/contact</loc>
-  <lastmod>2026-02-12T00:00:00+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://www.fullclearsolutions.com/dashboard</loc>
+  <lastmod>2026-02-15T00:00:00+00:00</lastmod>
+  <priority>0.70</priority>
 </url>
 <url>
-  <loc>https://fullclearsolutions.com/financialclose</loc>
-  <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+  <loc>https://www.fullclearsolutions.com/blogpost10</loc>
+  <lastmod>2026-02-10T00:00:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://fullclearsolutions.com/blogpost3</loc>
-  <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+  <loc>https://www.fullclearsolutions.com/blogpost7</loc>
+  <lastmod>2026-01-15T00:00:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://fullclearsolutions.com/blogpost4</loc>
-  <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+  <loc>https://www.fullclearsolutions.com/blogpost8</loc>
+  <lastmod>2025-10-14T00:00:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://fullclearsolutions.com/blogpost5</loc>
-  <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+  <loc>https://www.fullclearsolutions.com/blogpost9</loc>
+  <lastmod>2025-06-18T00:00:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://fullclearsolutions.com/blogpost6</loc>
-  <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+  <loc>https://www.fullclearsolutions.com/financialclose</loc>
+  <lastmod>2024-08-10T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.fullclearsolutions.com/blogpost4</loc>
+  <lastmod>2024-08-12T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.fullclearsolutions.com/blogpost3</loc>
+  <lastmod>2024-05-21T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.fullclearsolutions.com/blogpost5</loc>
+  <lastmod>2023-10-18T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.fullclearsolutions.com/blogpost6</loc>
+  <lastmod>2023-06-04T00:00:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
