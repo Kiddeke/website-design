@@ -41,6 +41,11 @@
   <priority>0.70</priority>
 </url>
 <url>
+  <loc>https://www.fullclearsolutions.com/privacy</loc>
+  <lastmod>2026-07-18T00:00:00+00:00</lastmod>
+  <priority>0.30</priority>
+</url>
+<url>
   <loc>https://www.fullclearsolutions.com/blogpost10</loc>
   <lastmod>2026-02-10T00:00:00+00:00</lastmod>
   <priority>0.64</priority>
