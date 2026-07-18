@@ -1,3 +1,315 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss" source(none);
+
+@source "./pages";
+@source "./partials";
+@source "../public/script.js";
+
+/* Design tokens — BRAND.md §2. The only source of color/font/radius values. */
+@theme {
+  --color-paper: #FAF8F5;
+  --color-card: #FFFFFF;
+  --color-ink: #1C171A;
+  --color-ink-soft: #4E4549;
+  --color-burgundy: #7A1F31;
+  --color-burgundy-deep: #5C1624;
+  --color-slate: #3E5C76;
+  --color-line: #E5DFD7;
+  --color-success: #2E6B4F;
+  --font-display: "Spectral", Georgia, serif;
+  --font-body: "Public Sans", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+}
+
+/* On-dark and tint values, also specified in BRAND.md §2:
+   dark-band text/muted/hover-lift, success background tint. */
+@theme {
+  --color-ondark: #F1ECEE;
+  --color-ondark-muted: #C9C2C5;
+  --color-burgundy-lift: #8E2A3E;
+  --color-success-tint: #E8F2EC;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+  }
+  /* Quality floor — visible keyboard focus everywhere (BRAND.md §6) */
+  :focus-visible {
+    outline: 2px solid var(--color-slate);
+    outline-offset: 3px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+@layer components {
+  /* ---- Buttons (BRAND.md §6) ---- */
+  .btn {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: var(--radius-sm);
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    text-decoration: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: background-color 0.15s ease, color 0.15s ease;
+  }
+  .btn-primary {
+    background: var(--color-burgundy);
+    color: var(--color-card);
+  }
+  .btn-primary:hover {
+    background: var(--color-burgundy-deep);
+  }
+  .btn-ghost {
+    border-color: var(--color-ink);
+    color: var(--color-ink);
+    background: transparent;
+  }
+  .btn-ghost:hover {
+    background: var(--color-ink);
+    color: var(--color-paper);
+  }
+  /* On ink bands, burgundy hover lifts instead of deepens (BRAND.md §2) */
+  .on-dark .btn-primary:hover {
+    background: var(--color-burgundy-lift);
+  }
+
+  /* ---- Eyebrow labels (BRAND.md §6) ---- */
+  .eyebrow {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-burgundy);
+  }
+
+  /* ---- Signature: focus brackets (BRAND.md §5.1) ---- */
+  .focus-frame {
+    position: relative;
+    padding: 22px;
+  }
+  .focus-frame::before,
+  .focus-frame::after {
+    content: "";
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    border: 2.5px solid var(--color-burgundy);
+  }
+  .focus-frame::before {
+    top: 0;
+    left: 0;
+    border-right: none;
+    border-bottom: none;
+  }
+  .focus-frame::after {
+    bottom: 0;
+    right: 0;
+    border-left: none;
+    border-top: none;
+  }
+
+  /* ---- Signature: resolve animation (BRAND.md §5.2) ---- */
+  .resolve {
+    animation: resolve 1.6s ease-out both;
+  }
+  @keyframes resolve {
+    0% {
+      filter: blur(7px);
+      opacity: 0.55;
+    }
+    100% {
+      filter: blur(0);
+      opacity: 1;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .resolve {
+      animation: none;
+    }
+  }
+
+  /* ---- Signature: ledger card (BRAND.md §5.3) ---- */
+  .ledger {
+    background: var(--color-card);
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius-md);
+    box-shadow: 0 18px 40px -24px color-mix(in srgb, var(--color-ink) 25%, transparent);
+    padding: 26px 28px;
+  }
+  .ledger-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    border-bottom: 1px solid var(--color-line);
+    padding-bottom: 12px;
+    margin-bottom: 6px;
+  }
+  .ledger-title {
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+    font-weight: 600;
+  }
+  .ledger-tag {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+    color: var(--color-success);
+    background: var(--color-success-tint);
+    padding: 3px 8px;
+    border-radius: 3px;
+    white-space: nowrap;
+  }
+  .ledger table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+  }
+  .ledger td {
+    padding: 9px 0;
+    border-bottom: 1px solid color-mix(in srgb, var(--color-line) 55%, var(--color-card));
+  }
+  .ledger tr:last-child td {
+    border-bottom: none;
+  }
+  .ledger td:last-child {
+    text-align: right;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+  }
+  .ledger .lbl {
+    color: var(--color-ink-soft);
+  }
+  .ledger .ok {
+    color: var(--color-success);
+  }
+  .ledger-note {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    color: var(--color-ink-soft);
+    margin-top: 14px;
+    text-align: right;
+  }
+
+  /* ---- Dark band pull quote (BRAND.md §6) ---- */
+  .quote {
+    border-left: 2px solid var(--color-burgundy);
+    padding-left: 22px;
+  }
+  .quote blockquote {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-style: italic;
+    line-height: 1.5;
+    color: var(--color-ondark);
+    margin-bottom: 14px;
+  }
+  .quote figcaption {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    color: var(--color-ondark-muted);
+  }
+
+  /* ---- Form fields (contact page) ---- */
+  .field-label {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-ink-soft);
+    margin-bottom: 6px;
+  }
+  .field-input {
+    width: 100%;
+    background: var(--color-card);
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius-sm);
+    padding: 10px 12px;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    color: var(--color-ink);
+    transition: border-color 0.15s ease;
+  }
+  .field-input:hover {
+    border-color: var(--color-ink-soft);
+  }
+  .field-input:focus-visible {
+    outline: 2px solid var(--color-slate);
+    outline-offset: 1px;
+    border-color: var(--color-slate);
+  }
+
+  /* ---- Article typography (blog posts) ---- */
+  .article {
+    font-size: 1.02rem;
+    color: var(--color-ink-soft);
+  }
+  .article h2,
+  .article h3 {
+    color: var(--color-ink);
+    font-size: 1.35rem;
+    margin: 2.2em 0 0.7em;
+  }
+  .article p {
+    margin-bottom: 1.1em;
+    max-width: 66ch;
+  }
+  .article .lead {
+    font-size: 1.12rem;
+    color: var(--color-ink);
+  }
+  .article ul {
+    list-style: none;
+    margin: 0 0 1.4em;
+    padding: 0;
+  }
+  .article ul li {
+    position: relative;
+    padding: 0.55em 0 0.55em 1.4em;
+    border-bottom: 1px solid var(--color-line);
+    max-width: 66ch;
+  }
+  .article ul li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: var(--color-burgundy);
+  }
+  .article strong {
+    color: var(--color-ink);
+    font-weight: 600;
+  }
+  .article a {
+    color: var(--color-burgundy);
+    text-underline-offset: 2px;
+  }
+  .article a:hover {
+    color: var(--color-burgundy-deep);
+  }
+}

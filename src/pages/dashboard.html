@@ -1,378 +1,340 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="autumn">
+<html lang="en">
 <head>
     <!-- include:head.html -->
     <link rel="canonical" href="https://www.fullclearsolutions.com/dashboard" />
-    <meta name="description" content="Interactive OneStream dashboard demo showcasing financial consolidation, KPIs, planning, and AI-powered insights for enterprise finance teams.">
+    <meta name="description" content="Interactive OneStream dashboard demo showcasing financial consolidation, KPIs, planning, and AI-assisted insights for enterprise finance teams.">
     <!-- seo:meta:start -->
-    <meta property="og:title" content="OneStream Dashboard Demo - Full Clear Solutions">
-    <meta property="og:description" content="See what your OneStream implementation could look like with live KPIs, variance analysis, and AI insights.">
+    <meta property="og:title" content="OneStream Dashboard Demo — Full Clear">
+    <meta property="og:description" content="See what your OneStream implementation could look like with live KPIs, variance analysis, and AI-assisted insights.">
     <meta property="og:url" content="https://www.fullclearsolutions.com/dashboard">
-    <meta property="og:image" content="https://www.fullclearsolutions.com/images/cover_image.webp">
+    <meta property="og:image" content="https://www.fullclearsolutions.com/images/og.png">
     <meta property="og:type" content="website">
-    <meta name="twitter:title" content="OneStream Dashboard Demo - Full Clear Solutions">
-    <meta name="twitter:description" content="See what your OneStream implementation could look like with live KPIs, variance analysis, and AI insights.">
-    <meta name="twitter:image" content="https://www.fullclearsolutions.com/images/cover_image.webp">
+    <meta name="twitter:title" content="OneStream Dashboard Demo — Full Clear">
+    <meta name="twitter:description" content="See what your OneStream implementation could look like with live KPIs, variance analysis, and AI-assisted insights.">
+    <meta name="twitter:image" content="https://www.fullclearsolutions.com/images/og.png">
     <!-- seo:meta:end -->
-    <title>OneStream Dashboard Demo - Full Clear Solutions</title>
+    <title>OneStream Dashboard Demo — Full Clear</title>
 </head>
 <body>
 <!-- include:navbar.html -->
 
-<!-- Header Banner -->
-<section class="bg-base-200 py-8 lg:py-12">
-  <div class="container mx-auto px-6 text-center">
-    <h1 class="text-3xl font-bold lg:text-4xl">OneStream Dashboard Demo</h1>
-    <p class="mt-3 text-base-content/70 text-lg">Interactive preview of a unified finance platform</p>
-    <div class="mt-4 flex flex-wrap justify-center gap-2">
-      <span class="badge badge-primary">Live KPIs</span>
-      <span class="badge badge-secondary">Variance Analysis</span>
-      <span class="badge badge-accent">AI Insights</span>
-      <span class="badge badge-outline">Mock Data</span>
+<main>
+  <!-- Header -->
+  <section class="border-b border-line py-12 lg:py-16">
+    <div class="mx-auto max-w-[1120px] px-6">
+      <span class="eyebrow mb-5">Dashboard demo</span>
+      <h1 class="mb-[22px] max-w-[24ch] text-[clamp(2.4rem,4.6vw,3.6rem)] leading-[1.12] tracking-[-0.015em]">What your close could <em class="italic text-burgundy">look like.</em></h1>
+      <p class="max-w-[56ch] text-[1.06rem] text-ink-soft">An interactive preview of a OneStream-style finance dashboard — KPIs, variance analysis, close tracking, and AI-assisted insights.</p>
+      <p class="mt-5 font-mono text-[0.7rem] uppercase tracking-[0.12em] text-ink-soft">All figures are <span class="text-burgundy">mock data</span> for demonstration</p>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Dashboard Body -->
-<section class="container mx-auto px-4 py-8">
-  <div class="flex flex-col lg:flex-row gap-6">
+  <!-- Dashboard body -->
+  <section class="py-12">
+    <div class="mx-auto flex max-w-[1120px] flex-col gap-8 px-6 lg:flex-row">
 
-    <!-- Sidebar -->
-    <aside class="lg:w-56 shrink-0">
-      <ul class="menu bg-base-200 rounded-box w-full">
-        <li class="menu-title">Dashboard Views</li>
-        <li><a class="active">Executive Summary</a></li>
-        <li><a>Revenue Analysis</a></li>
-        <li><a>P&L Detail</a></li>
-        <li><a>Balance Sheet</a></li>
-        <li><a>Cash Flow</a></li>
-        <li><a>Planning & Forecast</a></li>
-        <li><a>Close Management</a></li>
-      </ul>
-    </aside>
+      <!-- Sidebar -->
+      <aside class="shrink-0 lg:w-52" aria-label="Dashboard views (demo)">
+        <p class="mb-3 font-mono text-[0.68rem] uppercase tracking-[0.12em] text-ink-soft">Dashboard views</p>
+        <ul class="border-t border-line font-body text-[0.9rem]">
+          <li class="border-b border-line"><span class="block border-l-2 border-burgundy bg-card py-2.5 pl-3 font-medium text-ink">Executive summary</span></li>
+          <li class="border-b border-line"><span class="block py-2.5 pl-3 text-ink-soft">Revenue analysis</span></li>
+          <li class="border-b border-line"><span class="block py-2.5 pl-3 text-ink-soft">P&amp;L detail</span></li>
+          <li class="border-b border-line"><span class="block py-2.5 pl-3 text-ink-soft">Balance sheet</span></li>
+          <li class="border-b border-line"><span class="block py-2.5 pl-3 text-ink-soft">Cash flow</span></li>
+          <li class="border-b border-line"><span class="block py-2.5 pl-3 text-ink-soft">Planning &amp; forecast</span></li>
+          <li class="border-b border-line"><span class="block py-2.5 pl-3 text-ink-soft">Close management</span></li>
+        </ul>
+      </aside>
 
-    <!-- Main Content -->
-    <div class="flex-1 min-w-0 space-y-6">
+      <!-- Main content -->
+      <div class="min-w-0 flex-1 space-y-8">
 
-      <!-- KPI Row -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        <div class="stat bg-base-100 rounded-box shadow">
-          <div class="stat-title">Revenue</div>
-          <div class="stat-value text-primary">$142.8M</div>
-          <div class="stat-desc text-success">+8.2% vs prior year</div>
-        </div>
-        <div class="stat bg-base-100 rounded-box shadow">
-          <div class="stat-title">Operating Expense</div>
-          <div class="stat-value text-secondary">$98.4M</div>
-          <div class="stat-desc text-error">+3.1% vs budget</div>
-        </div>
-        <div class="stat bg-base-100 rounded-box shadow">
-          <div class="stat-title">Net Income</div>
-          <div class="stat-value text-accent">$44.4M</div>
-          <div class="stat-desc text-success">+12.6% vs prior year</div>
-        </div>
-        <div class="stat bg-base-100 rounded-box shadow">
-          <div class="stat-title">Close Progress</div>
-          <div class="stat-value text-primary">78%</div>
-          <div class="stat-desc">22 of 28 tasks complete</div>
-        </div>
-      </div>
-
-      <!-- Budget vs Actual + Donut -->
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-
-        <!-- Budget vs Actual -->
-        <div class="lg:col-span-2 card bg-base-100 shadow">
-          <div class="card-body">
-            <h2 class="card-title text-lg">Budget vs Actual by Department</h2>
-            <div class="space-y-4 mt-2">
-              <!-- Finance -->
-              <div>
-                <div class="flex justify-between text-sm mb-1">
-                  <span>Finance</span>
-                  <span class="text-success">$12.1M / $12.8M (94.5%)</span>
-                </div>
-                <div class="w-full bg-base-200 rounded-full h-4 overflow-hidden">
-                  <div class="bg-primary h-4 rounded-full budget-bar" style="width:94.5%"></div>
-                </div>
-              </div>
-              <!-- Sales -->
-              <div>
-                <div class="flex justify-between text-sm mb-1">
-                  <span>Sales</span>
-                  <span class="text-error">$28.6M / $26.0M (110.0%)</span>
-                </div>
-                <div class="w-full bg-base-200 rounded-full h-4 overflow-hidden">
-                  <div class="bg-error h-4 rounded-full budget-bar" style="width:100%"></div>
-                </div>
-              </div>
-              <!-- Engineering -->
-              <div>
-                <div class="flex justify-between text-sm mb-1">
-                  <span>Engineering</span>
-                  <span class="text-success">$34.2M / $36.0M (95.0%)</span>
-                </div>
-                <div class="w-full bg-base-200 rounded-full h-4 overflow-hidden">
-                  <div class="bg-primary h-4 rounded-full budget-bar" style="width:95%"></div>
-                </div>
-              </div>
-              <!-- Marketing -->
-              <div>
-                <div class="flex justify-between text-sm mb-1">
-                  <span>Marketing</span>
-                  <span class="text-error">$15.8M / $14.5M (108.9%)</span>
-                </div>
-                <div class="w-full bg-base-200 rounded-full h-4 overflow-hidden">
-                  <div class="bg-warning h-4 rounded-full budget-bar" style="width:100%"></div>
-                </div>
-              </div>
-              <!-- Operations -->
-              <div>
-                <div class="flex justify-between text-sm mb-1">
-                  <span>Operations</span>
-                  <span class="text-success">$7.7M / $9.1M (84.6%)</span>
-                </div>
-                <div class="w-full bg-base-200 rounded-full h-4 overflow-hidden">
-                  <div class="bg-primary h-4 rounded-full budget-bar" style="width:84.6%"></div>
-                </div>
-              </div>
-            </div>
+        <!-- KPI row -->
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="ledger !p-5">
+            <p class="font-mono text-[0.68rem] uppercase tracking-[0.12em] text-ink-soft">Revenue</p>
+            <p class="mt-1 font-mono text-2xl font-medium text-ink">$142.8M</p>
+            <p class="mt-1 font-mono text-[0.7rem] text-success">+8.2% vs prior year</p>
+          </div>
+          <div class="ledger !p-5">
+            <p class="font-mono text-[0.68rem] uppercase tracking-[0.12em] text-ink-soft">Operating expense</p>
+            <p class="mt-1 font-mono text-2xl font-medium text-ink">$98.4M</p>
+            <p class="mt-1 font-mono text-[0.7rem] text-burgundy">+3.1% vs budget</p>
+          </div>
+          <div class="ledger !p-5">
+            <p class="font-mono text-[0.68rem] uppercase tracking-[0.12em] text-ink-soft">Net income</p>
+            <p class="mt-1 font-mono text-2xl font-medium text-ink">$44.4M</p>
+            <p class="mt-1 font-mono text-[0.7rem] text-success">+12.6% vs prior year</p>
+          </div>
+          <div class="ledger !p-5">
+            <p class="font-mono text-[0.68rem] uppercase tracking-[0.12em] text-ink-soft">Close progress</p>
+            <p class="mt-1 font-mono text-2xl font-medium text-ink">78%</p>
+            <p class="mt-1 font-mono text-[0.7rem] text-ink-soft">22 of 28 tasks complete</p>
           </div>
         </div>
 
-        <!-- Revenue Donut Chart -->
-        <div class="card bg-base-100 shadow">
-          <div class="card-body items-center">
-            <h2 class="card-title text-lg">Revenue by Segment</h2>
-            <svg viewBox="0 0 36 36" class="w-44 h-44 mt-2" aria-label="Revenue breakdown donut chart">
-              <!-- Enterprise 45% -->
-              <circle cx="18" cy="18" r="15.915" fill="none" stroke="oklch(var(--p))" stroke-width="3.5"
-                stroke-dasharray="45 55" stroke-dashoffset="25" class="donut-segment" />
-              <!-- Mid-Market 28% -->
-              <circle cx="18" cy="18" r="15.915" fill="none" stroke="oklch(var(--s))" stroke-width="3.5"
-                stroke-dasharray="28 72" stroke-dashoffset="80" class="donut-segment" />
-              <!-- SMB 17% -->
-              <circle cx="18" cy="18" r="15.915" fill="none" stroke="oklch(var(--a))" stroke-width="3.5"
-                stroke-dasharray="17 83" stroke-dashoffset="52" class="donut-segment" />
-              <!-- Gov 10% -->
-              <circle cx="18" cy="18" r="15.915" fill="none" stroke="oklch(var(--n))" stroke-width="3.5"
-                stroke-dasharray="10 90" stroke-dashoffset="35" class="donut-segment" />
+        <!-- Budget vs actual + segments -->
+        <div class="grid grid-cols-1 gap-6 lg:grid-cols-3">
+          <div class="ledger lg:col-span-2">
+            <div class="ledger-head">
+              <span class="ledger-title">Budget vs actual by department</span>
+              <span class="font-mono text-[0.68rem] uppercase tracking-[0.08em] text-ink-soft">FY2025</span>
+            </div>
+            <div class="mt-3 space-y-4">
+              <div>
+                <div class="mb-1 flex justify-between text-sm">
+                  <span class="text-ink-soft">Finance</span>
+                  <span class="font-mono text-[0.78rem] text-success">$12.1M / $12.8M (94.5%)</span>
+                </div>
+                <div class="h-2 w-full overflow-hidden rounded-sm bg-paper"><div class="h-2 rounded-sm bg-success" style="width:94.5%"></div></div>
+              </div>
+              <div>
+                <div class="mb-1 flex justify-between text-sm">
+                  <span class="text-ink-soft">Sales</span>
+                  <span class="font-mono text-[0.78rem] text-burgundy">$28.6M / $26.0M (110.0%)</span>
+                </div>
+                <div class="h-2 w-full overflow-hidden rounded-sm bg-paper"><div class="h-2 rounded-sm bg-burgundy" style="width:100%"></div></div>
+              </div>
+              <div>
+                <div class="mb-1 flex justify-between text-sm">
+                  <span class="text-ink-soft">Engineering</span>
+                  <span class="font-mono text-[0.78rem] text-success">$34.2M / $36.0M (95.0%)</span>
+                </div>
+                <div class="h-2 w-full overflow-hidden rounded-sm bg-paper"><div class="h-2 rounded-sm bg-success" style="width:95%"></div></div>
+              </div>
+              <div>
+                <div class="mb-1 flex justify-between text-sm">
+                  <span class="text-ink-soft">Marketing</span>
+                  <span class="font-mono text-[0.78rem] text-burgundy">$15.8M / $14.5M (108.9%)</span>
+                </div>
+                <div class="h-2 w-full overflow-hidden rounded-sm bg-paper"><div class="h-2 rounded-sm bg-burgundy" style="width:100%"></div></div>
+              </div>
+              <div>
+                <div class="mb-1 flex justify-between text-sm">
+                  <span class="text-ink-soft">Operations</span>
+                  <span class="font-mono text-[0.78rem] text-success">$7.7M / $9.1M (84.6%)</span>
+                </div>
+                <div class="h-2 w-full overflow-hidden rounded-sm bg-paper"><div class="h-2 rounded-sm bg-success" style="width:84.6%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ledger">
+            <div class="ledger-head">
+              <span class="ledger-title">Revenue by segment</span>
+            </div>
+            <svg viewBox="0 0 36 36" class="mx-auto mt-4 h-40 w-40" role="img" aria-label="Revenue breakdown: Enterprise 45%, Mid-Market 28%, SMB 17%, Government 10%">
+              <circle cx="18" cy="18" r="15.915" fill="none" class="stroke-burgundy" stroke-width="3.5" stroke-dasharray="45 55" stroke-dashoffset="25" />
+              <circle cx="18" cy="18" r="15.915" fill="none" class="stroke-slate" stroke-width="3.5" stroke-dasharray="28 72" stroke-dashoffset="80" />
+              <circle cx="18" cy="18" r="15.915" fill="none" class="stroke-success" stroke-width="3.5" stroke-dasharray="17 83" stroke-dashoffset="52" />
+              <circle cx="18" cy="18" r="15.915" fill="none" class="stroke-ink-soft" stroke-width="3.5" stroke-dasharray="10 90" stroke-dashoffset="35" />
             </svg>
-            <div class="flex flex-wrap gap-3 mt-3 text-sm">
-              <span class="flex items-center gap-1"><span class="w-3 h-3 rounded-full bg-primary inline-block"></span> Enterprise 45%</span>
-              <span class="flex items-center gap-1"><span class="w-3 h-3 rounded-full bg-secondary inline-block"></span> Mid-Market 28%</span>
-              <span class="flex items-center gap-1"><span class="w-3 h-3 rounded-full bg-accent inline-block"></span> SMB 17%</span>
-              <span class="flex items-center gap-1"><span class="w-3 h-3 rounded-full bg-neutral inline-block"></span> Gov 10%</span>
-            </div>
+            <ul class="mt-4 space-y-1.5 font-mono text-[0.72rem] text-ink-soft">
+              <li class="flex items-center gap-2"><span class="inline-block h-2.5 w-2.5 rounded-full bg-burgundy"></span> ENTERPRISE &middot; 45%</li>
+              <li class="flex items-center gap-2"><span class="inline-block h-2.5 w-2.5 rounded-full bg-slate"></span> MID-MARKET &middot; 28%</li>
+              <li class="flex items-center gap-2"><span class="inline-block h-2.5 w-2.5 rounded-full bg-success"></span> SMB &middot; 17%</li>
+              <li class="flex items-center gap-2"><span class="inline-block h-2.5 w-2.5 rounded-full bg-ink-soft"></span> GOV &middot; 10%</li>
+            </ul>
           </div>
         </div>
-      </div>
 
-      <!-- P&L Table + AI Insights -->
-      <div class="grid grid-cols-1 lg:grid-cols-5 gap-6">
-
-        <!-- P&L Table -->
-        <div class="lg:col-span-3 card bg-base-100 shadow">
-          <div class="card-body">
-            <h2 class="card-title text-lg">P&L Summary -- Q4 FY2025</h2>
+        <!-- P&L + AI insights -->
+        <div class="grid grid-cols-1 gap-6 lg:grid-cols-5">
+          <div class="ledger lg:col-span-3">
+            <div class="ledger-head">
+              <span class="ledger-title">P&amp;L summary — Q4 FY2025</span>
+              <span class="ledger-tag">ON BUDGET</span>
+            </div>
             <div class="overflow-x-auto">
-              <table class="table table-zebra table-sm">
+              <table class="w-full border-collapse text-sm">
                 <thead>
-                  <tr>
-                    <th>Line Item</th>
-                    <th class="text-right">Actual</th>
-                    <th class="text-right">Budget</th>
-                    <th class="text-right">Variance</th>
-                    <th class="text-right">Var %</th>
+                  <tr class="border-b border-line font-mono text-[0.65rem] uppercase tracking-[0.1em] text-ink-soft">
+                    <th class="py-2 text-left font-medium">Line item</th>
+                    <th class="py-2 text-right font-medium">Actual</th>
+                    <th class="py-2 text-right font-medium">Budget</th>
+                    <th class="py-2 text-right font-medium">Var</th>
+                    <th class="py-2 text-right font-medium">Var %</th>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr>
-                    <td class="font-semibold">Revenue</td>
-                    <td class="text-right">$142.8M</td>
-                    <td class="text-right">$138.0M</td>
-                    <td class="text-right text-success">+$4.8M</td>
-                    <td class="text-right text-success">+3.5%</td>
+                <tbody class="font-mono text-[0.78rem]">
+                  <tr class="border-b border-line/60">
+                    <td class="py-2 font-body font-semibold text-ink">Revenue</td>
+                    <td class="py-2 text-right">$142.8M</td>
+                    <td class="py-2 text-right">$138.0M</td>
+                    <td class="py-2 text-right text-success">+$4.8M</td>
+                    <td class="py-2 text-right text-success">+3.5%</td>
+                  </tr>
+                  <tr class="border-b border-line/60">
+                    <td class="py-2 pl-4 font-body text-ink-soft">COGS</td>
+                    <td class="py-2 text-right">($62.4M)</td>
+                    <td class="py-2 text-right">($58.0M)</td>
+                    <td class="py-2 text-right text-burgundy">-$4.4M</td>
+                    <td class="py-2 text-right text-burgundy">+7.6%</td>
+                  </tr>
+                  <tr class="border-b border-line/60">
+                    <td class="py-2 font-body font-semibold text-ink">Gross profit</td>
+                    <td class="py-2 text-right">$80.4M</td>
+                    <td class="py-2 text-right">$80.0M</td>
+                    <td class="py-2 text-right text-success">+$0.4M</td>
+                    <td class="py-2 text-right text-success">+0.5%</td>
+                  </tr>
+                  <tr class="border-b border-line/60">
+                    <td class="py-2 pl-4 font-body text-ink-soft">SG&amp;A</td>
+                    <td class="py-2 text-right">($24.8M)</td>
+                    <td class="py-2 text-right">($25.0M)</td>
+                    <td class="py-2 text-right text-success">+$0.2M</td>
+                    <td class="py-2 text-right text-success">-0.8%</td>
+                  </tr>
+                  <tr class="border-b border-line/60">
+                    <td class="py-2 pl-4 font-body text-ink-soft">R&amp;D</td>
+                    <td class="py-2 text-right">($11.2M)</td>
+                    <td class="py-2 text-right">($12.0M)</td>
+                    <td class="py-2 text-right text-success">+$0.8M</td>
+                    <td class="py-2 text-right text-success">-6.7%</td>
                   </tr>
                   <tr>
-                    <td class="pl-6">COGS</td>
-                    <td class="text-right">($62.4M)</td>
-                    <td class="text-right">($58.0M)</td>
-                    <td class="text-right text-error">-$4.4M</td>
-                    <td class="text-right text-error">+7.6%</td>
-                  </tr>
-                  <tr>
-                    <td class="font-semibold">Gross Profit</td>
-                    <td class="text-right">$80.4M</td>
-                    <td class="text-right">$80.0M</td>
-                    <td class="text-right text-success">+$0.4M</td>
-                    <td class="text-right text-success">+0.5%</td>
-                  </tr>
-                  <tr>
-                    <td class="pl-6">SG&A</td>
-                    <td class="text-right">($24.8M)</td>
-                    <td class="text-right">($25.0M)</td>
-                    <td class="text-right text-success">+$0.2M</td>
-                    <td class="text-right text-success">-0.8%</td>
-                  </tr>
-                  <tr>
-                    <td class="pl-6">R&D</td>
-                    <td class="text-right">($11.2M)</td>
-                    <td class="text-right">($12.0M)</td>
-                    <td class="text-right text-success">+$0.8M</td>
-                    <td class="text-right text-success">-6.7%</td>
-                  </tr>
-                  <tr>
-                    <td class="font-semibold">Operating Income</td>
-                    <td class="text-right">$44.4M</td>
-                    <td class="text-right">$43.0M</td>
-                    <td class="text-right text-success">+$1.4M</td>
-                    <td class="text-right text-success">+3.3%</td>
+                    <td class="py-2 font-body font-semibold text-ink">Operating income</td>
+                    <td class="py-2 text-right">$44.4M</td>
+                    <td class="py-2 text-right">$43.0M</td>
+                    <td class="py-2 text-right text-success">+$1.4M</td>
+                    <td class="py-2 text-right text-success">+3.3%</td>
                   </tr>
                 </tbody>
               </table>
             </div>
-            <div class="flex flex-wrap gap-2 mt-3">
-              <button class="btn btn-xs btn-outline">Drill into COGS</button>
-              <button class="btn btn-xs btn-outline">View by Entity</button>
-              <button class="btn btn-xs btn-outline">Export to Excel</button>
+          </div>
+
+          <div class="ledger lg:col-span-2">
+            <div class="ledger-head">
+              <span class="ledger-title">AI insights</span>
+              <span class="font-mono text-[0.68rem] uppercase tracking-[0.08em] text-ink-soft">Demo</span>
+            </div>
+            <ul class="mt-1 text-sm">
+              <li class="border-b border-line/60 py-3">
+                <p class="font-mono text-[0.65rem] uppercase tracking-[0.1em] text-burgundy">Variance alert</p>
+                <p class="mt-1 text-ink-soft">COGS +7.6% over budget, driven by raw material cost increases in the APAC region.</p>
+              </li>
+              <li class="border-b border-line/60 py-3">
+                <p class="font-mono text-[0.65rem] uppercase tracking-[0.1em] text-success">Revenue trend</p>
+                <p class="mt-1 text-ink-soft">Enterprise segment up 12% QoQ — strongest growth in three quarters.</p>
+              </li>
+              <li class="py-3">
+                <p class="font-mono text-[0.65rem] uppercase tracking-[0.1em] text-slate">Forecast risk</p>
+                <p class="mt-1 text-ink-soft">FX headwinds may reduce Q1 FY26 revenue by $2.1M without hedging.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- AI prompt -->
+        <div class="ledger" id="ai-prompt-section">
+          <div class="ledger-head">
+            <span class="ledger-title">Ask the AI assistant</span>
+            <span class="font-mono text-[0.68rem] uppercase tracking-[0.08em] text-ink-soft">Demo</span>
+          </div>
+          <div class="mb-4 mt-2 flex flex-wrap gap-2">
+            <button class="btn btn-ghost ai-quick-btn !px-3.5 !py-1.5 !text-[0.78rem]" type="button">Analyze COGS variance</button>
+            <button class="btn btn-ghost ai-quick-btn !px-3.5 !py-1.5 !text-[0.78rem]" type="button">Generate Q4 forecast</button>
+            <button class="btn btn-ghost ai-quick-btn !px-3.5 !py-1.5 !text-[0.78rem]" type="button">YoY margin trends</button>
+            <button class="btn btn-ghost ai-quick-btn !px-3.5 !py-1.5 !text-[0.78rem]" type="button">Consolidation risks</button>
+          </div>
+          <div class="flex gap-2.5">
+            <label class="sr-only" for="ai-prompt-input">Ask about your financial data</label>
+            <input type="text" id="ai-prompt-input" placeholder="Ask about your financial data…" class="field-input flex-1" />
+            <button id="ai-prompt-submit" class="btn btn-primary" type="button">Ask</button>
+          </div>
+          <div id="ai-response" class="mt-4 hidden">
+            <div class="rounded-sm border border-line bg-paper p-4 text-sm text-ink-soft">
+              <div id="ai-response-text"></div>
             </div>
           </div>
         </div>
 
-        <!-- AI Insights Panel -->
-        <div class="lg:col-span-2 card bg-base-100 shadow">
-          <div class="card-body">
-            <h2 class="card-title text-lg">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
-              AI Insights
-            </h2>
-            <div class="space-y-3 mt-1">
-              <div class="alert alert-warning text-sm">
-                <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-5 w-5" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
-                <span><strong>COGS variance alert:</strong> +7.6% over budget driven by raw material cost increases in APAC region.</span>
-              </div>
-              <div class="alert alert-success text-sm">
-                <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-5 w-5" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                <span><strong>Revenue trend:</strong> Enterprise segment up 12% QoQ, strongest growth in 3 quarters.</span>
-              </div>
-              <div class="alert alert-info text-sm">
-                <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-5 w-5" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                <span><strong>Forecast risk:</strong> FX headwinds may reduce Q1 FY26 revenue by $2.1M without hedging.</span>
-              </div>
-            </div>
+        <!-- Close task tracker -->
+        <div class="ledger">
+          <div class="ledger-head">
+            <span class="ledger-title">Close task tracker — January 2025</span>
+            <span class="ledger-tag">DAY 8 OF 12</span>
           </div>
-        </div>
-      </div>
-
-      <!-- AI Prompt Bar -->
-      <div class="card bg-base-100 shadow" id="ai-prompt-section">
-        <div class="card-body">
-          <h2 class="card-title text-lg">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" /></svg>
-            Ask the AI Assistant
-          </h2>
-          <div class="flex flex-wrap gap-2 mb-3">
-            <button class="btn btn-sm btn-outline ai-quick-btn">Analyze COGS variance</button>
-            <button class="btn btn-sm btn-outline ai-quick-btn">Generate Q4 forecast</button>
-            <button class="btn btn-sm btn-outline ai-quick-btn">YoY margin trends</button>
-            <button class="btn btn-sm btn-outline ai-quick-btn">Consolidation risks</button>
-          </div>
-          <div class="flex gap-2">
-            <input type="text" id="ai-prompt-input" placeholder="Ask about your financial data..." class="input input-bordered flex-1" />
-            <button id="ai-prompt-submit" class="btn btn-primary">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
-            </button>
-          </div>
-          <div id="ai-response" class="mt-3 hidden">
-            <div class="bg-base-200 rounded-lg p-4 text-sm">
-              <div id="ai-response-text" class="ai-typewriter"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Close Task Tracker -->
-      <div class="card bg-base-100 shadow">
-        <div class="card-body">
-          <h2 class="card-title text-lg">Close Task Tracker -- January 2025</h2>
           <div class="overflow-x-auto">
-            <table class="table table-sm">
+            <table class="w-full border-collapse text-sm">
               <thead>
-                <tr>
-                  <th>Task</th>
-                  <th>Owner</th>
-                  <th>Due</th>
-                  <th>Status</th>
+                <tr class="border-b border-line font-mono text-[0.65rem] uppercase tracking-[0.1em] text-ink-soft">
+                  <th class="py-2 text-left font-medium">Task</th>
+                  <th class="py-2 text-left font-medium">Owner</th>
+                  <th class="py-2 text-left font-medium">Due</th>
+                  <th class="py-2 text-right font-medium">Status</th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>Intercompany eliminations</td>
-                  <td>J. Martinez</td>
-                  <td>Jan 5</td>
-                  <td><span class="badge badge-success">Complete</span></td>
+                <tr class="border-b border-line/60">
+                  <td class="py-2.5 text-ink-soft">Intercompany eliminations</td>
+                  <td class="py-2.5 text-ink-soft">J. Martinez</td>
+                  <td class="py-2.5 font-mono text-[0.78rem]">Jan 5</td>
+                  <td class="py-2.5 text-right font-mono text-[0.72rem] text-success">&#10003; COMPLETE</td>
+                </tr>
+                <tr class="border-b border-line/60">
+                  <td class="py-2.5 text-ink-soft">Revenue recognition review</td>
+                  <td class="py-2.5 text-ink-soft">S. Patel</td>
+                  <td class="py-2.5 font-mono text-[0.78rem]">Jan 6</td>
+                  <td class="py-2.5 text-right font-mono text-[0.72rem] text-success">&#10003; COMPLETE</td>
+                </tr>
+                <tr class="border-b border-line/60">
+                  <td class="py-2.5 text-ink-soft">Fixed asset roll-forward</td>
+                  <td class="py-2.5 text-ink-soft">M. Chen</td>
+                  <td class="py-2.5 font-mono text-[0.78rem]">Jan 7</td>
+                  <td class="py-2.5 text-right font-mono text-[0.72rem] text-success">&#10003; COMPLETE</td>
+                </tr>
+                <tr class="border-b border-line/60">
+                  <td class="py-2.5 text-ink-soft">Lease accounting (ASC 842)</td>
+                  <td class="py-2.5 text-ink-soft">R. Johnson</td>
+                  <td class="py-2.5 font-mono text-[0.78rem]">Jan 8</td>
+                  <td class="py-2.5 text-right font-mono text-[0.72rem] text-slate">IN PROGRESS</td>
+                </tr>
+                <tr class="border-b border-line/60">
+                  <td class="py-2.5 text-ink-soft">Equity adjustments</td>
+                  <td class="py-2.5 text-ink-soft">A. Williams</td>
+                  <td class="py-2.5 font-mono text-[0.78rem]">Jan 9</td>
+                  <td class="py-2.5 text-right font-mono text-[0.72rem] text-slate">IN PROGRESS</td>
+                </tr>
+                <tr class="border-b border-line/60">
+                  <td class="py-2.5 text-ink-soft">Tax provision calculation</td>
+                  <td class="py-2.5 text-ink-soft">K. Lee</td>
+                  <td class="py-2.5 font-mono text-[0.78rem]">Jan 10</td>
+                  <td class="py-2.5 text-right font-mono text-[0.72rem] text-ink-soft">NOT STARTED</td>
+                </tr>
+                <tr class="border-b border-line/60">
+                  <td class="py-2.5 text-ink-soft">Management reporting package</td>
+                  <td class="py-2.5 text-ink-soft">D. Brown</td>
+                  <td class="py-2.5 font-mono text-[0.78rem]">Jan 12</td>
+                  <td class="py-2.5 text-right font-mono text-[0.72rem] text-ink-soft">NOT STARTED</td>
                 </tr>
                 <tr>
-                  <td>Revenue recognition review</td>
-                  <td>S. Patel</td>
-                  <td>Jan 6</td>
-                  <td><span class="badge badge-success">Complete</span></td>
-                </tr>
-                <tr>
-                  <td>Fixed asset roll-forward</td>
-                  <td>M. Chen</td>
-                  <td>Jan 7</td>
-                  <td><span class="badge badge-success">Complete</span></td>
-                </tr>
-                <tr>
-                  <td>Lease accounting (ASC 842)</td>
-                  <td>R. Johnson</td>
-                  <td>Jan 8</td>
-                  <td><span class="badge badge-warning">In Progress</span></td>
-                </tr>
-                <tr>
-                  <td>Equity adjustments</td>
-                  <td>A. Williams</td>
-                  <td>Jan 9</td>
-                  <td><span class="badge badge-warning">In Progress</span></td>
-                </tr>
-                <tr>
-                  <td>Tax provision calculation</td>
-                  <td>K. Lee</td>
-                  <td>Jan 10</td>
-                  <td><span class="badge badge-ghost">Not Started</span></td>
-                </tr>
-                <tr>
-                  <td>Management reporting package</td>
-                  <td>D. Brown</td>
-                  <td>Jan 12</td>
-                  <td><span class="badge badge-ghost">Not Started</span></td>
-                </tr>
-                <tr>
-                  <td>External audit deliverables</td>
-                  <td>J. Martinez</td>
-                  <td>Jan 15</td>
-                  <td><span class="badge badge-ghost">Not Started</span></td>
+                  <td class="py-2.5 text-ink-soft">External audit deliverables</td>
+                  <td class="py-2.5 text-ink-soft">J. Martinez</td>
+                  <td class="py-2.5 font-mono text-[0.78rem]">Jan 15</td>
+                  <td class="py-2.5 text-right font-mono text-[0.72rem] text-ink-soft">NOT STARTED</td>
                 </tr>
               </tbody>
             </table>
           </div>
         </div>
+
       </div>
+    </div>
+  </section>
 
-    </div><!-- /Main Content -->
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="bg-base-200 py-10">
-  <div class="container mx-auto px-6 text-center">
-    <h2 class="text-2xl font-bold">Ready to Build Your Dashboard?</h2>
-    <p class="mt-2 text-base-content/70 max-w-xl mx-auto">This is a preview of what OneStream can deliver. Let us design a solution tailored to your finance team's workflows.</p>
-    <a class="btn btn-primary mt-4" href="./contact">Request an Initial Assessment</a>
-  </div>
-</section>
+  <!-- CTA -->
+  <section class="border-t border-line py-16">
+    <div class="mx-auto max-w-[1120px] px-6">
+      <h2 class="mb-3.5 max-w-[30ch] text-[clamp(1.7rem,3vw,2.3rem)]">Want reporting like this on your own numbers?</h2>
+      <p class="mb-7 max-w-[52ch] text-ink-soft">This is a preview of what OneStream can deliver. We design dashboards around your finance team's workflows.</p>
+      <a class="btn btn-primary" href="./contact">Book an assessment</a>
+    </div>
+  </section>
+</main>
 
 <!-- include:footer.html -->
 </body>

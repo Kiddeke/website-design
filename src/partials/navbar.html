@@ -1,78 +1,37 @@
-    <div class="navbar bg-base-100">
-        <div class="navbar-start">
-          <details class="dropdown">
-            <summary class="btn btn-ghost list-none" aria-label="Open navigation menu">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16" />
-              </svg>
-            </summary>
-            <ul
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-              <li><a href="./">Home</a></li>
-              <li><a href="./consulting">Consulting</a></li>
-              <li><a href="./about">About</a></li>
-              <li><a href="./onestream">OneStream</a></li>
-              <li><a href="./blog">Blog</a></li>
-              <li><a href="./dashboard">Dashboard Demo</a></li>
-              <li><a href="./contact" class="text-primary font-semibold">Initial Assessment</a></li>
-            </ul>
-          </details>
-          <a href="./" class="btn btn-ghost text-xl"><img class="max-w-10" src="images/logo.png" alt="Full Clear Solutions logo" width="512" height="512" loading="eager" decoding="async" /><span>Full&nbsp;Clear<span class="hidden sm:inline"> Solutions</span></span></a>
-        </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
-            <li><a href="./">Home</a></li>
-            <li><a href="./consulting">Consulting</a></li>
-            <li><a href="./about">About</a></li>
-            <li><a href="./onestream">OneStream</a></li>
-            <li><a href="./blog">Blog</a></li>
-            <li><a href="./dashboard">Dashboard Demo</a></li>
-          </ul>
-        </div>
+<header class="sticky top-0 z-10 border-b border-line bg-paper/92 backdrop-blur-[8px]">
+  <div class="mx-auto flex h-[68px] max-w-[1120px] items-center justify-between px-6">
+    <a class="flex items-center gap-2.5 text-ink no-underline" href="./" aria-label="Full Clear home">
+      <svg width="34" height="34" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <path d="M4 13 V8 a4 4 0 0 1 4-4 h5" stroke="#7A1F31" stroke-width="3" stroke-linecap="round"/>
+        <path d="M36 27 v5 a4 4 0 0 1 -4 4 h-5" stroke="#7A1F31" stroke-width="3" stroke-linecap="round"/>
+        <rect x="12" y="21" width="4.5" height="7" rx="1" fill="#1C171A"/>
+        <rect x="18" y="16" width="4.5" height="12" rx="1" fill="#1C171A"/>
+        <rect x="24" y="11" width="4.5" height="17" rx="1" fill="#7A1F31"/>
+      </svg>
+      <span class="font-display text-xl font-semibold tracking-[-0.01em]">Full Clear</span>
+    </a>
 
-        <div class="navbar-end">
-          <div class="dropdown dropdown-end">
-              <div tabindex="0" role="button" class="btn btn-ghost btn-sm" aria-label="Choose color theme">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
-                </svg>
-              </div>
-              <ul tabindex="0" class="dropdown-content bg-base-300 rounded-box z-[1] w-52 p-2 shadow-2xl">
-                <li>
-                  <input
-                  type="radio"
-                  name="theme-dropdown"
-                  class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
-                  aria-label="Default"
-                  value="autumn" />
-              </li>
-              <li>
-                <input
-                  type="radio"
-                  name="theme-dropdown"
-                  class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
-                  aria-label="Light"
-                  value="nord" />
-              </li>
-              <li>
-                <input
-                  type="radio"
-                  name="theme-dropdown"
-                  class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
-                  aria-label="Dark"
-                  value="business" />
-              </li>
-              </ul>
-            </div>
-          <a id="freecostproposal" class="btn btn-primary ml-2" href="./contact">Initial Assessment</a>
-      </div>
-    </div>
+    <nav class="hidden items-center gap-7 md:flex" aria-label="Main">
+      <a class="text-[0.9rem] font-medium text-ink-soft no-underline transition-colors duration-150 hover:text-burgundy" href="./consulting">Services</a>
+      <a class="text-[0.9rem] font-medium text-ink-soft no-underline transition-colors duration-150 hover:text-burgundy" href="./onestream">OneStream</a>
+      <a class="text-[0.9rem] font-medium text-ink-soft no-underline transition-colors duration-150 hover:text-burgundy" href="./about">About</a>
+      <a class="text-[0.9rem] font-medium text-ink-soft no-underline transition-colors duration-150 hover:text-burgundy" href="./blog">Blog</a>
+      <a class="btn btn-primary !px-[18px] !py-[9px]" href="./contact">Book an assessment</a>
+    </nav>
+
+    <details class="relative md:hidden">
+      <summary class="btn btn-ghost !px-3 !py-[7px] list-none [&::-webkit-details-marker]:hidden" aria-label="Open navigation menu">
+        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7h16M4 12h16m-16 5h16" />
+        </svg>
+      </summary>
+      <nav class="absolute right-0 z-20 mt-3 flex w-56 flex-col gap-1 rounded-md border border-line bg-card p-3 shadow-lg" aria-label="Main mobile">
+        <a class="rounded-sm px-3 py-2 text-[0.9rem] font-medium text-ink-soft no-underline hover:bg-paper hover:text-burgundy" href="./consulting">Services</a>
+        <a class="rounded-sm px-3 py-2 text-[0.9rem] font-medium text-ink-soft no-underline hover:bg-paper hover:text-burgundy" href="./onestream">OneStream</a>
+        <a class="rounded-sm px-3 py-2 text-[0.9rem] font-medium text-ink-soft no-underline hover:bg-paper hover:text-burgundy" href="./about">About</a>
+        <a class="rounded-sm px-3 py-2 text-[0.9rem] font-medium text-ink-soft no-underline hover:bg-paper hover:text-burgundy" href="./blog">Blog</a>
+        <a class="btn btn-primary mt-2 text-center" href="./contact">Book an assessment</a>
+      </nav>
+    </details>
+  </div>
+</header>

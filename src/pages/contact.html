@@ -1,137 +1,113 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="autumn">
+<html lang="en">
 <head>
     <!-- include:head.html -->
     <link rel="canonical" href="https://www.fullclearsolutions.com/contact" />
-    <meta name="description" content="Request a free OneStream cost proposal from Full Clear Solutions and get a response within one business day.">
+    <meta name="description" content="Book an assessment with Full Clear. Tell us about your OneStream initiative and get a response within one business day.">
     <!-- seo:meta:start -->
-    <meta property="og:title" content="Contact Us - Full Clear Solutions">
-    <meta property="og:description" content="Request a free OneStream cost proposal from Full Clear Solutions and get a response within one business day.">
+    <meta property="og:title" content="Book an assessment — Full Clear">
+    <meta property="og:description" content="Tell us about your OneStream initiative and get a response within one business day.">
     <meta property="og:url" content="https://www.fullclearsolutions.com/contact">
-    <meta property="og:image" content="https://www.fullclearsolutions.com/images/cover_image.webp">
+    <meta property="og:image" content="https://www.fullclearsolutions.com/images/og.png">
     <meta property="og:type" content="website">
-    <meta name="twitter:title" content="Contact Us - Full Clear Solutions">
-    <meta name="twitter:description" content="Request a free OneStream cost proposal from Full Clear Solutions and get a response within one business day.">
-    <meta name="twitter:image" content="https://www.fullclearsolutions.com/images/cover_image.webp">
+    <meta name="twitter:title" content="Book an assessment — Full Clear">
+    <meta name="twitter:description" content="Tell us about your OneStream initiative and get a response within one business day.">
+    <meta name="twitter:image" content="https://www.fullclearsolutions.com/images/og.png">
     <!-- seo:meta:end -->
-    <title>Contact Us - Full Clear Solutions</title>
+    <title>Book an assessment — Full Clear</title>
 </head>
 <body>
 <!-- include:navbar.html -->
 
-<!-- Hero -->
-<section class="hero bg-base-200 py-12 lg:py-16">
-  <div class="hero-content text-center">
-    <div class="max-w-3xl">
-      <h1 class="text-4xl font-bold lg:text-5xl">Let's Scope Your Initiative</h1>
-      <p class="py-4 text-lg text-base-content/80">Tell us what you're working on and we'll respond within one business day. No pitch decks, no sales pressure -- just a straightforward conversation about what you need.</p>
+<main>
+  <!-- Hero -->
+  <section class="border-b border-line py-14 lg:py-20">
+    <div class="mx-auto max-w-[1120px] px-6">
+      <span class="eyebrow mb-5">Contact</span>
+      <h1 class="mb-[22px] max-w-[22ch] text-[clamp(2.4rem,4.6vw,3.6rem)] leading-[1.12] tracking-[-0.015em]">Book an <em class="italic text-burgundy">assessment.</em></h1>
+      <p class="max-w-[56ch] text-[1.06rem] text-ink-soft">Tell us what you're working on and we'll respond within one business day. No pitch decks, no sales pressure — a straightforward conversation about what you need.</p>
+      <div class="mt-8 flex flex-wrap gap-x-8 gap-y-2">
+        <span class="font-mono text-[0.72rem] uppercase tracking-[0.1em] text-ink-soft"><span class="text-success">&#10003;</span> Response within 1 business day</span>
+        <span class="font-mono text-[0.72rem] uppercase tracking-[0.1em] text-ink-soft"><span class="text-success">&#10003;</span> No obligation, no contracts upfront</span>
+        <span class="font-mono text-[0.72rem] uppercase tracking-[0.1em] text-ink-soft"><span class="text-success">&#10003;</span> Direct access to senior consultants</span>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Trust Signals -->
-<section class="container mx-auto px-6 py-8 reveal">
-  <div class="grid gap-4 md:grid-cols-3 max-w-4xl mx-auto text-center">
-    <div class="flex items-center justify-center gap-2 text-base-content/70">
-      <svg class="h-5 w-5 text-success shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" /></svg>
-      <span>Response within 1 business day</span>
+  <!-- Form -->
+  <section class="py-20">
+    <div class="mx-auto max-w-[1120px] px-6">
+      <div class="mx-auto max-w-3xl">
+        <form class="grid gap-5 md:grid-cols-2" action="https://formspree.io/f/xgejqdlo" method="POST">
+          <div>
+            <label class="field-label" for="f-name">Name</label>
+            <input class="field-input" id="f-name" type="text" name="name" autocomplete="name" required>
+          </div>
+          <div>
+            <label class="field-label" for="f-email">Email</label>
+            <input class="field-input" id="f-email" type="email" name="email" autocomplete="email" required>
+          </div>
+          <div>
+            <label class="field-label" for="f-company">Company</label>
+            <input class="field-input" id="f-company" type="text" name="company" autocomplete="organization" required>
+          </div>
+          <div>
+            <label class="field-label" for="f-country">Country</label>
+            <input class="field-input" id="f-country" type="text" name="country" autocomplete="country-name" placeholder="United States" required>
+          </div>
+          <div>
+            <label class="field-label" for="f-type">Engagement type</label>
+            <select class="field-input" id="f-type" name="project_type" required>
+              <option value="" disabled selected>Select one</option>
+              <option value="implement">Implement — new OneStream delivery</option>
+              <option value="optimize">Optimize — tune an existing platform</option>
+              <option value="rescue">Rescue — assess a stalled implementation</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div>
+            <label class="field-label" for="f-budget">Budget range <span class="normal-case tracking-normal text-ink-soft/70">(optional)</span></label>
+            <select class="field-input" id="f-budget" name="budget_range">
+              <option value="" disabled selected>Select budget range</option>
+              <option value="under_50k">Under $50,000</option>
+              <option value="50k_100k">$50,000 - $100,000</option>
+              <option value="100k_250k">$100,000 - $250,000</option>
+              <option value="250k_plus">$250,000+</option>
+            </select>
+          </div>
+          <div>
+            <label class="field-label" for="f-timeline">Timeline</label>
+            <select class="field-input" id="f-timeline" name="timeline" required>
+              <option value="" disabled selected>Select timeline</option>
+              <option value="immediate">Immediate</option>
+              <option value="1_3_months">1-3 months</option>
+              <option value="3_6_months">3-6 months</option>
+              <option value="6_plus_months">6+ months</option>
+            </select>
+          </div>
+          <div>
+            <label class="field-label" for="f-referral">How did you hear about us?</label>
+            <select class="field-input" id="f-referral" name="referral_source">
+              <option value="" disabled selected>Select one</option>
+              <option value="search">Search engine</option>
+              <option value="referral">Referral</option>
+              <option value="linkedin">LinkedIn</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="md:col-span-2">
+            <label class="field-label" for="f-message">Message</label>
+            <textarea class="field-input h-32" id="f-message" name="message" placeholder="Tell us about your current platform, close process, and what you're trying to fix." required></textarea>
+          </div>
+          <div class="flex flex-wrap items-center gap-4 md:col-span-2">
+            <button class="btn btn-primary" type="submit">Book an assessment</button>
+            <span class="font-mono text-[0.72rem] text-ink-soft">OR EMAIL: <a class="text-burgundy underline-offset-2 hover:underline" href="mailto:grant@fullclearsolutions.com">GRANT@FULLCLEARSOLUTIONS.COM</a></span>
+          </div>
+        </form>
+      </div>
     </div>
-    <div class="flex items-center justify-center gap-2 text-base-content/70">
-      <svg class="h-5 w-5 text-success shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" /></svg>
-      <span>No obligation, no contracts upfront</span>
-    </div>
-    <div class="flex items-center justify-center gap-2 text-base-content/70">
-      <svg class="h-5 w-5 text-success shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" /></svg>
-      <span>Direct access to senior consultants</span>
-    </div>
-  </div>
-</section>
-
-<!-- Contact Form -->
-<section class="container mx-auto px-6 pb-14 reveal">
-  <div class="mx-auto max-w-4xl card bg-base-100 shadow-xl">
-    <div class="card-body">
-      <h2 class="card-title text-2xl">Request an Initial Assessment</h2>
-      <p class="text-base-content/70">Share your project details and we will follow up within 1 business day.</p>
-
-      <form class="grid gap-4 md:grid-cols-2" action="https://formspree.io/f/xgejqdlo" method="POST">
-        <label class="form-control">
-          <span class="label-text">Name</span>
-          <input class="input input-bordered" type="text" name="name" required>
-        </label>
-
-        <label class="form-control">
-          <span class="label-text">Email</span>
-          <input class="input input-bordered" type="email" name="email" required>
-        </label>
-
-        <label class="form-control">
-          <span class="label-text">Company</span>
-          <input class="input input-bordered" type="text" name="company" required>
-        </label>
-
-        <label class="form-control">
-          <span class="label-text">Country</span>
-          <input class="input input-bordered" type="text" name="country" placeholder="United States" required>
-        </label>
-
-        <label class="form-control">
-          <span class="label-text">Project Type</span>
-          <select class="select select-bordered" name="project_type" required>
-            <option value="" disabled selected>Select project type</option>
-            <option value="onestream">OneStream</option>
-            <option value="fpa">FP&A</option>
-            <option value="process_optimization">Process Optimization</option>
-            <option value="other">Other</option>
-          </select>
-        </label>
-
-        <label class="form-control">
-          <span class="label-text">Budget Range <span class="text-base-content/50">(optional)</span></span>
-          <select class="select select-bordered" name="budget_range">
-            <option value="" disabled selected>Select budget range</option>
-            <option value="under_50k">Under $50,000</option>
-            <option value="50k_100k">$50,000 - $100,000</option>
-            <option value="100k_250k">$100,000 - $250,000</option>
-            <option value="250k_plus">$250,000+</option>
-          </select>
-        </label>
-
-        <label class="form-control">
-          <span class="label-text">Timeline</span>
-          <select class="select select-bordered" name="timeline" required>
-            <option value="" disabled selected>Select timeline</option>
-            <option value="immediate">Immediate</option>
-            <option value="1_3_months">1-3 months</option>
-            <option value="3_6_months">3-6 months</option>
-            <option value="6_plus_months">6+ months</option>
-          </select>
-        </label>
-
-        <label class="form-control">
-          <span class="label-text">How did you hear about us?</span>
-          <select class="select select-bordered" name="referral_source">
-            <option value="" disabled selected>Select one</option>
-            <option value="search">Search engine</option>
-            <option value="referral">Referral</option>
-            <option value="linkedin">LinkedIn</option>
-            <option value="other">Other</option>
-          </select>
-        </label>
-
-        <label class="form-control md:col-span-2">
-          <span class="label-text">Message</span>
-          <textarea class="textarea textarea-bordered h-32" name="message" placeholder="Tell us about your current platform, goals, and timeline." required></textarea>
-        </label>
-
-        <div class="md:col-span-2 flex flex-wrap items-center gap-3">
-          <button class="btn btn-primary" type="submit">Submit Proposal Request</button>
-          <span class="text-sm text-base-content/70">Or email directly: grant@fullclearsolutions.com</span>
-        </div>
-      </form>
-    </div>
-  </div>
-</section>
+  </section>
+</main>
 
 <!-- include:footer.html -->
 </body>
