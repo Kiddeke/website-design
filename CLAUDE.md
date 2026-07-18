@@ -5,7 +5,7 @@
 - Display name is **"Full Clear"** — "Full Clear Solutions" (legal name) appears only in the footer copyright line, the privacy page, and JSON-LD `legalName`.
 - CTAs site-wide: primary **"Book an assessment"**, secondary **"See capabilities"**. No "Get Started" / "Learn More".
 - Services are always **Implement / Optimize / Rescue**, in that order.
-- Placeholder client stats/quotes are marked with `TODO: real client data` comments — never present them as real results.
+- The site contains **no client stats or testimonials** — never add invented results or quotes. Illustrative visuals (e.g. the hero ledger) must be labeled as such ("not client data").
 
 ## Architecture
 - Static HTML site -- no framework, no client-side routing

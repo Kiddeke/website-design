@@ -462,6 +462,9 @@
   .gap-2\.5 {
     gap: calc(var(--spacing) * 2.5);
   }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
   .gap-3\.5 {
     gap: calc(var(--spacing) * 3.5);
   }
@@ -834,6 +837,10 @@
   .tracking-\[0\.12em\] {
     --tw-tracking: 0.12em;
     letter-spacing: 0.12em;
+  }
+  .tracking-\[0\.14em\] {
+    --tw-tracking: 0.14em;
+    letter-spacing: 0.14em;
   }
   .tracking-normal {
     --tw-tracking: var(--tracking-normal);
