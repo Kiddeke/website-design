@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Full Clear — OneStream Consulting</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FAF8F5;
+    --ink:#1C171A;
+    --ink-soft:#4E4549;
+    --burgundy:#7A1F31;
+    --burgundy-deep:#5C1624;
+    --slate:#3E5C76;
+    --line:#E5DFD7;
+    --card:#FFFFFF;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"Public Sans",system-ui,sans-serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .mono{font-family:"IBM Plex Mono",monospace}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+
+  /* ---------- Nav ---------- */
+  header{
+    position:sticky;top:0;z-index:10;
+    background:rgba(250,248,245,.92);backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+  .brand svg{display:block}
+  .brand-name{font-family:"Spectral",serif;font-weight:600;font-size:1.25rem;letter-spacing:-.01em}
+  .nav-links{display:flex;align-items:center;gap:28px}
+  .nav-links a{font-size:.9rem;font-weight:500;color:var(--ink-soft);text-decoration:none}
+  .nav-links a:hover{color:var(--burgundy)}
+  .btn{
+    display:inline-block;padding:12px 22px;border-radius:4px;
+    font-weight:600;font-size:.92rem;text-decoration:none;
+    border:1px solid transparent;transition:background .15s ease,color .15s ease;
+  }
+  .btn:focus-visible,a:focus-visible{outline:2px solid var(--slate);outline-offset:3px}
+  .btn-primary{background:var(--burgundy);color:#fff}
+  .btn-primary:hover{background:var(--burgundy-deep)}
+  .btn-ghost{border-color:var(--ink);color:var(--ink)}
+  .btn-ghost:hover{background:var(--ink);color:var(--paper)}
+  .nav .btn{padding:9px 18px}
+
+  /* ---------- Hero ---------- */
+  .hero{padding:88px 0 72px;border-bottom:1px solid var(--line)}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+  .eyebrow{
+    font-family:"IBM Plex Mono",monospace;font-size:.72rem;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--burgundy);margin-bottom:20px;display:block;
+  }
+  h1{
+    font-family:"Spectral",serif;font-weight:500;
+    font-size:clamp(2.4rem,4.6vw,3.6rem);line-height:1.12;letter-spacing:-.015em;
+    margin-bottom:22px;
+  }
+  h1 em{font-style:italic;color:var(--burgundy)}
+  .hero p{font-size:1.06rem;color:var(--ink-soft);max-width:46ch;margin-bottom:34px}
+  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:30px}
+  .hero-creds{display:flex;gap:24px;flex-wrap:wrap}
+  .cred{font-family:"IBM Plex Mono",monospace;font-size:.75rem;color:var(--ink-soft)}
+  .cred b{color:var(--ink);font-weight:500}
+
+  /* Signature: ledger that comes into focus */
+  .focus-frame{position:relative;padding:22px}
+  .focus-frame::before,.focus-frame::after{
+    content:"";position:absolute;width:34px;height:34px;border:2.5px solid var(--burgundy);
+  }
+  .focus-frame::before{top:0;left:0;border-right:none;border-bottom:none}
+  .focus-frame::after{bottom:0;right:0;border-left:none;border-top:none}
+  .ledger{
+    background:var(--card);border:1px solid var(--line);border-radius:6px;
+    box-shadow:0 18px 40px -24px rgba(28,23,26,.25);
+    padding:26px 28px;
+    animation:resolve 1.6s ease-out both;
+  }
+  @keyframes resolve{
+    0%{filter:blur(7px);opacity:.55}
+    100%{filter:blur(0);opacity:1}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .ledger{animation:none}
+    html{scroll-behavior:auto}
+  }
+  .ledger-head{
+    display:flex;justify-content:space-between;align-items:baseline;
+    border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:6px;
+  }
+  .ledger-title{font-family:"Spectral",serif;font-size:1.05rem;font-weight:600}
+  .ledger-tag{
+    font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.08em;
+    color:#2E6B4F;background:#E8F2EC;padding:3px 8px;border-radius:3px;
+  }
+  .ledger table{width:100%;border-collapse:collapse;font-size:.85rem}
+  .ledger td{padding:9px 0;border-bottom:1px solid #F1EDE6}
+  .ledger tr:last-child td{border-bottom:none}
+  .ledger td:last-child{text-align:right;font-family:"IBM Plex Mono",monospace;font-size:.8rem}
+  .ledger .lbl{color:var(--ink-soft)}
+  .ok{color:#2E6B4F}
+  .ledger-note{
+    font-family:"IBM Plex Mono",monospace;font-size:.68rem;color:var(--ink-soft);
+    margin-top:14px;text-align:right;
+  }
+
+  /* ---------- Services ---------- */
+  section{padding:80px 0}
+  .sec-head{max-width:56ch;margin-bottom:48px}
+  h2{
+    font-family:"Spectral",serif;font-weight:500;font-size:clamp(1.7rem,3vw,2.3rem);
+    letter-spacing:-.01em;line-height:1.2;margin-bottom:14px;
+  }
+  .sec-head p{color:var(--ink-soft)}
+  .svc{border-top:1px solid var(--line)}
+  .svc-row{
+    display:grid;grid-template-columns:220px 1fr auto;gap:32px;align-items:baseline;
+    padding:30px 0;border-bottom:1px solid var(--line);
+  }
+  .svc-name{font-family:"Spectral",serif;font-size:1.25rem;font-weight:600}
+  .svc-row p{color:var(--ink-soft);font-size:.95rem;max-width:58ch}
+  .svc-link{
+    font-family:"IBM Plex Mono",monospace;font-size:.75rem;letter-spacing:.08em;
+    color:var(--burgundy);text-decoration:none;white-space:nowrap;
+  }
+  .svc-link:hover{text-decoration:underline}
+
+  /* ---------- Proof band ---------- */
+  .band{background:var(--ink);color:var(--paper);padding:76px 0}
+  .band-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+  .band h2{color:#fff}
+  .band p{color:#C9C2C5;max-width:44ch;margin-bottom:28px}
+  .quote{
+    border-left:2px solid var(--burgundy);padding-left:22px;
+  }
+  .quote blockquote{
+    font-family:"Spectral",serif;font-size:1.25rem;font-style:italic;line-height:1.5;
+    color:#F1ECEE;margin-bottom:14px;
+  }
+  .quote figcaption{font-family:"IBM Plex Mono",monospace;font-size:.72rem;color:#9B9196;letter-spacing:.06em}
+  .band .btn-primary{background:var(--burgundy)}
+  .band .btn-primary:hover{background:#8E2A3E}
+
+  /* ---------- Footer ---------- */
+  footer{padding:36px 0;border-top:1px solid var(--line)}
+  .foot{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+  .foot small{font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--ink-soft)}
+
+  @media (max-width:860px){
+    .nav-links a{display:none}
+    .hero{padding:56px 0}
+    .hero-grid,.band-grid{grid-template-columns:1fr;gap:44px}
+    .svc-row{grid-template-columns:1fr;gap:10px;padding:26px 0}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#" aria-label="Full Clear home">
+      <!-- Mark: financials brought into focus -->
+      <svg width="34" height="34" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <path d="M4 13 V8 a4 4 0 0 1 4-4 h5" stroke="#7A1F31" stroke-width="3" stroke-linecap="round"/>
+        <path d="M36 27 v5 a4 4 0 0 1 -4 4 h-5" stroke="#7A1F31" stroke-width="3" stroke-linecap="round"/>
+        <rect x="12" y="21" width="4.5" height="7" rx="1" fill="#1C171A"/>
+        <rect x="18" y="16" width="4.5" height="12" rx="1" fill="#1C171A"/>
+        <rect x="24" y="11" width="4.5" height="17" rx="1" fill="#7A1F31"/>
+      </svg>
+      <span class="brand-name">Full Clear</span>
+    </a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#approach">Approach</a>
+      <a href="#results">Results</a>
+      <a class="btn btn-primary" href="#">Book an assessment</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">OneStream implementation &amp; optimization</span>
+        <h1>Your close, your plan, your numbers — <em>in full clarity.</em></h1>
+        <p>We design, build, and rescue OneStream implementations for enterprise finance teams, so consolidation, planning, and reporting run on one platform you actually trust.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#">Book an assessment</a>
+          <a class="btn btn-ghost" href="#services">See capabilities</a>
+        </div>
+        <div class="hero-creds">
+          <span class="cred"><b>OneStream</b> Solution Architect</span>
+          <span class="cred"><b>10+ yrs</b> enterprise delivery</span>
+        </div>
+      </div>
+
+      <div class="focus-frame" aria-hidden="true">
+        <div class="ledger">
+          <div class="ledger-head">
+            <span class="ledger-title">Consolidated close — May</span>
+            <span class="ledger-tag">ON TIME</span>
+          </div>
+          <table>
+            <tr><td class="lbl">Data loads &amp; validation</td><td class="ok">✓ Day 1</td></tr>
+            <tr><td class="lbl">Intercompany eliminations</td><td class="ok">✓ Day 2</td></tr>
+            <tr><td class="lbl">FX translation</td><td class="ok">✓ Day 2</td></tr>
+            <tr><td class="lbl">Consolidation &amp; review</td><td class="ok">✓ Day 3</td></tr>
+            <tr><td class="lbl">Management reporting</td><td class="ok">✓ Day 3</td></tr>
+          </table>
+          <div class="ledger-note">close cycle: 8 days → 3 days</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>One platform. Three ways we help.</h2>
+        <p>Whether you're starting fresh, stuck mid-flight, or living with a build that never quite worked, we meet you where your implementation actually is.</p>
+      </div>
+      <div class="svc">
+        <div class="svc-row">
+          <span class="svc-name">Implement</span>
+          <p>Full-cycle OneStream delivery — application design, dimensions, workflows, cube views, and go-live — built around your close calendar, not a generic template.</p>
+          <a class="svc-link" href="#">HOW WE DELIVER →</a>
+        </div>
+        <div class="svc-row">
+          <span class="svc-name">Optimize</span>
+          <p>Performance tuning, consolidation rule cleanup, and reporting redesign for teams whose platform works, but slower and messier than it should.</p>
+          <a class="svc-link" href="#">WHAT WE TUNE →</a>
+        </div>
+        <div class="svc-row">
+          <span class="svc-name">Rescue</span>
+          <p>Independent assessment and remediation for stalled or failed implementations — an honest read on what's broken and a plan to fix it.</p>
+          <a class="svc-link" href="#">START WITH AN ASSESSMENT →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="results">
+    <div class="wrap band-grid">
+      <div>
+        <h2>Numbers your CFO stops double-checking.</h2>
+        <p>Every engagement starts with a working session on your current close and planning process — no discovery theater, no 40-slide deck.</p>
+        <a class="btn btn-primary" href="#">Book an assessment</a>
+      </div>
+      <figure class="quote">
+        <blockquote>"Placeholder for a real client quote — one sentence about the close getting faster and the finance team trusting the numbers again."</blockquote>
+        <figcaption>NAME · VP FINANCE, COMPANY</figcaption>
+      </figure>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <a class="brand" href="#" aria-label="Full Clear home">
+      <svg width="26" height="26" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <path d="M4 13 V8 a4 4 0 0 1 4-4 h5" stroke="#7A1F31" stroke-width="3" stroke-linecap="round"/>
+        <path d="M36 27 v5 a4 4 0 0 1 -4 4 h-5" stroke="#7A1F31" stroke-width="3" stroke-linecap="round"/>
+        <rect x="12" y="21" width="4.5" height="7" rx="1" fill="#1C171A"/>
+        <rect x="18" y="16" width="4.5" height="12" rx="1" fill="#1C171A"/>
+        <rect x="24" y="11" width="4.5" height="17" rx="1" fill="#7A1F31"/>
+      </svg>
+      <span class="brand-name" style="font-size:1rem">Full Clear</span>
+    </a>
+    <small>© 2026 FULL CLEAR SOLUTIONS · INDEPENDENT ONESTREAM CONSULTANCY</small>
+  </div>
+</footer>
+
+</body>
+</html>
