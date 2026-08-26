@@ -957,6 +957,9 @@
     .hover\:text-burgundy:hover {
       color: var(--color-burgundy);
     }
+    .hover\:text-burgundy-deep:hover {
+      color: var(--color-burgundy-deep);
+    }
     .hover\:underline:hover {
       text-decoration-line: underline;
     }
