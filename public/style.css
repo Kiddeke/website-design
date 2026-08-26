@@ -390,8 +390,14 @@
   .max-w-\[46ch\] {
     max-width: 46ch;
   }
+  .max-w-\[48ch\] {
+    max-width: 48ch;
+  }
   .max-w-\[52ch\] {
     max-width: 52ch;
+  }
+  .max-w-\[54ch\] {
+    max-width: 54ch;
   }
   .max-w-\[56ch\] {
     max-width: 56ch;
