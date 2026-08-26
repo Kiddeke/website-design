@@ -14,6 +14,42 @@
       ]
     },
     {
+      "title": "Splash 2026: SensibleAI Agents Go GA and Finance Gets an Agentic Layer",
+      "date": "2026-05-19",
+      "page": "blogpost14",
+      "category": "Industry news",
+      "summary": "At Splash 2026, OneStream announced GA of its four SensibleAI Agents (Search, Finance Analyst, Deep Analysis, Forecast) and a Finance Agentic Layer connecting Copilot, Claude, ChatGPT and Gemini to governed platform data.",
+      "topics": ["Splash 2026", "SensibleAI Agents", "Finance Agentic Layer", "AI", "agentic AI"],
+      "sources": [
+        "https://www.prnewswire.com/news-releases/onestream-unlocks-agentic-ai-for-the-office-of-the-cfo-with-finance-agentic-layer-announces-general-availability-of-sensible-ai-agents-302775010.html",
+        "https://www.onestream.com/blog/sensibleai-agents-are-now-generally-available/"
+      ]
+    },
+    {
+      "title": "OneStream Completes Its $6.4B Acquisition by Hg",
+      "date": "2026-04-01",
+      "page": "blogpost13",
+      "category": "Industry news",
+      "summary": "OneStream completed its all-cash go-private acquisition by Hg on April 1, 2026, valuing the company at about $6.4 billion; General Atlantic and Tidemark are minority investors and Tom Shea remains CEO.",
+      "topics": ["Hg", "acquisition", "go-private", "completion"],
+      "sources": [
+        "https://www.prnewswire.com/news-releases/onestream-announces-completion-of-acquisition-by-hg-for-6-4-billion-302731460.html",
+        "https://www.cfodive.com/news/onestream-closes-64b-go-private-deal-hg/816799/"
+      ]
+    },
+    {
+      "title": "OneStream Named a 4x Leader in the 2026 Gartner Magic Quadrant",
+      "date": "2026-03-11",
+      "page": "blogpost12",
+      "category": "Industry news",
+      "summary": "OneStream was named a Leader for the fourth consecutive year in the 2026 Gartner Magic Quadrant for Financial Close and Consolidation Solutions, placed furthest in Completeness of Vision among 14 vendors; the same week it announced Splash 2026 (May 18-20, Orlando) and the OneStream World Tour.",
+      "topics": ["Gartner", "Magic Quadrant", "financial close", "analyst recognition", "Splash 2026 announcement"],
+      "sources": [
+        "https://www.prnewswire.com/news-releases/onestream-named-a-4x-leader-and-placed-furthest-in-vision-in-the-2026-gartner-magic-quadrant-for-financial-close-and-consolidation-solutions-302710058.html",
+        "https://www.prnewswire.com/news-releases/onestream-announces-splash-2026-and-the-onestream-world-tour-to-help-finance-lead-in-a-time-of-rapid-change-302708594.html"
+      ]
+    },
+    {
       "title": "Migrating from Legacy EPM to OneStream: A Practical Guide",
       "date": "2026-02-10",
       "page": "blogpost10",
