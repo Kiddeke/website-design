@@ -1,0 +1,98 @@
+{
+  "_readme": "Machine-readable index of blog posts, newest first. Used by the automated OneStream news publisher to avoid duplicate posts: before publishing, compare candidate news against every entry's title, topics, and source URLs. Keep in sync with src/pages/blog.html. See BLOG_PUBLISHING.md for the full workflow.",
+  "posts": [
+    {
+      "title": "DHS Plans $100M+ Follow-On OneStream Systems Integrator BPA",
+      "date": "2026-08-26",
+      "page": "blogpost11",
+      "category": "Industry news",
+      "summary": "DHS plans to compete a $100M+ follow-on BPA for a systems integrator to operate and maintain its OneStream platform, with solicitation expected Oct 20, 2026 and award in Q2 FY2027.",
+      "topics": ["DHS", "government", "BPA", "systems integrator", "PPBE"],
+      "sources": [
+        "https://www.govconwire.com/articles/dhs-follow-on-onestream-systems-integrator-bpa",
+        "https://www.prnewswire.com/news-releases/onestream-announces-completion-of-acquisition-by-hg-for-6-4-billion-302731460.html"
+      ]
+    },
+    {
+      "title": "Migrating from Legacy EPM to OneStream: A Practical Guide",
+      "date": "2026-02-10",
+      "page": "blogpost10",
+      "category": "Consulting",
+      "summary": "A practical migration guide for moving from Oracle Hyperion, SAP BPC, or IBM Cognos to OneStream.",
+      "topics": ["migration", "Hyperion", "SAP BPC", "legacy EPM"],
+      "sources": []
+    },
+    {
+      "title": "What OneStream's $6.4B Hg Acquisition Means for Your Implementation",
+      "date": "2026-01-15",
+      "page": "blogpost7",
+      "category": "Industry news",
+      "summary": "What OneStream's $6.4 billion acquisition by Hg means for implementation timelines, product roadmap, and existing customers.",
+      "topics": ["Hg", "acquisition", "go-private"],
+      "sources": []
+    },
+    {
+      "title": "SensibleAI and the Rise of Finance AI in OneStream",
+      "date": "2025-10-14",
+      "page": "blogpost8",
+      "category": "Technical",
+      "summary": "How OneStream SensibleAI is reshaping finance workflows with ML-driven forecasting, anomaly detection, and predictive analytics.",
+      "topics": ["SensibleAI", "AI", "forecasting"],
+      "sources": []
+    },
+    {
+      "title": "OneStream Platform 9.1: What's New and What It Means for Your Upgrade",
+      "date": "2025-06-18",
+      "page": "blogpost9",
+      "category": "Technical",
+      "summary": "A practical breakdown of OneStream Platform 9.1 features.",
+      "topics": ["platform release", "9.1", "upgrade"],
+      "sources": []
+    },
+    {
+      "title": "Business Rule Considerations for OneStream Implementations",
+      "date": "2024-08-12",
+      "page": "blogpost4",
+      "category": "Technical",
+      "summary": "Designing OneStream business rules with clear architecture and governance.",
+      "topics": ["business rules"],
+      "sources": []
+    },
+    {
+      "title": "OneStream Implementations: Roadblocks as Opportunities",
+      "date": "2024-08-10",
+      "page": "financialclose",
+      "category": "Consulting",
+      "summary": "Converting implementation friction points into delivery and adoption wins.",
+      "topics": ["implementation", "change management"],
+      "sources": []
+    },
+    {
+      "title": "Formula Pass Prioritization in OneStream",
+      "date": "2024-05-21",
+      "page": "blogpost3",
+      "category": "Technical",
+      "summary": "Best practices for reliable formula sequencing and performance.",
+      "topics": ["formula passes", "performance"],
+      "sources": []
+    },
+    {
+      "title": "Nuances of Pulling Data from Azure Blobs into OneStream",
+      "date": "2023-10-18",
+      "page": "blogpost5",
+      "category": "Technical",
+      "summary": "Integration patterns for connecting Azure Blob Storage to OneStream.",
+      "topics": ["Azure", "data integration"],
+      "sources": []
+    },
+    {
+      "title": "UAT Testing Best Practices for OneStream Implementations",
+      "date": "2023-06-04",
+      "page": "blogpost6",
+      "category": "Consulting",
+      "summary": "Acceptance criteria, early end-user involvement, and structured test cycles.",
+      "topics": ["UAT", "testing"],
+      "sources": []
+    }
+  ]
+}
