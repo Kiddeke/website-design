@@ -2,6 +2,30 @@
   "_readme": "Machine-readable index of blog posts, newest first. Used by the automated OneStream news publisher to avoid duplicate posts: before publishing, compare candidate news against every entry's title, topics, and source URLs. Keep in sync with src/pages/blog.html. See BLOG_PUBLISHING.md for the full workflow.",
   "posts": [
     {
+      "title": "OneStream Named the Only Customers' Choice in Gartner Peer Insights",
+      "date": "2026-09-14",
+      "page": "blogpost16",
+      "category": "Industry news",
+      "summary": "OneStream earns the sole Customers' Choice distinction on a 4.8 rating from 171 verified reviews and 98% willingness to recommend.",
+      "topics": ["Gartner Peer Insights", "Customers' Choice", "analyst recognition", "financial close"],
+      "sources": [
+        "https://www.prnewswire.com/news-releases/onestream-named-the-only-customers-choice-in-the-2026-gartner-peer-insights-voice-of-the-customer-for-financial-close-and-consolidation-solutions-302876652.html",
+        "https://www.onestream.com/news/onestream-named-the-only-customers-choice-in-the-2026-gartner-r-peer-insights-tm-voice-of-the-customer-for-financial-close-and-consolidation-solutions/"
+      ]
+    },
+    {
+      "title": "OneStream Adds SensibleAI Forecast and Studio to FedRAMP High",
+      "date": "2026-09-02",
+      "page": "blogpost15",
+      "category": "Industry news",
+      "summary": "Federal agencies can now run SensibleAI Forecast and Studio on sensitive financial data inside the OneStream Government Community Cloud.",
+      "topics": ["FedRAMP High", "SensibleAI Forecast", "SensibleAI Studio", "government", "AI"],
+      "sources": [
+        "https://www.webull.com/news/15510612354343936",
+        "https://www.onestream.com/news/onestream-achieves-the-highest-level-of-federal-security-compliance-with-fedramp-high-authorization/"
+      ]
+    },
+    {
       "title": "DHS Plans $100M+ Follow-On OneStream Systems Integrator BPA",
       "date": "2026-08-26",
       "page": "blogpost11",
