@@ -2,6 +2,24 @@
   "_readme": "Machine-readable index of blog posts, newest first. Used by the automated OneStream news publisher to avoid duplicate posts: before publishing, compare candidate news against every entry's title, topics, and source URLs. Keep in sync with src/pages/blog.html. See BLOG_PUBLISHING.md for the full workflow.",
   "posts": [
     {
+          "title": "OneStream's Forward Finance Index: AI Adoption Outpaces Enterprise Value",
+          "date": "2026-10-13",
+          "page": "blogpost17",
+          "category": "Industry news",
+          "summary": "A survey of 1,300 CFOs finds 74% use AI to cut manual work, but only 14% report enterprise value and decision impact.",
+          "topics": [
+                "Forward Finance Index",
+                "Forward Finance Blueprint",
+                "AI",
+                "CFO survey",
+                "data trust"
+          ],
+          "sources": [
+                "https://www.prnewswire.com/news-releases/finance-is-scaling-ai-faster-than-it-can-trust-the-results-new-onestream-index-finds-302906161.html",
+                "https://www.hpcwire.com/bigdatawire/this-just-in/onestream-finance-is-scaling-ai-faster-than-it-can-trust-the-results/"
+          ]
+    },
+    {
       "title": "OneStream Named the Only Customers' Choice in Gartner Peer Insights",
       "date": "2026-09-14",
       "page": "blogpost16",
