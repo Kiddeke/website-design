@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css?v=8">
+    <link rel="stylesheet" href="./style.css?v=9">
     <meta property="og:site_name" content="Full Clear">
     <meta name="twitter:card" content="summary_large_image">
 
@@ -18,11 +18,11 @@
     <meta property="og:title" content="Basin — Built by Full Clear">
     <meta property="og:description" content="The consolidation and month-end close platform we built in-house: FX translation, eliminations, journals, sign-off, and audit trail for mid-market groups.">
     <meta property="og:url" content="https://www.fullclearsolutions.com/basin">
-    <meta property="og:image" content="https://www.fullclearsolutions.com/images/og.png">
+    <meta property="og:image" content="https://www.fullclearsolutions.com/images/basin-og.png">
     <meta property="og:type" content="website">
     <meta name="twitter:title" content="Basin — Built by Full Clear">
     <meta name="twitter:description" content="The consolidation and month-end close platform we built in-house: FX translation, eliminations, journals, sign-off, and audit trail for mid-market groups.">
-    <meta name="twitter:image" content="https://www.fullclearsolutions.com/images/og.png">
+    <meta name="twitter:image" content="https://www.fullclearsolutions.com/images/basin-og.png">
     <!-- seo:meta:end -->
     <title>Basin — Built by Full Clear</title>
     <script type="application/ld+json">
@@ -88,37 +88,44 @@
 <main>
   <!-- Hero -->
   <section class="border-b border-line py-14 lg:pb-[72px] lg:pt-[88px]">
-    <div class="mx-auto grid max-w-[1120px] gap-11 px-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-16">
-      <div>
-        <span class="eyebrow mb-5">Basin &mdash; built by Full Clear</span>
-        <h1 class="mb-[22px] text-[clamp(2.4rem,4.6vw,3.6rem)] leading-[1.12] tracking-[-0.015em]">We consult on close platforms. So we <em class="italic text-burgundy">built one.</em></h1>
-        <p class="mb-[34px] max-w-[48ch] text-[1.06rem] text-ink-soft">Basin is a financial consolidation and month-end close platform we designed and built in-house — trial balance import, FX translation, intercompany eliminations, topside journals, consolidated statements, and a sign-off that locks the period. Sized for groups of about five entities, not five hundred.</p>
-        <div class="mb-[30px] flex flex-wrap gap-3.5">
-          <a class="btn btn-primary" href="./contact">Book an assessment</a>
-          <a class="btn btn-ghost" href="#inside">See what's inside</a>
+    <div class="mx-auto max-w-[1120px] px-6">
+      <div class="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-end lg:gap-16">
+        <div>
+          <span class="eyebrow mb-5 flex items-center gap-2">
+            <svg class="h-5 w-5 text-basin-teal" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" aria-hidden="true">
+              <path d="M4 11 Q16 19 28 11" stroke-width="2" opacity="0.5"/>
+              <path d="M6 16 Q16 23 26 16" stroke-width="2" opacity="0.8"/>
+              <path d="M9 21 Q16 26 23 21" stroke-width="2.4"/>
+              <circle cx="16" cy="25" r="1.8" fill="currentColor" stroke="none"/>
+            </svg>
+            Basin &mdash; built by Full Clear
+          </span>
+          <h1 class="text-[clamp(2.4rem,4.6vw,3.6rem)] leading-[1.12] tracking-[-0.015em]">We consult on close platforms. So we <em class="italic text-burgundy">built one.</em></h1>
         </div>
-        <div class="flex flex-wrap gap-6">
-          <span class="font-mono text-[0.75rem] text-ink-soft"><b class="font-medium text-ink">Built in-house</b> engine to interface</span>
-          <span class="font-mono text-[0.75rem] text-ink-soft"><b class="font-medium text-ink">Full lifecycle</b> load &rarr; sign-off</span>
-          <a class="font-mono text-[0.75rem] text-burgundy no-underline transition-colors duration-150 hover:text-burgundy-deep hover:underline" href="https://basin.finance" target="_blank" rel="noopener noreferrer">basin.finance&nbsp;&#8599;</a>
+        <div>
+          <p class="mb-7 max-w-[48ch] text-[1.02rem] text-ink-soft">Basin is a financial consolidation and month-end close platform we designed and built in-house — trial balance import, FX translation, intercompany eliminations, topside journals, consolidated statements, and a sign-off that locks the period. Sized for groups of about five entities, not five hundred.</p>
+          <div class="flex flex-wrap gap-3.5">
+            <a class="btn btn-primary" href="./contact">Book an assessment</a>
+            <a class="btn btn-ghost" href="#inside">See what's inside</a>
+          </div>
         </div>
       </div>
 
-      <div class="focus-frame" aria-hidden="true">
-        <div class="ledger resolve">
-          <div class="ledger-head">
-            <span class="ledger-title">Consolidated revenue — Basin</span>
-            <span class="ledger-tag">SEEDED DEMO</span>
-          </div>
-          <table>
-            <tr><td class="lbl">FX translation</td><td>4 currencies &rarr; USD</td></tr>
-            <tr><td class="lbl">Sum of five entities</td><td>$50.6M</td></tr>
-            <tr><td class="lbl">Intercompany eliminations</td><td>($2.4M)</td></tr>
-            <tr><td class="lbl font-semibold text-ink">Consolidated revenue</td><td class="font-semibold text-ink">$48.2M</td></tr>
-          </table>
-          <div class="ledger-note">seeded demo data — not client data</div>
+      <figure class="mt-12 lg:mt-14">
+        <div class="focus-frame">
+          <picture>
+            <source media="(max-width: 640px)" srcset="./images/basin-consolidation-mobile.webp" width="900" height="745">
+            <img class="resolve block h-auto w-full rounded-md border border-line shadow-[0_24px_48px_-28px_color-mix(in_srgb,var(--color-ink)_45%,transparent)]" src="./images/basin-consolidation.webp" width="1600" height="1161" alt="Basin's Consolidation screen: five entities' revenue streams, translated to USD, converging into one consolidated total of 48,200 thousand net of intercompany, with KPI cards for consolidated revenue ($48.2M), intercompany eliminated ($2.4M), entities reported (4 of 5) and gross before eliminations ($50.6M)." fetchpriority="high" decoding="async">
+          </picture>
         </div>
-      </div>
+        <figcaption class="mt-3 flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2 px-[22px]">
+          <span class="font-mono text-[0.7rem] text-ink-soft">Basin&rsquo;s consolidation view &middot; seeded demo data &mdash; not client data</span>
+          <span class="flex flex-wrap gap-6">
+            <span class="font-mono text-[0.75rem] text-ink-soft"><b class="font-medium text-ink">Full lifecycle</b> load &rarr; sign-off</span>
+            <a class="font-mono text-[0.75rem] text-burgundy no-underline transition-colors duration-150 hover:text-burgundy-deep hover:underline" href="https://basin.finance" target="_blank" rel="noopener noreferrer">basin.finance&nbsp;&#8599;</a>
+          </span>
+        </figcaption>
+      </figure>
     </div>
   </section>
 

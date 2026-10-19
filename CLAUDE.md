@@ -22,7 +22,7 @@
 
 ## Stack
 - **Tailwind CSS v4** (via `@tailwindcss/postcss`). No DaisyUI, no component libraries.
-- Design tokens live in the `@theme` block in `src/style.css` (copied exactly from BRAND.md §2). **Never hardcode hex values, font families, or radii** — any value outside the tokens is a bug.
+- Design tokens live in the `@theme` block in `src/style.css` (copied exactly from BRAND.md §2). **Never hardcode hex values, font families, or radii** — any value outside the tokens is a bug. The one sanctioned extra token is `--color-basin-teal` (Basin's mark on `/basin` only — see BRAND.md §2.1).
 - Fonts: Spectral (headings), Public Sans (body), IBM Plex Mono (eyebrows/data) via Google Fonts with `display=swap` + preconnect (in `src/partials/head.html`).
 - Signature component classes (defined in `src/style.css`): `.btn/.btn-primary/.btn-ghost`, `.eyebrow`, `.focus-frame`, `.ledger*`, `.resolve`, `.quote`, `.field-*`, `.article`, `.on-dark`.
 - Motion: hero `.resolve` blur-in only, hover transitions <=150ms. Everything wrapped in `prefers-reduced-motion`. No scroll reveals, no counters.
