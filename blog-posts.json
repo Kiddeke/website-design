@@ -2,22 +2,42 @@
   "_readme": "Machine-readable index of blog posts, newest first. Used by the automated OneStream news publisher to avoid duplicate posts: before publishing, compare candidate news against every entry's title, topics, and source URLs. Keep in sync with src/pages/blog.html. See BLOG_PUBLISHING.md for the full workflow.",
   "posts": [
     {
-          "title": "OneStream's Forward Finance Index: AI Adoption Outpaces Enterprise Value",
-          "date": "2026-10-13",
-          "page": "blogpost17",
-          "category": "Industry news",
-          "summary": "A survey of 1,300 CFOs finds 74% use AI to cut manual work, but only 14% report enterprise value and decision impact.",
-          "topics": [
-                "Forward Finance Index",
-                "Forward Finance Blueprint",
-                "AI",
-                "CFO survey",
-                "data trust"
-          ],
-          "sources": [
-                "https://www.prnewswire.com/news-releases/finance-is-scaling-ai-faster-than-it-can-trust-the-results-new-onestream-index-finds-302906161.html",
-                "https://www.hpcwire.com/bigdatawire/this-just-in/onestream-finance-is-scaling-ai-faster-than-it-can-trust-the-results/"
-          ]
+      "title": "What Building a Consolidation Engine Taught Us About the Close",
+      "date": "2026-10-19",
+      "page": "blogpost18",
+      "category": "Technical",
+      "summary": "Lessons from building Basin from scratch — order of operations, traceability, intercompany, minority interest, and period locks — and what they change on a OneStream project.",
+      "topics": [
+        "Basin",
+        "consolidation",
+        "FX translation",
+        "intercompany eliminations",
+        "non-controlling interest",
+        "period lock",
+        "traceability"
+      ],
+      "sources": [
+        "https://www.fullclearsolutions.com/basin",
+        "https://basin.finance/demo"
+      ]
+    },
+    {
+      "title": "OneStream's Forward Finance Index: AI Adoption Outpaces Enterprise Value",
+      "date": "2026-10-13",
+      "page": "blogpost17",
+      "category": "Industry news",
+      "summary": "A survey of 1,300 CFOs finds 74% use AI to cut manual work, but only 14% report enterprise value and decision impact.",
+      "topics": [
+        "Forward Finance Index",
+        "Forward Finance Blueprint",
+        "AI",
+        "CFO survey",
+        "data trust"
+      ],
+      "sources": [
+        "https://www.prnewswire.com/news-releases/finance-is-scaling-ai-faster-than-it-can-trust-the-results-new-onestream-index-finds-302906161.html",
+        "https://www.hpcwire.com/bigdatawire/this-just-in/onestream-finance-is-scaling-ai-faster-than-it-can-trust-the-results/"
+      ]
     },
     {
       "title": "OneStream Named the Only Customers' Choice in Gartner Peer Insights",
@@ -25,7 +45,12 @@
       "page": "blogpost16",
       "category": "Industry news",
       "summary": "OneStream earns the sole Customers' Choice distinction on a 4.8 rating from 171 verified reviews and 98% willingness to recommend.",
-      "topics": ["Gartner Peer Insights", "Customers' Choice", "analyst recognition", "financial close"],
+      "topics": [
+        "Gartner Peer Insights",
+        "Customers' Choice",
+        "analyst recognition",
+        "financial close"
+      ],
       "sources": [
         "https://www.prnewswire.com/news-releases/onestream-named-the-only-customers-choice-in-the-2026-gartner-peer-insights-voice-of-the-customer-for-financial-close-and-consolidation-solutions-302876652.html",
         "https://www.onestream.com/news/onestream-named-the-only-customers-choice-in-the-2026-gartner-r-peer-insights-tm-voice-of-the-customer-for-financial-close-and-consolidation-solutions/"
@@ -37,7 +62,13 @@
       "page": "blogpost15",
       "category": "Industry news",
       "summary": "Federal agencies can now run SensibleAI Forecast and Studio on sensitive financial data inside the OneStream Government Community Cloud.",
-      "topics": ["FedRAMP High", "SensibleAI Forecast", "SensibleAI Studio", "government", "AI"],
+      "topics": [
+        "FedRAMP High",
+        "SensibleAI Forecast",
+        "SensibleAI Studio",
+        "government",
+        "AI"
+      ],
       "sources": [
         "https://www.webull.com/news/15510612354343936",
         "https://www.onestream.com/news/onestream-achieves-the-highest-level-of-federal-security-compliance-with-fedramp-high-authorization/"
@@ -49,7 +80,13 @@
       "page": "blogpost11",
       "category": "Industry news",
       "summary": "DHS plans to compete a $100M+ follow-on BPA for a systems integrator to operate and maintain its OneStream platform, with solicitation expected Oct 20, 2026 and award in Q2 FY2027.",
-      "topics": ["DHS", "government", "BPA", "systems integrator", "PPBE"],
+      "topics": [
+        "DHS",
+        "government",
+        "BPA",
+        "systems integrator",
+        "PPBE"
+      ],
       "sources": [
         "https://www.govconwire.com/articles/dhs-follow-on-onestream-systems-integrator-bpa",
         "https://www.prnewswire.com/news-releases/onestream-announces-completion-of-acquisition-by-hg-for-6-4-billion-302731460.html"
@@ -61,7 +98,13 @@
       "page": "blogpost14",
       "category": "Industry news",
       "summary": "At Splash 2026, OneStream announced GA of its four SensibleAI Agents (Search, Finance Analyst, Deep Analysis, Forecast) and a Finance Agentic Layer connecting Copilot, Claude, ChatGPT and Gemini to governed platform data.",
-      "topics": ["Splash 2026", "SensibleAI Agents", "Finance Agentic Layer", "AI", "agentic AI"],
+      "topics": [
+        "Splash 2026",
+        "SensibleAI Agents",
+        "Finance Agentic Layer",
+        "AI",
+        "agentic AI"
+      ],
       "sources": [
         "https://www.prnewswire.com/news-releases/onestream-unlocks-agentic-ai-for-the-office-of-the-cfo-with-finance-agentic-layer-announces-general-availability-of-sensible-ai-agents-302775010.html",
         "https://www.onestream.com/blog/sensibleai-agents-are-now-generally-available/"
@@ -73,7 +116,12 @@
       "page": "blogpost13",
       "category": "Industry news",
       "summary": "OneStream completed its all-cash go-private acquisition by Hg on April 1, 2026, valuing the company at about $6.4 billion; General Atlantic and Tidemark are minority investors and Tom Shea remains CEO.",
-      "topics": ["Hg", "acquisition", "go-private", "completion"],
+      "topics": [
+        "Hg",
+        "acquisition",
+        "go-private",
+        "completion"
+      ],
       "sources": [
         "https://www.prnewswire.com/news-releases/onestream-announces-completion-of-acquisition-by-hg-for-6-4-billion-302731460.html",
         "https://www.cfodive.com/news/onestream-closes-64b-go-private-deal-hg/816799/"
@@ -85,7 +133,13 @@
       "page": "blogpost12",
       "category": "Industry news",
       "summary": "OneStream was named a Leader for the fourth consecutive year in the 2026 Gartner Magic Quadrant for Financial Close and Consolidation Solutions, placed furthest in Completeness of Vision among 14 vendors; the same week it announced Splash 2026 (May 18-20, Orlando) and the OneStream World Tour.",
-      "topics": ["Gartner", "Magic Quadrant", "financial close", "analyst recognition", "Splash 2026 announcement"],
+      "topics": [
+        "Gartner",
+        "Magic Quadrant",
+        "financial close",
+        "analyst recognition",
+        "Splash 2026 announcement"
+      ],
       "sources": [
         "https://www.prnewswire.com/news-releases/onestream-named-a-4x-leader-and-placed-furthest-in-vision-in-the-2026-gartner-magic-quadrant-for-financial-close-and-consolidation-solutions-302710058.html",
         "https://www.prnewswire.com/news-releases/onestream-announces-splash-2026-and-the-onestream-world-tour-to-help-finance-lead-in-a-time-of-rapid-change-302708594.html"
@@ -97,7 +151,12 @@
       "page": "blogpost10",
       "category": "Consulting",
       "summary": "A practical migration guide for moving from Oracle Hyperion, SAP BPC, or IBM Cognos to OneStream.",
-      "topics": ["migration", "Hyperion", "SAP BPC", "legacy EPM"],
+      "topics": [
+        "migration",
+        "Hyperion",
+        "SAP BPC",
+        "legacy EPM"
+      ],
       "sources": []
     },
     {
@@ -106,7 +165,11 @@
       "page": "blogpost7",
       "category": "Industry news",
       "summary": "What OneStream's $6.4 billion acquisition by Hg means for implementation timelines, product roadmap, and existing customers.",
-      "topics": ["Hg", "acquisition", "go-private"],
+      "topics": [
+        "Hg",
+        "acquisition",
+        "go-private"
+      ],
       "sources": []
     },
     {
@@ -115,7 +178,11 @@
       "page": "blogpost8",
       "category": "Technical",
       "summary": "How OneStream SensibleAI is reshaping finance workflows with ML-driven forecasting, anomaly detection, and predictive analytics.",
-      "topics": ["SensibleAI", "AI", "forecasting"],
+      "topics": [
+        "SensibleAI",
+        "AI",
+        "forecasting"
+      ],
       "sources": []
     },
     {
@@ -124,7 +191,11 @@
       "page": "blogpost9",
       "category": "Technical",
       "summary": "A practical breakdown of OneStream Platform 9.1 features.",
-      "topics": ["platform release", "9.1", "upgrade"],
+      "topics": [
+        "platform release",
+        "9.1",
+        "upgrade"
+      ],
       "sources": []
     },
     {
@@ -133,7 +204,9 @@
       "page": "blogpost4",
       "category": "Technical",
       "summary": "Designing OneStream business rules with clear architecture and governance.",
-      "topics": ["business rules"],
+      "topics": [
+        "business rules"
+      ],
       "sources": []
     },
     {
@@ -142,7 +215,10 @@
       "page": "financialclose",
       "category": "Consulting",
       "summary": "Converting implementation friction points into delivery and adoption wins.",
-      "topics": ["implementation", "change management"],
+      "topics": [
+        "implementation",
+        "change management"
+      ],
       "sources": []
     },
     {
@@ -151,7 +227,10 @@
       "page": "blogpost3",
       "category": "Technical",
       "summary": "Best practices for reliable formula sequencing and performance.",
-      "topics": ["formula passes", "performance"],
+      "topics": [
+        "formula passes",
+        "performance"
+      ],
       "sources": []
     },
     {
@@ -160,7 +239,10 @@
       "page": "blogpost5",
       "category": "Technical",
       "summary": "Integration patterns for connecting Azure Blob Storage to OneStream.",
-      "topics": ["Azure", "data integration"],
+      "topics": [
+        "Azure",
+        "data integration"
+      ],
       "sources": []
     },
     {
@@ -169,7 +251,10 @@
       "page": "blogpost6",
       "category": "Consulting",
       "summary": "Acceptance criteria, early end-user involvement, and structured test cycles.",
-      "topics": ["UAT", "testing"],
+      "topics": [
+        "UAT",
+        "testing"
+      ],
       "sources": []
     }
   ]

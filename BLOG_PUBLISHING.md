@@ -12,10 +12,12 @@ post means these steps, all of which must stay in sync:
    with an "Our Take" section), the "Book an assessment" CTA section, and
    `<!-- include:footer.html -->`. Source links go inline in the article text as
    `<a href="..." rel="noopener" target="_blank">` — every fact must trace to a linked source.
-2. **Add an article entry at the TOP of the list** in `src/pages/blog.html` (inside
-   `<div class="border-t border-line">`), copying the existing `<article>` block structure:
-   date + category (use `Industry news` for news posts), linked title, one-sentence summary,
-   and the `Read →` link, all pointing at `./blogpostN`.
+2. **Add an article entry to `src/pages/blog.html`**, copying an existing `<article>` block
+   exactly (date + category, linked `<h3>` title, one-sentence summary, `Read →` link, all
+   pointing at `./blogpostN`). The page has two lists:
+   - **News posts** (category `Industry news`) go at the TOP of `<div id="news-list">`.
+   - **Original articles** (category `Technical` or `Consulting`) go at the TOP of
+     `<div id="insights-list">`. The automated news publisher never writes here.
 3. **Prepend an entry to `blog-posts.json`** (title, date, page, category, summary, topics,
    sources). Validate: `python3 -c "import json; json.load(open('blog-posts.json'))"`.
 4. **Add the post to `public/sitemap.xml`**: insert a `<url>` entry for

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="images/mark.svg" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css?v=9">
+    <meta property="og:site_name" content="Full Clear">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="canonical" href="https://www.fullclearsolutions.com/blogpost18" />
+    <meta name="description" content="Lessons from building Basin's consolidation engine from scratch: order of operations, traceability, intercompany, minority interest, and period locks.">
+    <!-- seo:meta:start -->
+    <meta property="og:title" content="What Building a Consolidation Engine Taught Us About the Close">
+    <meta property="og:description" content="Lessons from building Basin's consolidation engine from scratch: order of operations, traceability, intercompany, minority interest, and period locks.">
+    <meta property="og:url" content="https://www.fullclearsolutions.com/blogpost18">
+    <meta property="og:image" content="https://www.fullclearsolutions.com/images/basin-og.png">
+    <meta property="og:type" content="article">
+    <meta name="twitter:title" content="What Building a Consolidation Engine Taught Us About the Close">
+    <meta name="twitter:description" content="Lessons from building Basin's consolidation engine from scratch: order of operations, traceability, intercompany, minority interest, and period locks.">
+    <meta name="twitter:image" content="https://www.fullclearsolutions.com/images/basin-og.png">
+    <!-- seo:meta:end -->
+    <title>What Building a Consolidation Engine Taught Us</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "What Building a Consolidation Engine Taught Us About the Close",
+      "datePublished": "2026-10-19",
+      "author": {
+        "@type": "Person",
+        "name": "Grant Deker"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Full Clear",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.fullclearsolutions.com/images/apple-touch-icon.png"
+        }
+      },
+      "image": "https://www.fullclearsolutions.com/images/basin-og.png",
+      "mainEntityOfPage": "https://www.fullclearsolutions.com/blogpost18"
+    }
+    </script>
+</head>
+<body>
+<header class="sticky top-0 z-10 border-b border-line bg-paper/92 backdrop-blur-[8px]">
+  <div class="mx-auto flex h-[68px] max-w-[1120px] items-center justify-between px-6">
+    <a class="flex items-center gap-2.5 text-ink no-underline" href="./" aria-label="Full Clear home">
+      <svg width="34" height="34" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <path d="M4 13 V8 a4 4 0 0 1 4-4 h5" stroke="#7A1F31" stroke-width="3" stroke-linecap="round"/>
+        <path d="M36 27 v5 a4 4 0 0 1 -4 4 h-5" stroke="#7A1F31" stroke-width="3" stroke-linecap="round"/>
+        <rect x="12" y="21" width="4.5" height="7" rx="1" fill="#1C171A"/>
+        <rect x="18" y="16" width="4.5" height="12" rx="1" fill="#1C171A"/>
+        <rect x="24" y="11" width="4.5" height="17" rx="1" fill="#7A1F31"/>
+      </svg>
+      <span class="font-display text-xl font-semibold tracking-[-0.01em]">Full Clear</span>
+    </a>
+
+    <nav class="hidden items-center gap-7 md:flex" aria-label="Main">
+      <a class="text-[0.9rem] font-medium text-ink-soft no-underline transition-colors duration-150 hover:text-burgundy" href="./consulting">Services</a>
+      <a class="text-[0.9rem] font-medium text-ink-soft no-underline transition-colors duration-150 hover:text-burgundy" href="./onestream">OneStream</a>
+      <a class="text-[0.9rem] font-medium text-ink-soft no-underline transition-colors duration-150 hover:text-burgundy" href="./basin">Basin</a>
+      <a class="text-[0.9rem] font-medium text-ink-soft no-underline transition-colors duration-150 hover:text-burgundy" href="./about">About</a>
+      <a class="text-[0.9rem] font-medium text-ink-soft no-underline transition-colors duration-150 hover:text-burgundy" href="./blog">Blog</a>
+      <a class="btn btn-primary !px-[18px] !py-[9px]" href="./contact">Book an assessment</a>
+    </nav>
+
+    <details class="relative md:hidden">
+      <summary class="btn btn-ghost !px-3 !py-[7px] list-none [&::-webkit-details-marker]:hidden" aria-label="Open navigation menu">
+        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7h16M4 12h16m-16 5h16" />
+        </svg>
+      </summary>
+      <nav class="absolute right-0 z-20 mt-3 flex w-56 flex-col gap-1 rounded-md border border-line bg-card p-3 shadow-lg" aria-label="Main mobile">
+        <a class="rounded-sm px-3 py-2 text-[0.9rem] font-medium text-ink-soft no-underline hover:bg-paper hover:text-burgundy" href="./consulting">Services</a>
+        <a class="rounded-sm px-3 py-2 text-[0.9rem] font-medium text-ink-soft no-underline hover:bg-paper hover:text-burgundy" href="./onestream">OneStream</a>
+        <a class="rounded-sm px-3 py-2 text-[0.9rem] font-medium text-ink-soft no-underline hover:bg-paper hover:text-burgundy" href="./basin">Basin</a>
+        <a class="rounded-sm px-3 py-2 text-[0.9rem] font-medium text-ink-soft no-underline hover:bg-paper hover:text-burgundy" href="./about">About</a>
+        <a class="rounded-sm px-3 py-2 text-[0.9rem] font-medium text-ink-soft no-underline hover:bg-paper hover:text-burgundy" href="./blog">Blog</a>
+        <a class="btn btn-primary mt-2 text-center" href="./contact">Book an assessment</a>
+      </nav>
+    </details>
+  </div>
+</header>
+
+
+<main class="py-12 lg:py-16">
+  <div class="mx-auto max-w-[1120px] px-6">
+    <article class="article mx-auto max-w-[720px]">
+      <header class="mb-10 border-b border-line pb-8">
+        <a href="./blog" class="font-mono text-[0.75rem] uppercase tracking-[0.08em] text-burgundy no-underline hover:underline">&larr; All articles</a>
+        <h1 class="mt-6 mb-4 text-[clamp(1.9rem,3.4vw,2.6rem)] leading-[1.15] tracking-[-0.015em] text-ink">What Building a Consolidation Engine Taught Us About the Close</h1>
+        <p class="font-mono text-[0.72rem] uppercase tracking-[0.1em] text-ink-soft">By <a href="./about" rel="author" class="text-ink no-underline hover:text-burgundy">Grant Deker</a> &middot; OneStream Solution Architect &middot; <time datetime="2026-10-19">Oct 19, 2026</time></p>
+      </header>
+
+      <p class="lead">We implement OneStream for a living. We also built <a href="./basin">Basin</a>, our own consolidation and month-end close platform, from the engine up: trial balance import, FX translation, intercompany eliminations, topside journals, minority interest, three consolidated statements, and a sign-off that locks the period. Configuring those mechanisms on a client platform is one thing. Writing every one of them yourself is another. Here's what it taught us — and what it changes about how we approach a OneStream build.</p>
+
+      <h3>The order of operations is the design</h3>
+      <p>Basin's engine runs one sequence, every time: translate each entity's trial balance at the period-end rate, sum the entities into the group chart of accounts, subtract intercompany eliminations, apply posted topside journals, then carve out non-controlling interests. Written as a formula it looks almost boring — <strong>consolidated = gross &minus; eliminations + adjustments</strong> — but the order is the design. Each step depends on data the step before it has finished shaping, and running one out of turn produces numbers that look right and aren't.</p>
+      <p>Translation is where this bites hardest. The two sides of an intercompany balance are often booked in different currencies, and after translation they don't always net to exactly zero. That difference has to land somewhere deliberate. If the design doesn't say where, it ends up in a plug, and a plug is where trust in the close goes to die.</p>
+      <p>OneStream makes this sequence explicit in its Consolidation dimension — Local, Translated, OwnerPreAdj, Share, Elimination, OwnerPostAdj, Top. Building the same pipeline by hand makes the first diagnostic question on any OneStream project obvious: <em>which member did this number go wrong in?</em> If a figure is right at Translated and wrong at Elimination, you've already ruled out half the rules in the application.</p>
+
+      <h3>Every number has to carry its own receipt</h3>
+      <p>Basin follows one rule throughout: the screens never re-derive a figure. The engine returns each consolidated account together with its per-entity contributions — local amount, rate, USD amount — plus the eliminations and journal impacts applied to it. Every account line on the P&amp;L can be expanded to show exactly where it came from.</p>
+      <p>That rule shapes everything downstream, and it's the lesson that matters most for client work. Reviewers don't trust totals; they trust drill-downs. On a OneStream build, the drill paths and the cube views a controller uses to check a number belong in the design from the first workshop — not in a reporting phase after go-live, when the data model can no longer bend to support them.</p>
+
+      <h3>Intercompany is a workflow problem, not a math problem</h3>
+      <p>The elimination itself is trivial arithmetic. The hard part is that both sides have to show up. In Basin's sample group, one of the five entities is still waiting on its trial balance, so the intercompany pair that touches it stays <em>unmatched</em> and is flagged on the consolidation screen. The group still consolidates — but it tells you, plainly, that it's incomplete.</p>
+      <p>That's the behaviour worth designing for on any OneStream project: matching status that's visible early in the workflow, an owner for every open pair, and intercompany reconciliation scheduled on the close calendar before consolidation — not discovered during review.</p>
+
+      <h3>Minority interest forces you to define "the group"</h3>
+      <p>The moment an entity is less than wholly owned — the sample data includes one at 75% — you have to decide what the consolidated numbers mean. Basin consolidates the entity in full, then computes the outside shareholders' share of its translated net income and carves it out, so the P&amp;L ends the statutory way: non-controlling interests, then the result attributable to the group.</p>
+      <p>The lesson isn't the calculation. It's that ownership is data with a history. It needs a proper home, an editor with the right permissions, and an audit trail — not a percentage typed into a spreadsheet cell that someone updates when they remember.</p>
+
+      <h3>A multi-currency cash flow only ties when FX is explicit</h3>
+      <p>Basin builds the cash flow statement the indirect way: from the net result and the movement between the prior and current balance sheets. In a multi-currency group, that only reconciles to the change in cash with an explicit <strong>effect of exchange rates on cash</strong> line — which is exactly how a real multi-currency cash flow is presented. If a group cash flow doesn't tie, look at FX first. It's almost always FX.</p>
+
+      <h3>A lock is only a lock if the data layer enforces it</h3>
+      <p>Hiding the edit buttons on a signed-off period is not a control. In Basin, the sign-off lock is enforced where the data is written, so every class of write — task updates, trial balance imports, journals, intercompany changes, FX rate edits — refuses on a locked period, whatever screen or route it comes from. Reopening a period is a separate permission, and both directions land in an append-only audit trail.</p>
+      <p>The same thinking applies to journals: lines must balance before they can be saved, the person who drafts a journal isn't the person who posts it, and a posted journal is immutable — a correction is another journal. On a OneStream project, test workflow locks and certification in UAT by actively trying to write into a locked period, not just checking that the status reads "locked."</p>
+
+      <h3>Our Take</h3>
+      <p>We didn't build Basin to replace OneStream. For enterprise finance teams, OneStream is the platform we implement and recommend; Basin is for smaller groups that haven't reached that scale yet. But building one from scratch means we've had to answer every design question ourselves — where translation differences go, what a reviewer needs to see behind a number, what a lock actually has to stop. Those are the same questions that decide whether a OneStream consolidation earns a CFO's trust.</p>
+      <p>If you'd like to see these ideas running, you can <a href="https://basin.finance/demo" rel="noopener" target="_blank">explore Basin's read-only demo</a> — no sign-up, sample data only. And if you'd like the same discipline applied to your OneStream application, that's what an assessment is for.</p>
+
+    </article>
+  </div>
+</main>
+
+<section class="border-t border-line py-16">
+  <div class="mx-auto max-w-[1120px] px-6">
+    <h2 class="mb-3.5 max-w-[30ch] text-[clamp(1.7rem,3vw,2.3rem)]">Want this discipline on your OneStream platform?</h2>
+    <p class="mb-7 max-w-[52ch] text-ink-soft">We'll walk through your consolidation design and tell you plainly what we'd change — no commitment required.</p>
+    <a class="btn btn-primary" href="./contact">Book an assessment</a>
+  </div>
+</section>
+
+<footer class="border-t border-line py-9">
+  <div class="mx-auto max-w-[1120px] px-6">
+    <div class="flex flex-wrap items-center justify-between gap-4">
+      <a class="flex items-center gap-2.5 text-ink no-underline" href="./" aria-label="Full Clear home">
+        <svg width="26" height="26" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+          <path d="M4 13 V8 a4 4 0 0 1 4-4 h5" stroke="#7A1F31" stroke-width="3" stroke-linecap="round"/>
+          <path d="M36 27 v5 a4 4 0 0 1 -4 4 h-5" stroke="#7A1F31" stroke-width="3" stroke-linecap="round"/>
+          <rect x="12" y="21" width="4.5" height="7" rx="1" fill="#1C171A"/>
+          <rect x="18" y="16" width="4.5" height="12" rx="1" fill="#1C171A"/>
+          <rect x="24" y="11" width="4.5" height="17" rx="1" fill="#7A1F31"/>
+        </svg>
+        <span class="font-display text-base font-semibold tracking-[-0.01em]">Full Clear</span>
+      </a>
+      <nav class="flex flex-wrap items-center gap-x-5 gap-y-2 font-mono text-[0.7rem] uppercase tracking-[0.08em]" aria-label="Footer">
+        <a class="text-ink-soft no-underline transition-colors duration-150 hover:text-burgundy" href="./consulting">Services</a>
+        <a class="text-ink-soft no-underline transition-colors duration-150 hover:text-burgundy" href="./basin">Basin</a>
+        <a class="text-ink-soft no-underline transition-colors duration-150 hover:text-burgundy" href="./dashboard">Dashboard demo</a>
+        <a class="text-ink-soft no-underline transition-colors duration-150 hover:text-burgundy" href="./contact">Contact</a>
+        <a class="text-ink-soft no-underline transition-colors duration-150 hover:text-burgundy" href="./privacy">Privacy</a>
+        <a class="text-ink-soft no-underline transition-colors duration-150 hover:text-burgundy" href="https://www.linkedin.com/in/grant-deker-774b872aa/" target="_blank" rel="noopener noreferrer">LinkedIn&nbsp;&#8599;</a>
+      </nav>
+    </div>
+    <p class="mt-6 font-mono text-[0.7rem] tracking-[0.06em] text-ink-soft">&copy; 2026 FULL CLEAR SOLUTIONS &middot; INDEPENDENT ONESTREAM CONSULTANCY</p>
+  </div>
+</footer>
+<script src="script.js" defer></script>
+
+</body>
+</html>

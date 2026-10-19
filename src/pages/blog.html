@@ -25,100 +25,42 @@
     <div class="mx-auto max-w-[1120px] px-6">
       <span class="eyebrow mb-5">Blog</span>
       <h1 class="mb-[22px] max-w-[24ch] text-[clamp(2.4rem,4.6vw,3.6rem)] leading-[1.12] tracking-[-0.015em]">Insights &amp; best practices.</h1>
-      <p class="max-w-[56ch] text-[1.06rem] text-ink-soft">Practical guidance on OneStream implementation, financial close optimization, and enterprise finance architecture.</p>
+      <p class="max-w-[56ch] text-[1.06rem] text-ink-soft">Practical guidance on OneStream implementation, financial close optimization, and enterprise finance architecture — plus a running log of <a class="text-burgundy underline-offset-2 hover:underline" href="#news">OneStream news</a> and what it means for you.</p>
     </div>
   </section>
 
-  <!-- Articles -->
-  <section class="py-20">
+  <!-- Insights: original articles. New original posts go at the TOP of #insights-list. -->
+  <section id="insights" class="py-20">
     <div class="mx-auto max-w-[1120px] px-6">
-      <div class="border-t border-line">
+      <div class="mb-10 max-w-[56ch]">
+        <span class="eyebrow mb-4">Insights</span>
+        <h2 class="mb-3 text-[clamp(1.7rem,3vw,2.3rem)]">Original guidance from the work.</h2>
+        <p class="text-ink-soft">Implementation lessons, technical deep-dives, and the patterns we see on OneStream projects.</p>
+      </div>
+      <div id="insights-list" class="border-t border-line">
 
         <article class="grid grid-cols-1 gap-2.5 border-b border-line py-7 md:grid-cols-[180px_1fr_auto] md:items-baseline md:gap-8">
-          <p class="font-mono text-[0.72rem] uppercase tracking-[0.1em] text-ink-soft">Oct 13, 2026<br class="hidden md:block"><span class="text-burgundy">Industry news</span></p>
+          <p class="font-mono text-[0.72rem] uppercase tracking-[0.1em] text-ink-soft">Oct 19, 2026<br class="hidden md:block"><span class="text-burgundy">Technical</span></p>
           <div>
-            <h2 class="font-display text-[1.25rem] font-semibold"><a class="no-underline hover:text-burgundy" href="./blogpost17">OneStream's Forward Finance Index: AI Adoption Outpaces Enterprise Value</a></h2>
-            <p class="mt-1.5 max-w-[62ch] text-[0.95rem] text-ink-soft">A survey of 1,300 CFOs finds 74% use AI to cut manual work, but only 14% report enterprise value and decision impact.</p>
+            <h3 class="font-display text-[1.25rem] font-semibold"><a class="no-underline hover:text-burgundy" href="./blogpost18">What Building a Consolidation Engine Taught Us About the Close</a></h3>
+            <p class="mt-1.5 max-w-[62ch] text-[0.95rem] text-ink-soft">Lessons from building Basin from scratch — order of operations, traceability, intercompany, minority interest, and period locks — and what they change on a OneStream project.</p>
           </div>
-          <a class="font-mono text-[0.75rem] uppercase tracking-[0.08em] text-burgundy no-underline hover:underline md:whitespace-nowrap" href="./blogpost17">Read &rarr;</a>
-        </article>
-
-        <article class="grid grid-cols-1 gap-2.5 border-b border-line py-7 md:grid-cols-[180px_1fr_auto] md:items-baseline md:gap-8">
-          <p class="font-mono text-[0.72rem] uppercase tracking-[0.1em] text-ink-soft">Sep 14, 2026<br class="hidden md:block"><span class="text-burgundy">Industry news</span></p>
-          <div>
-            <h2 class="font-display text-[1.25rem] font-semibold"><a class="no-underline hover:text-burgundy" href="./blogpost16">OneStream Named the Only Customers' Choice in Gartner Peer Insights</a></h2>
-            <p class="mt-1.5 max-w-[62ch] text-[0.95rem] text-ink-soft">OneStream earns the sole Customers' Choice distinction on a 4.8 rating from 171 verified reviews and 98% willingness to recommend.</p>
-          </div>
-          <a class="font-mono text-[0.75rem] uppercase tracking-[0.08em] text-burgundy no-underline hover:underline md:whitespace-nowrap" href="./blogpost16">Read &rarr;</a>
-        </article>
-
-        <article class="grid grid-cols-1 gap-2.5 border-b border-line py-7 md:grid-cols-[180px_1fr_auto] md:items-baseline md:gap-8">
-          <p class="font-mono text-[0.72rem] uppercase tracking-[0.1em] text-ink-soft">Sep 2, 2026<br class="hidden md:block"><span class="text-burgundy">Industry news</span></p>
-          <div>
-            <h2 class="font-display text-[1.25rem] font-semibold"><a class="no-underline hover:text-burgundy" href="./blogpost15">OneStream Adds SensibleAI Forecast and Studio to FedRAMP High</a></h2>
-            <p class="mt-1.5 max-w-[62ch] text-[0.95rem] text-ink-soft">Federal agencies can now run SensibleAI Forecast and Studio on sensitive financial data inside the OneStream Government Community Cloud.</p>
-          </div>
-          <a class="font-mono text-[0.75rem] uppercase tracking-[0.08em] text-burgundy no-underline hover:underline md:whitespace-nowrap" href="./blogpost15">Read &rarr;</a>
-        </article>
-
-        <article class="grid grid-cols-1 gap-2.5 border-b border-line py-7 md:grid-cols-[180px_1fr_auto] md:items-baseline md:gap-8">
-          <p class="font-mono text-[0.72rem] uppercase tracking-[0.1em] text-ink-soft">Aug 26, 2026<br class="hidden md:block"><span class="text-burgundy">Industry news</span></p>
-          <div>
-            <h2 class="font-display text-[1.25rem] font-semibold"><a class="no-underline hover:text-burgundy" href="./blogpost11">DHS Plans $100M+ Follow-On OneStream Systems Integrator BPA</a></h2>
-            <p class="mt-1.5 max-w-[62ch] text-[0.95rem] text-ink-soft">DHS plans to compete a $100M+ follow-on BPA for a systems integrator to run its OneStream platform — a long-term vote of confidence in OneStream for department-wide planning and budgeting.</p>
-          </div>
-          <a class="font-mono text-[0.75rem] uppercase tracking-[0.08em] text-burgundy no-underline hover:underline md:whitespace-nowrap" href="./blogpost11">Read &rarr;</a>
-        </article>
-
-        <article class="grid grid-cols-1 gap-2.5 border-b border-line py-7 md:grid-cols-[180px_1fr_auto] md:items-baseline md:gap-8">
-          <p class="font-mono text-[0.72rem] uppercase tracking-[0.1em] text-ink-soft">May 19, 2026<br class="hidden md:block"><span class="text-burgundy">Industry news</span></p>
-          <div>
-            <h2 class="font-display text-[1.25rem] font-semibold"><a class="no-underline hover:text-burgundy" href="./blogpost14">Splash 2026: SensibleAI Agents Go GA and Finance Gets an Agentic Layer</a></h2>
-            <p class="mt-1.5 max-w-[62ch] text-[0.95rem] text-ink-soft">OneStream ships four native AI agents and a governed Finance Agentic Layer connecting Copilot, Claude, ChatGPT and Gemini to platform data — with identity and role-based security enforced end to end.</p>
-          </div>
-          <a class="font-mono text-[0.75rem] uppercase tracking-[0.08em] text-burgundy no-underline hover:underline md:whitespace-nowrap" href="./blogpost14">Read &rarr;</a>
-        </article>
-
-        <article class="grid grid-cols-1 gap-2.5 border-b border-line py-7 md:grid-cols-[180px_1fr_auto] md:items-baseline md:gap-8">
-          <p class="font-mono text-[0.72rem] uppercase tracking-[0.1em] text-ink-soft">Apr 1, 2026<br class="hidden md:block"><span class="text-burgundy">Industry news</span></p>
-          <div>
-            <h2 class="font-display text-[1.25rem] font-semibold"><a class="no-underline hover:text-burgundy" href="./blogpost13">OneStream Completes Its $6.4B Acquisition by Hg</a></h2>
-            <p class="mt-1.5 max-w-[62ch] text-[0.95rem] text-ink-soft">The go-private deal closes with Tom Shea staying on as CEO and leadership unchanged — what the new ownership structure means for customers and roadmap investment.</p>
-          </div>
-          <a class="font-mono text-[0.75rem] uppercase tracking-[0.08em] text-burgundy no-underline hover:underline md:whitespace-nowrap" href="./blogpost13">Read &rarr;</a>
-        </article>
-
-        <article class="grid grid-cols-1 gap-2.5 border-b border-line py-7 md:grid-cols-[180px_1fr_auto] md:items-baseline md:gap-8">
-          <p class="font-mono text-[0.72rem] uppercase tracking-[0.1em] text-ink-soft">Mar 11, 2026<br class="hidden md:block"><span class="text-burgundy">Industry news</span></p>
-          <div>
-            <h2 class="font-display text-[1.25rem] font-semibold"><a class="no-underline hover:text-burgundy" href="./blogpost12">OneStream Named a 4x Leader in the 2026 Gartner Magic Quadrant</a></h2>
-            <p class="mt-1.5 max-w-[62ch] text-[0.95rem] text-ink-soft">A fourth consecutive year in the Leaders' quadrant for Financial Close and Consolidation — placed furthest of all 14 evaluated vendors in Completeness of Vision.</p>
-          </div>
-          <a class="font-mono text-[0.75rem] uppercase tracking-[0.08em] text-burgundy no-underline hover:underline md:whitespace-nowrap" href="./blogpost12">Read &rarr;</a>
+          <a class="font-mono text-[0.75rem] uppercase tracking-[0.08em] text-burgundy no-underline hover:underline md:whitespace-nowrap" href="./blogpost18">Read &rarr;</a>
         </article>
 
         <article class="grid grid-cols-1 gap-2.5 border-b border-line py-7 md:grid-cols-[180px_1fr_auto] md:items-baseline md:gap-8">
           <p class="font-mono text-[0.72rem] uppercase tracking-[0.1em] text-ink-soft">Feb 10, 2026<br class="hidden md:block"><span class="text-burgundy">Consulting</span></p>
           <div>
-            <h2 class="font-display text-[1.25rem] font-semibold"><a class="no-underline hover:text-burgundy" href="./blogpost10">Migrating from Legacy EPM to OneStream: A Practical Guide</a></h2>
+            <h3 class="font-display text-[1.25rem] font-semibold"><a class="no-underline hover:text-burgundy" href="./blogpost10">Migrating from Legacy EPM to OneStream: A Practical Guide</a></h3>
             <p class="mt-1.5 max-w-[62ch] text-[0.95rem] text-ink-soft">A practical migration guide for moving from Oracle Hyperion, SAP BPC, or IBM Cognos to OneStream, covering timelines, data strategy, and common pitfalls.</p>
           </div>
           <a class="font-mono text-[0.75rem] uppercase tracking-[0.08em] text-burgundy no-underline hover:underline md:whitespace-nowrap" href="./blogpost10">Read &rarr;</a>
         </article>
 
         <article class="grid grid-cols-1 gap-2.5 border-b border-line py-7 md:grid-cols-[180px_1fr_auto] md:items-baseline md:gap-8">
-          <p class="font-mono text-[0.72rem] uppercase tracking-[0.1em] text-ink-soft">Jan 15, 2026<br class="hidden md:block"><span class="text-burgundy">Industry news</span></p>
-          <div>
-            <h2 class="font-display text-[1.25rem] font-semibold"><a class="no-underline hover:text-burgundy" href="./blogpost7">What OneStream's $6.4B Hg Acquisition Means for Your Implementation</a></h2>
-            <p class="mt-1.5 max-w-[62ch] text-[0.95rem] text-ink-soft">What OneStream's $6.4 billion acquisition by Hg means for implementation timelines, product roadmap, and existing customers.</p>
-          </div>
-          <a class="font-mono text-[0.75rem] uppercase tracking-[0.08em] text-burgundy no-underline hover:underline md:whitespace-nowrap" href="./blogpost7">Read &rarr;</a>
-        </article>
-
-        <article class="grid grid-cols-1 gap-2.5 border-b border-line py-7 md:grid-cols-[180px_1fr_auto] md:items-baseline md:gap-8">
           <p class="font-mono text-[0.72rem] uppercase tracking-[0.1em] text-ink-soft">Oct 14, 2025<br class="hidden md:block"><span class="text-burgundy">Technical</span></p>
           <div>
-            <h2 class="font-display text-[1.25rem] font-semibold"><a class="no-underline hover:text-burgundy" href="./blogpost8">SensibleAI and the Rise of Finance AI in OneStream</a></h2>
+            <h3 class="font-display text-[1.25rem] font-semibold"><a class="no-underline hover:text-burgundy" href="./blogpost8">SensibleAI and the Rise of Finance AI in OneStream</a></h3>
             <p class="mt-1.5 max-w-[62ch] text-[0.95rem] text-ink-soft">How OneStream SensibleAI is reshaping finance workflows with ML-driven forecasting, anomaly detection, and predictive analytics for the Office of the CFO.</p>
           </div>
           <a class="font-mono text-[0.75rem] uppercase tracking-[0.08em] text-burgundy no-underline hover:underline md:whitespace-nowrap" href="./blogpost8">Read &rarr;</a>
@@ -127,7 +69,7 @@
         <article class="grid grid-cols-1 gap-2.5 border-b border-line py-7 md:grid-cols-[180px_1fr_auto] md:items-baseline md:gap-8">
           <p class="font-mono text-[0.72rem] uppercase tracking-[0.1em] text-ink-soft">Jun 18, 2025<br class="hidden md:block"><span class="text-burgundy">Technical</span></p>
           <div>
-            <h2 class="font-display text-[1.25rem] font-semibold"><a class="no-underline hover:text-burgundy" href="./blogpost9">OneStream Platform 9.1: What's New and What It Means for Your Upgrade</a></h2>
+            <h3 class="font-display text-[1.25rem] font-semibold"><a class="no-underline hover:text-burgundy" href="./blogpost9">OneStream Platform 9.1: What's New and What It Means for Your Upgrade</a></h3>
             <p class="mt-1.5 max-w-[62ch] text-[0.95rem] text-ink-soft">A practical breakdown of OneStream Platform 9.1 features including Cube View Designer, Profiler, Allocations tool, and security enhancements.</p>
           </div>
           <a class="font-mono text-[0.75rem] uppercase tracking-[0.08em] text-burgundy no-underline hover:underline md:whitespace-nowrap" href="./blogpost9">Read &rarr;</a>
@@ -136,7 +78,7 @@
         <article class="grid grid-cols-1 gap-2.5 border-b border-line py-7 md:grid-cols-[180px_1fr_auto] md:items-baseline md:gap-8">
           <p class="font-mono text-[0.72rem] uppercase tracking-[0.1em] text-ink-soft">Aug 12, 2024<br class="hidden md:block"><span class="text-burgundy">Technical</span></p>
           <div>
-            <h2 class="font-display text-[1.25rem] font-semibold"><a class="no-underline hover:text-burgundy" href="./blogpost4">Business Rule Considerations for OneStream Implementations</a></h2>
+            <h3 class="font-display text-[1.25rem] font-semibold"><a class="no-underline hover:text-burgundy" href="./blogpost4">Business Rule Considerations for OneStream Implementations</a></h3>
             <p class="mt-1.5 max-w-[62ch] text-[0.95rem] text-ink-soft">Business rules in OneStream drive automation, validation, and reliable financial workflows when designed with clear architecture and governance.</p>
           </div>
           <a class="font-mono text-[0.75rem] uppercase tracking-[0.08em] text-burgundy no-underline hover:underline md:whitespace-nowrap" href="./blogpost4">Read &rarr;</a>
@@ -145,7 +87,7 @@
         <article class="grid grid-cols-1 gap-2.5 border-b border-line py-7 md:grid-cols-[180px_1fr_auto] md:items-baseline md:gap-8">
           <p class="font-mono text-[0.72rem] uppercase tracking-[0.1em] text-ink-soft">Aug 10, 2024<br class="hidden md:block"><span class="text-burgundy">Consulting</span></p>
           <div>
-            <h2 class="font-display text-[1.25rem] font-semibold"><a class="no-underline hover:text-burgundy" href="./financialclose">OneStream Implementations: Roadblocks as Opportunities</a></h2>
+            <h3 class="font-display text-[1.25rem] font-semibold"><a class="no-underline hover:text-burgundy" href="./financialclose">OneStream Implementations: Roadblocks as Opportunities</a></h3>
             <p class="mt-1.5 max-w-[62ch] text-[0.95rem] text-ink-soft">How to convert implementation friction points into delivery and adoption wins across change management, data integration, and timeline pressures.</p>
           </div>
           <a class="font-mono text-[0.75rem] uppercase tracking-[0.08em] text-burgundy no-underline hover:underline md:whitespace-nowrap" href="./financialclose">Read &rarr;</a>
@@ -154,7 +96,7 @@
         <article class="grid grid-cols-1 gap-2.5 border-b border-line py-7 md:grid-cols-[180px_1fr_auto] md:items-baseline md:gap-8">
           <p class="font-mono text-[0.72rem] uppercase tracking-[0.1em] text-ink-soft">May 21, 2024<br class="hidden md:block"><span class="text-burgundy">Technical</span></p>
           <div>
-            <h2 class="font-display text-[1.25rem] font-semibold"><a class="no-underline hover:text-burgundy" href="./blogpost3">Formula Pass Prioritization in OneStream</a></h2>
+            <h3 class="font-display text-[1.25rem] font-semibold"><a class="no-underline hover:text-burgundy" href="./blogpost3">Formula Pass Prioritization in OneStream</a></h3>
             <p class="mt-1.5 max-w-[62ch] text-[0.95rem] text-ink-soft">Best practices for reliable formula sequencing and performance in enterprise models with complex calculation dependencies.</p>
           </div>
           <a class="font-mono text-[0.75rem] uppercase tracking-[0.08em] text-burgundy no-underline hover:underline md:whitespace-nowrap" href="./blogpost3">Read &rarr;</a>
@@ -163,7 +105,7 @@
         <article class="grid grid-cols-1 gap-2.5 border-b border-line py-7 md:grid-cols-[180px_1fr_auto] md:items-baseline md:gap-8">
           <p class="font-mono text-[0.72rem] uppercase tracking-[0.1em] text-ink-soft">Oct 18, 2023<br class="hidden md:block"><span class="text-burgundy">Technical</span></p>
           <div>
-            <h2 class="font-display text-[1.25rem] font-semibold"><a class="no-underline hover:text-burgundy" href="./blogpost5">Nuances of Pulling Data from Azure Blobs into OneStream</a></h2>
+            <h3 class="font-display text-[1.25rem] font-semibold"><a class="no-underline hover:text-burgundy" href="./blogpost5">Nuances of Pulling Data from Azure Blobs into OneStream</a></h3>
             <p class="mt-1.5 max-w-[62ch] text-[0.95rem] text-ink-soft">Reliable integration patterns for connecting Azure Blob Storage to OneStream with proper authentication, format handling, and performance optimization.</p>
           </div>
           <a class="font-mono text-[0.75rem] uppercase tracking-[0.08em] text-burgundy no-underline hover:underline md:whitespace-nowrap" href="./blogpost5">Read &rarr;</a>
@@ -172,10 +114,96 @@
         <article class="grid grid-cols-1 gap-2.5 border-b border-line py-7 md:grid-cols-[180px_1fr_auto] md:items-baseline md:gap-8">
           <p class="font-mono text-[0.72rem] uppercase tracking-[0.1em] text-ink-soft">Jun 4, 2023<br class="hidden md:block"><span class="text-burgundy">Consulting</span></p>
           <div>
-            <h2 class="font-display text-[1.25rem] font-semibold"><a class="no-underline hover:text-burgundy" href="./blogpost6">UAT Testing Best Practices for OneStream Implementations</a></h2>
+            <h3 class="font-display text-[1.25rem] font-semibold"><a class="no-underline hover:text-burgundy" href="./blogpost6">UAT Testing Best Practices for OneStream Implementations</a></h3>
             <p class="mt-1.5 max-w-[62ch] text-[0.95rem] text-ink-soft">How to define acceptance criteria, involve end-users early, and structure test cycles that reduce go-live risk.</p>
           </div>
           <a class="font-mono text-[0.75rem] uppercase tracking-[0.08em] text-burgundy no-underline hover:underline md:whitespace-nowrap" href="./blogpost6">Read &rarr;</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- OneStream news: the automated publisher adds entries at the TOP of #news-list. -->
+  <section id="news" class="border-t border-line py-20">
+    <div class="mx-auto max-w-[1120px] px-6">
+      <div class="mb-10 max-w-[56ch]">
+        <span class="eyebrow mb-4">OneStream news</span>
+        <h2 class="mb-3 text-[clamp(1.7rem,3vw,2.3rem)]">What changed, and what it means for you.</h2>
+        <p class="text-ink-soft">Product releases, company news, and analyst recognition — each with our take on what it means for your platform.</p>
+      </div>
+      <div id="news-list" class="border-t border-line">
+
+        <article class="grid grid-cols-1 gap-2.5 border-b border-line py-7 md:grid-cols-[180px_1fr_auto] md:items-baseline md:gap-8">
+          <p class="font-mono text-[0.72rem] uppercase tracking-[0.1em] text-ink-soft">Oct 13, 2026<br class="hidden md:block"><span class="text-burgundy">Industry news</span></p>
+          <div>
+            <h3 class="font-display text-[1.25rem] font-semibold"><a class="no-underline hover:text-burgundy" href="./blogpost17">OneStream's Forward Finance Index: AI Adoption Outpaces Enterprise Value</a></h3>
+            <p class="mt-1.5 max-w-[62ch] text-[0.95rem] text-ink-soft">A survey of 1,300 CFOs finds 74% use AI to cut manual work, but only 14% report enterprise value and decision impact.</p>
+          </div>
+          <a class="font-mono text-[0.75rem] uppercase tracking-[0.08em] text-burgundy no-underline hover:underline md:whitespace-nowrap" href="./blogpost17">Read &rarr;</a>
+        </article>
+
+        <article class="grid grid-cols-1 gap-2.5 border-b border-line py-7 md:grid-cols-[180px_1fr_auto] md:items-baseline md:gap-8">
+          <p class="font-mono text-[0.72rem] uppercase tracking-[0.1em] text-ink-soft">Sep 14, 2026<br class="hidden md:block"><span class="text-burgundy">Industry news</span></p>
+          <div>
+            <h3 class="font-display text-[1.25rem] font-semibold"><a class="no-underline hover:text-burgundy" href="./blogpost16">OneStream Named the Only Customers' Choice in Gartner Peer Insights</a></h3>
+            <p class="mt-1.5 max-w-[62ch] text-[0.95rem] text-ink-soft">OneStream earns the sole Customers' Choice distinction on a 4.8 rating from 171 verified reviews and 98% willingness to recommend.</p>
+          </div>
+          <a class="font-mono text-[0.75rem] uppercase tracking-[0.08em] text-burgundy no-underline hover:underline md:whitespace-nowrap" href="./blogpost16">Read &rarr;</a>
+        </article>
+
+        <article class="grid grid-cols-1 gap-2.5 border-b border-line py-7 md:grid-cols-[180px_1fr_auto] md:items-baseline md:gap-8">
+          <p class="font-mono text-[0.72rem] uppercase tracking-[0.1em] text-ink-soft">Sep 2, 2026<br class="hidden md:block"><span class="text-burgundy">Industry news</span></p>
+          <div>
+            <h3 class="font-display text-[1.25rem] font-semibold"><a class="no-underline hover:text-burgundy" href="./blogpost15">OneStream Adds SensibleAI Forecast and Studio to FedRAMP High</a></h3>
+            <p class="mt-1.5 max-w-[62ch] text-[0.95rem] text-ink-soft">Federal agencies can now run SensibleAI Forecast and Studio on sensitive financial data inside the OneStream Government Community Cloud.</p>
+          </div>
+          <a class="font-mono text-[0.75rem] uppercase tracking-[0.08em] text-burgundy no-underline hover:underline md:whitespace-nowrap" href="./blogpost15">Read &rarr;</a>
+        </article>
+
+        <article class="grid grid-cols-1 gap-2.5 border-b border-line py-7 md:grid-cols-[180px_1fr_auto] md:items-baseline md:gap-8">
+          <p class="font-mono text-[0.72rem] uppercase tracking-[0.1em] text-ink-soft">Aug 26, 2026<br class="hidden md:block"><span class="text-burgundy">Industry news</span></p>
+          <div>
+            <h3 class="font-display text-[1.25rem] font-semibold"><a class="no-underline hover:text-burgundy" href="./blogpost11">DHS Plans $100M+ Follow-On OneStream Systems Integrator BPA</a></h3>
+            <p class="mt-1.5 max-w-[62ch] text-[0.95rem] text-ink-soft">DHS plans to compete a $100M+ follow-on BPA for a systems integrator to run its OneStream platform — a long-term vote of confidence in OneStream for department-wide planning and budgeting.</p>
+          </div>
+          <a class="font-mono text-[0.75rem] uppercase tracking-[0.08em] text-burgundy no-underline hover:underline md:whitespace-nowrap" href="./blogpost11">Read &rarr;</a>
+        </article>
+
+        <article class="grid grid-cols-1 gap-2.5 border-b border-line py-7 md:grid-cols-[180px_1fr_auto] md:items-baseline md:gap-8">
+          <p class="font-mono text-[0.72rem] uppercase tracking-[0.1em] text-ink-soft">May 19, 2026<br class="hidden md:block"><span class="text-burgundy">Industry news</span></p>
+          <div>
+            <h3 class="font-display text-[1.25rem] font-semibold"><a class="no-underline hover:text-burgundy" href="./blogpost14">Splash 2026: SensibleAI Agents Go GA and Finance Gets an Agentic Layer</a></h3>
+            <p class="mt-1.5 max-w-[62ch] text-[0.95rem] text-ink-soft">OneStream ships four native AI agents and a governed Finance Agentic Layer connecting Copilot, Claude, ChatGPT and Gemini to platform data — with identity and role-based security enforced end to end.</p>
+          </div>
+          <a class="font-mono text-[0.75rem] uppercase tracking-[0.08em] text-burgundy no-underline hover:underline md:whitespace-nowrap" href="./blogpost14">Read &rarr;</a>
+        </article>
+
+        <article class="grid grid-cols-1 gap-2.5 border-b border-line py-7 md:grid-cols-[180px_1fr_auto] md:items-baseline md:gap-8">
+          <p class="font-mono text-[0.72rem] uppercase tracking-[0.1em] text-ink-soft">Apr 1, 2026<br class="hidden md:block"><span class="text-burgundy">Industry news</span></p>
+          <div>
+            <h3 class="font-display text-[1.25rem] font-semibold"><a class="no-underline hover:text-burgundy" href="./blogpost13">OneStream Completes Its $6.4B Acquisition by Hg</a></h3>
+            <p class="mt-1.5 max-w-[62ch] text-[0.95rem] text-ink-soft">The go-private deal closes with Tom Shea staying on as CEO and leadership unchanged — what the new ownership structure means for customers and roadmap investment.</p>
+          </div>
+          <a class="font-mono text-[0.75rem] uppercase tracking-[0.08em] text-burgundy no-underline hover:underline md:whitespace-nowrap" href="./blogpost13">Read &rarr;</a>
+        </article>
+
+        <article class="grid grid-cols-1 gap-2.5 border-b border-line py-7 md:grid-cols-[180px_1fr_auto] md:items-baseline md:gap-8">
+          <p class="font-mono text-[0.72rem] uppercase tracking-[0.1em] text-ink-soft">Mar 11, 2026<br class="hidden md:block"><span class="text-burgundy">Industry news</span></p>
+          <div>
+            <h3 class="font-display text-[1.25rem] font-semibold"><a class="no-underline hover:text-burgundy" href="./blogpost12">OneStream Named a 4x Leader in the 2026 Gartner Magic Quadrant</a></h3>
+            <p class="mt-1.5 max-w-[62ch] text-[0.95rem] text-ink-soft">A fourth consecutive year in the Leaders' quadrant for Financial Close and Consolidation — placed furthest of all 14 evaluated vendors in Completeness of Vision.</p>
+          </div>
+          <a class="font-mono text-[0.75rem] uppercase tracking-[0.08em] text-burgundy no-underline hover:underline md:whitespace-nowrap" href="./blogpost12">Read &rarr;</a>
+        </article>
+
+        <article class="grid grid-cols-1 gap-2.5 border-b border-line py-7 md:grid-cols-[180px_1fr_auto] md:items-baseline md:gap-8">
+          <p class="font-mono text-[0.72rem] uppercase tracking-[0.1em] text-ink-soft">Jan 15, 2026<br class="hidden md:block"><span class="text-burgundy">Industry news</span></p>
+          <div>
+            <h3 class="font-display text-[1.25rem] font-semibold"><a class="no-underline hover:text-burgundy" href="./blogpost7">What OneStream's $6.4B Hg Acquisition Means for Your Implementation</a></h3>
+            <p class="mt-1.5 max-w-[62ch] text-[0.95rem] text-ink-soft">What OneStream's $6.4 billion acquisition by Hg means for implementation timelines, product roadmap, and existing customers.</p>
+          </div>
+          <a class="font-mono text-[0.75rem] uppercase tracking-[0.08em] text-burgundy no-underline hover:underline md:whitespace-nowrap" href="./blogpost7">Read &rarr;</a>
         </article>
 
       </div>
