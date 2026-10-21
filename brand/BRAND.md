@@ -29,10 +29,10 @@ On dark (`--color-ink`) backgrounds: text `#F1ECEE`, muted text `#C9C2C5`, burgu
 
 ### 2.1 Product exception: Basin
 
-Basin is Full Clear's own close platform, with its own identity ("still water" dark teal, watershed mark). On the Basin page only, two things may appear outside the palette above, because they *are* the product:
+Basin is Full Clear's own close platform, with its own identity (light by default with neutral surfaces and one teal accent, an optional dark mode, and the watershed mark). On the Basin page only, two things may appear outside the palette above, because they *are* the product:
 
-- **Product screenshots** of Basin, shown as-is, framed by Full Clear's focus brackets (Full Clear's frame, Basin's content), captioned "seeded demo data — not client data."
-- **The Basin mark**, in `--color-basin-teal` (`#2F9D97`, Basin's `accent-2`, chosen to clear 3:1 contrast on paper as a graphic).
+- **Product screenshots** of Basin in its default light mode, shown as-is, framed by Full Clear's focus brackets (Full Clear's frame, Basin's content), captioned "seeded demo data — not client data."
+- **The Basin mark**, in `--color-basin-teal` (`#0A766D`, Basin's light-mode `accent`, about 5:1 on paper).
 
 Never use Basin teal for text, buttons, links, or any Full Clear UI. Inside the Basin app, the endorsement runs the other way: a quiet "Built by Full Clear ↗" link in Basin's own styling.
 

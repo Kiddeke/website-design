@@ -34,7 +34,7 @@
 /* Basin product accent — BRAND.md §2.1 exception. Only for showing Basin's own
    identity (its mark) on /basin. Never for text, buttons, or Full Clear UI. */
 @theme {
-  --color-basin-teal: #2F9D97;
+  --color-basin-teal: #0A766D;
 }
 
 @layer base {
