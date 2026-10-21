@@ -28,7 +28,7 @@
       <p class="max-w-[56ch] text-[1.06rem] text-ink-soft">Tell us what you're working on and we'll respond within one business day. No pitch decks, no sales pressure — a straightforward conversation about what you need.</p>
       <div class="mt-8 flex flex-wrap gap-x-8 gap-y-2">
         <span class="font-mono text-[0.72rem] uppercase tracking-[0.1em] text-ink-soft"><span class="text-success">&#10003;</span> Response within 1 business day</span>
-        <span class="font-mono text-[0.72rem] uppercase tracking-[0.1em] text-ink-soft"><span class="text-success">&#10003;</span> No obligation, no contracts upfront</span>
+        <span class="font-mono text-[0.72rem] uppercase tracking-[0.1em] text-ink-soft"><span class="text-success">&#10003;</span> Projects or C2C roles</span>
         <span class="font-mono text-[0.72rem] uppercase tracking-[0.1em] text-ink-soft"><span class="text-success">&#10003;</span> Direct access to the architect who builds it</span>
       </div>
     </div>
@@ -38,7 +38,7 @@
   <section class="py-20">
     <div class="mx-auto max-w-[1120px] px-6">
       <div class="mx-auto max-w-3xl">
-        <form class="grid gap-5 md:grid-cols-2" action="https://formspree.io/f/xgejqdlo" method="POST">
+        <form id="form" class="grid scroll-mt-24 gap-5 md:grid-cols-2" action="https://formspree.io/f/xgejqdlo" method="POST">
           <div>
             <label class="field-label" for="f-name">Name</label>
             <input class="field-input" id="f-name" type="text" name="name" autocomplete="name" required>
@@ -62,11 +62,12 @@
               <option value="implement">Implement — new OneStream delivery</option>
               <option value="optimize">Optimize — tune an existing platform</option>
               <option value="rescue">Rescue — assess a stalled implementation</option>
+              <option value="c2c">Subcontract / C2C role — staff a OneStream seat</option>
               <option value="other">Other</option>
             </select>
           </div>
           <div>
-            <label class="field-label" for="f-budget">Budget range <span class="normal-case tracking-normal text-ink-soft/70">(optional)</span></label>
+            <label class="field-label" for="f-budget">Budget range <span class="normal-case tracking-normal text-ink-soft/70">(optional, projects)</span></label>
             <select class="field-input" id="f-budget" name="budget_range">
               <option value="" disabled selected>Select budget range</option>
               <option value="under_50k">Under $50,000</option>
@@ -102,6 +103,7 @@
           <div class="flex flex-wrap items-center gap-x-6 gap-y-2 md:col-span-2">
             <button class="btn btn-primary" type="submit">Book an assessment</button>
             <span class="font-mono text-[0.72rem] text-ink-soft">PHONE: <a class="text-burgundy underline-offset-2 hover:underline" href="tel:+17034981007">(703)&nbsp;498-1007</a></span>
+            <a class="font-mono text-[0.72rem] text-burgundy underline-offset-2 hover:underline" href="https://www.linkedin.com/in/grant-deker-774b872aa/" target="_blank" rel="noopener noreferrer">LINKEDIN&nbsp;&#8599;</a>
           </div>
         </form>
       </div>

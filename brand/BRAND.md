@@ -118,7 +118,7 @@ Quality floor: responsive to 360px, visible keyboard focus everywhere, reduced m
 - Candid-advisor tone: "no discovery theater, no 40-slide deck." Confidence through specificity (close days, cycle times), never through superlatives ("world-class," "leading," "cutting-edge" are banned).
 - Finance vocabulary, used correctly: close, consolidation, intercompany eliminations, FX translation, cube views, workflows, planning, reporting.
 - The three services are always named **Implement / Optimize / Rescue**, in that order.
-- One CTA verb site-wide: "Book an assessment." Secondary: "See capabilities."
+- One CTA verb site-wide: "Book an assessment." Secondary: "See capabilities." Exception: the `/partners` page speaks to firms staffing a role (C2C or SOW), where an assessment is the wrong ask — its primary CTA is "Send a role."
 - Placeholder stats and quotes in mockups (e.g., "8 days → 3 days") must be replaced with real client numbers before launch — never ship invented results.
 
 ## 8. Stack recommendation

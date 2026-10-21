@@ -3,7 +3,7 @@
 ## Brand
 - **`/brand/BRAND.md` is the single source of truth** for colors, typography, logo, components, motion, and copy voice. Read it before styling anything.
 - Display name is **"Full Clear"** — "Full Clear Solutions" (legal name) appears only in the footer copyright line, the privacy page, and JSON-LD `legalName`.
-- CTAs site-wide: primary **"Book an assessment"**, secondary **"See capabilities"**. No "Get Started" / "Learn More".
+- CTAs site-wide: primary **"Book an assessment"**, secondary **"See capabilities"**. No "Get Started" / "Learn More". One audience-specific exception: `/partners` (for SIs, consulting firms and staffing partners) uses **"Send a role"** → `./contact#form`.
 - Services are always **Implement / Optimize / Rescue**, in that order.
 - The site contains **no client stats or testimonials** — never add invented results or quotes. Illustrative visuals (e.g. the hero ledger) must be labeled as such ("not client data").
 
@@ -37,6 +37,7 @@
 - `public/script.js` -- dashboard AI demo JS
 - `public/images/mark.svg`, `mark-dark.svg` -- logo mark (light/dark); `og.png`, `apple-touch-icon.png` -- generated brand images
 - `build-html.js` -- 28-line build script for partial includes
+- `brand/capability-statement.html` -- source for `public/files/full-clear-capability-statement.pdf` (one Letter page, linked from `/partners`); after editing run `node brand/build-capability-statement.js` (needs Playwright/Chromium)
 
 ## External Services
 - **Formspree** (`formspree.io/f/xgejqdlo`) -- contact form

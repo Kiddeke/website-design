@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Full Clear — Capability Statement</title>
+<!--
+  Source for public/files/full-clear-capability-statement.pdf (one US Letter page).
+  Regenerate after editing:  node brand/build-capability-statement.js
+  Colors and fonts mirror the @theme tokens in src/style.css (BRAND.md §2–3).
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #FAF8F5; --card: #FFFFFF; --ink: #1C171A; --ink-soft: #4E4549;
+    --burgundy: #7A1F31; --line: #E5DFD7;
+    --display: "Spectral", Georgia, serif; --body: "Public Sans", system-ui, sans-serif; --mono: "IBM Plex Mono", monospace;
+  }
+  @page { size: Letter; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 8.5in; height: 11in; }
+  body { background: var(--paper); color: var(--ink); font-family: var(--body); font-size: 8.8pt; line-height: 1.4; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .page { padding: 0.45in 0.55in 0.4in; height: 11in; display: flex; flex-direction: column; }
+  .eyebrow { font-family: var(--mono); font-size: 7.2pt; letter-spacing: 0.14em; text-transform: uppercase; color: var(--burgundy); }
+  header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--line); padding-bottom: 12pt; }
+  .lockup { display: flex; align-items: center; gap: 8pt; font-family: var(--display); font-weight: 600; font-size: 15pt; letter-spacing: -0.01em; }
+  h1 { font-family: var(--display); font-weight: 500; font-size: 22pt; letter-spacing: -0.015em; line-height: 1.1; margin: 12pt 0 3pt; }
+  h1 em { color: var(--burgundy); }
+  .role { font-family: var(--mono); font-size: 8pt; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); }
+  .summary { margin: 8pt 0 10pt; max-width: 7.2in; font-size: 9.2pt; color: var(--ink-soft); }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 18pt; }
+  h2 { font-family: var(--display); font-weight: 600; font-size: 11.5pt; margin-bottom: 5pt; padding-bottom: 4pt; border-bottom: 1.5px solid var(--ink); }
+  ul { list-style: none; }
+  ul li { position: relative; padding: 2.4pt 0 2.4pt 12pt; border-bottom: 1px solid var(--line); color: var(--ink-soft); }
+  ul li::before { content: "—"; position: absolute; left: 0; color: var(--burgundy); }
+  dl { display: grid; grid-template-columns: auto 1fr; column-gap: 10pt; }
+  dt { font-family: var(--mono); font-size: 7pt; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-soft); padding: 3pt 0; border-bottom: 1px solid var(--line); }
+  dd { padding: 2.4pt 0; border-bottom: 1px solid var(--line); }
+  .box { background: var(--card); border: 1px solid var(--line); border-radius: 6px; padding: 8pt 10pt; margin-bottom: 8pt; }
+  .exp { margin-top: 8pt; }
+  .exp table { width: 100%; border-collapse: collapse; }
+  .exp td { padding: 3pt 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .exp td.org { width: 1.55in; font-family: var(--display); font-weight: 600; font-size: 10pt; }
+  .exp td.org span { display: block; font-family: var(--mono); font-weight: 400; font-size: 7pt; letter-spacing: 0.08em; color: var(--ink-soft); }
+  .exp td.what b { font-weight: 600; }
+  .exp td.what { color: var(--ink-soft); }
+  .exp td.what b { color: var(--ink); }
+  footer { margin-top: auto; padding-top: 10pt; border-top: 1px solid var(--line); display: flex; justify-content: space-between; font-family: var(--mono); font-size: 7.2pt; letter-spacing: 0.06em; color: var(--ink-soft); }
+  a { color: inherit; text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="lockup">
+      <svg width="26" height="26" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <path d="M4 13 V8 a4 4 0 0 1 4-4 h5" stroke="#7A1F31" stroke-width="3" stroke-linecap="round"/>
+        <path d="M36 27 v5 a4 4 0 0 1 -4 4 h-5" stroke="#7A1F31" stroke-width="3" stroke-linecap="round"/>
+        <rect x="12" y="21" width="4.5" height="7" rx="1" fill="#1C171A"/>
+        <rect x="18" y="16" width="4.5" height="12" rx="1" fill="#1C171A"/>
+        <rect x="24" y="11" width="4.5" height="17" rx="1" fill="#7A1F31"/>
+      </svg>
+      Full Clear
+    </div>
+    <span class="eyebrow">Capability statement &middot; 2026</span>
+  </header>
+
+  <h1>Grant Deker &mdash; <em>OneStream Solution Architect</em></h1>
+  <p class="role">Founder, Full Clear &middot; available for C2C and fixed-scope engagements</p>
+  <p class="summary">10+ years in enterprise finance systems across banking, government contracting, retail, and transportation. Has led OneStream implementations, Hyperion-to-OneStream migrations, and version upgrades from application design, business rules, and data integration through UAT, go-live, and ongoing administration. A finance background paired with hands-on development and team leadership.</p>
+
+  <div class="cols">
+    <div>
+      <h2>Core capabilities</h2>
+      <ul>
+        <li>OneStream application design: dimensions, extensible dimensions, cubes, workflow and time profiles</li>
+        <li>Business rules, member formulas, and API-driven calculations; remediation of deprecated rules</li>
+        <li>Data integration: import/export automation, transformation rules, Smart Integration Connector</li>
+        <li>Version upgrades (7.3 &rarr; 8.2, 7.4 &rarr; 9.4) and Hyperion-to-OneStream migration with parallel runs</li>
+        <li>Security design: workflow-scoped groups, Azure AD, provisioning from HR and accounting data</li>
+        <li>Consolidations, Parcel Services, account reconciliations, allocations, and TB validation</li>
+        <li>Cube views, dashboards, and financial statement reporting</li>
+        <li>UAT, user training, and leading developer and analyst teams</li>
+      </ul>
+    </div>
+    <div>
+      <div class="box">
+        <h2>Credentials</h2>
+        <dl>
+          <dt>OneStream</dt><dd>Application Build for Administrators</dd>
+          <dt>AWS</dt><dd>Solutions Architect &ndash; Associate</dd>
+          <dt>Clearance</dt><dd>Secret (previously held, inactive)</dd>
+          <dt>Education</dt><dd>B.B.A., Business Finance, James Madison University</dd>
+        </dl>
+      </div>
+      <div class="box">
+        <h2>Engagement</h2>
+        <dl>
+          <dt>Models</dt><dd>Corp-to-corp (C2C) contract &middot; fixed-scope SOW</dd>
+          <dt>Roles</dt><dd>Solution architect &middot; lead developer &middot; upgrade/migration lead</dd>
+          <dt>Based</dt><dd>Maryville, MO &middot; Central time &middot; remote</dd>
+          <dt>Contact</dt><dd>(703) 498-1007 &middot; fullclearsolutions.com/partners<br>linkedin.com/in/grant-deker-774b872aa</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+
+  <div class="exp">
+    <h2>Experience</h2>
+    <table>
+      <tr><td class="org">Penske<span>2024 &ndash; PRESENT</span></td><td class="what"><b>Lead OneStream Developer, Sr. Manager.</b> Leads a team of developers and analysts; automated imports and exports across 50+ workflows; HR- and accounting-integrated security; financial statement dashboards; upgrade 7.4 &rarr; 9.4.</td></tr>
+      <tr><td class="org">Full Clear<span>2023 &ndash; PRESENT</span></td><td class="what"><b>Founder &amp; Principal.</b> Independent OneStream consultancy; designed and built Basin, a consolidation and month-end close platform (basin.finance).</td></tr>
+      <tr><td class="org">Mattress Firm<span>2023 &ndash; 2024</span></td><td class="what"><b>Sr. OneStream Developer.</b> 25+ custom financial models deployed and tested through UAT; rules, hierarchy, security, Parcel Services; upgrade 7.3 &rarr; 8.2; Smart Integration Connector and Azure AD.</td></tr>
+      <tr><td class="org">GDIT<span>2021 &ndash; 2023</span></td><td class="what"><b>Senior Business Analyst.</b> Led the end-to-end OneStream implementation for consolidation, reporting, and planning; data integration, security, UAT, and training.</td></tr>
+      <tr><td class="org">Capital One<span>2019 &ndash; 2020</span></td><td class="what"><b>Senior Financial Analyst.</b> Led the OneStream implementation across seven business areas, including a nine-month Hyperion migration with parallel runs.</td></tr>
+      <tr><td class="org">Lockheed Martin<span>2017 &ndash; 2019</span></td><td class="what"><b>Financial Analyst, QSACK &amp; Associates.</b> Navy ISIS Systems contract: earned value management, Hyperion and SAP S/4HANA reporting, DCMA/DCAA/DoD compliance.</td></tr>
+    </table>
+  </div>
+
+  <footer>
+    <span>&copy; 2026 FULL CLEAR SOLUTIONS</span>
+    <span>FULLCLEARSOLUTIONS.COM/PARTNERS</span>
+  </footer>
+</div>
+</body>
+</html>
