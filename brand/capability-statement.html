@@ -34,8 +34,9 @@
   ul { list-style: none; }
   ul li { position: relative; padding: 2.4pt 0 2.4pt 12pt; border-bottom: 1px solid var(--line); color: var(--ink-soft); }
   ul li::before { content: "—"; position: absolute; left: 0; color: var(--burgundy); }
-  dl { display: grid; grid-template-columns: auto 1fr; column-gap: 10pt; }
-  dt { font-family: var(--mono); font-size: 7pt; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-soft); padding: 3pt 0; border-bottom: 1px solid var(--line); }
+  dl { display: grid; grid-template-columns: auto 1fr; column-gap: 0; }
+  dl > :nth-last-child(-n+2) { border-bottom: none; }
+  dt { font-family: var(--mono); font-size: 7pt; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-soft); padding: 3pt 10pt 3pt 0; border-bottom: 1px solid var(--line); }
   dd { padding: 2.4pt 0; border-bottom: 1px solid var(--line); }
   .box { background: var(--card); border: 1px solid var(--line); border-radius: 6px; padding: 8pt 10pt; margin-bottom: 8pt; }
   .exp { margin-top: 8pt; }
@@ -77,7 +78,7 @@
         <li>OneStream application design: dimensions, extensible dimensions, cubes, workflow and time profiles</li>
         <li>Business rules, member formulas, and API-driven calculations; remediation of deprecated rules</li>
         <li>Data integration: import/export automation, transformation rules, Smart Integration Connector</li>
-        <li>Version upgrades (7.3 &rarr; 8.2, 7.4 &rarr; 9.4) and Hyperion-to-OneStream migration with parallel runs</li>
+        <li>Version upgrades (7.3 to 8.2, 7.4 to 9.4) and Hyperion-to-OneStream migration with parallel runs</li>
         <li>Security design: workflow-scoped groups, Azure AD, provisioning from HR and accounting data</li>
         <li>Consolidations, Parcel Services, account reconciliations, allocations, and TB validation</li>
         <li>Cube views, dashboards, and financial statement reporting</li>
@@ -100,7 +101,7 @@
           <dt>Models</dt><dd>Corp-to-corp (C2C) contract &middot; fixed-scope SOW</dd>
           <dt>Roles</dt><dd>Solution architect &middot; lead developer &middot; upgrade/migration lead</dd>
           <dt>Based</dt><dd>Maryville, MO &middot; Central time &middot; remote</dd>
-          <dt>Contact</dt><dd>(703) 498-1007 &middot; fullclearsolutions.com/partners<br>linkedin.com/in/grant-deker-774b872aa</dd>
+          <dt>Contact</dt><dd>(703) 498-1007<br>fullclearsolutions.com/partners<br>linkedin.com/in/grant-deker-774b872aa</dd>
         </dl>
       </div>
     </div>
@@ -109,12 +110,12 @@
   <div class="exp">
     <h2>Experience</h2>
     <table>
-      <tr><td class="org">Penske<span>2024 &ndash; PRESENT</span></td><td class="what"><b>Lead OneStream Developer, Sr. Manager.</b> Leads a team of developers and analysts; automated imports and exports across 50+ workflows; HR- and accounting-integrated security; financial statement dashboards; upgrade 7.4 &rarr; 9.4.</td></tr>
+      <tr><td class="org">Penske<span>2024 &ndash; PRESENT</span></td><td class="what"><b>Lead OneStream Developer, Sr. Manager.</b> Leads a team of developers and analysts; automated imports and exports across 50+ workflows; HR- and accounting-integrated security; financial statement dashboards; upgrade 7.4 to 9.4.</td></tr>
       <tr><td class="org">Full Clear<span>2023 &ndash; PRESENT</span></td><td class="what"><b>Founder &amp; Principal.</b> Independent OneStream consultancy; designed and built Basin, a consolidation and month-end close platform (basin.finance).</td></tr>
-      <tr><td class="org">Mattress Firm<span>2023 &ndash; 2024</span></td><td class="what"><b>Sr. OneStream Developer.</b> 25+ custom financial models deployed and tested through UAT; rules, hierarchy, security, Parcel Services; upgrade 7.3 &rarr; 8.2; Smart Integration Connector and Azure AD.</td></tr>
+      <tr><td class="org">Mattress Firm<span>2023 &ndash; 2024</span></td><td class="what"><b>Sr. OneStream Developer.</b> 25+ custom financial models deployed and tested through UAT; rules, hierarchy, security, Parcel Services; upgrade 7.3 to 8.2; Smart Integration Connector and Azure AD.</td></tr>
       <tr><td class="org">GDIT<span>2021 &ndash; 2023</span></td><td class="what"><b>Senior Business Analyst.</b> Led the end-to-end OneStream implementation for consolidation, reporting, and planning; data integration, security, UAT, and training.</td></tr>
       <tr><td class="org">Capital One<span>2019 &ndash; 2020</span></td><td class="what"><b>Senior Financial Analyst.</b> Led the OneStream implementation across seven business areas, including a nine-month Hyperion migration with parallel runs.</td></tr>
-      <tr><td class="org">Lockheed Martin<span>2017 &ndash; 2019</span></td><td class="what"><b>Financial Analyst, QSACK &amp; Associates.</b> Navy ISIS Systems contract: earned value management, Hyperion and SAP S/4HANA reporting, DCMA/DCAA/DoD compliance.</td></tr>
+      <tr><td class="org">Lockheed Martin program<span>2017 &ndash; 2019</span></td><td class="what"><b>Financial Analyst, QSACK &amp; Associates.</b> Navy ISIS Systems contract: earned value management, Hyperion and SAP S/4HANA reporting, DCMA/DCAA/DoD compliance.</td></tr>
     </table>
   </div>
 

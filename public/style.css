@@ -1041,6 +1041,9 @@
     }
   }
   @media (width >= 40rem) {
+    .sm\:inline {
+      display: inline;
+    }
     .sm\:grid-cols-2 {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -1289,6 +1292,8 @@
   }
   .ledger-head {
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 8px;
     justify-content: space-between;
     align-items: baseline;
     gap: 12px;
@@ -1336,6 +1341,33 @@
   }
   .ledger .ok {
     color: var(--color-success);
+    white-space: nowrap;
+    padding-left: 12px;
+  }
+  @media (max-width: 639.98px) {
+    .ledger:has(.ledger-stack) {
+      padding: 20px;
+    }
+    .ledger-stack tr {
+      display: block;
+      padding: 8px 0;
+      border-bottom: 1px solid color-mix(in srgb, #E5DFD7 55%, #FFFFFF);
+      @supports (color: color-mix(in lab, red, red)) {
+        border-bottom: 1px solid color-mix(in srgb, var(--color-line) 55%, var(--color-card));
+      }
+    }
+    .ledger-stack tr:last-child {
+      border-bottom: none;
+    }
+    .ledger .ledger-stack td {
+      display: block;
+      padding: 0;
+      border: 0;
+    }
+    .ledger .ledger-stack td:last-child {
+      text-align: left;
+      margin-top: 2px;
+    }
   }
   .ledger-note {
     font-family: var(--font-mono);

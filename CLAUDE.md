@@ -3,7 +3,7 @@
 ## Brand
 - **`/brand/BRAND.md` is the single source of truth** for colors, typography, logo, components, motion, and copy voice. Read it before styling anything.
 - Display name is **"Full Clear"** — "Full Clear Solutions" (legal name) appears only in the footer copyright line, the privacy page, and JSON-LD `legalName`.
-- CTAs site-wide: primary **"Book an assessment"**, secondary **"See capabilities"**. No "Get Started" / "Learn More". One audience-specific exception: `/partners` (for SIs, consulting firms and staffing partners) uses **"Send a role"** → `./contact#form`.
+- CTAs site-wide: primary **"Book an assessment"**, secondary **"See capabilities"**. No "Get Started" / "Learn More". One audience-specific exception: `/partners` (for SIs, consulting firms and staffing partners) uses **"Send a role"** → `./contact#form`, with **"Capability statement (PDF)"** as its secondary.
 - Services are always **Implement / Optimize / Rescue**, in that order.
 - The site contains **no client stats or testimonials** — never add invented results or quotes. Illustrative visuals (e.g. the hero ledger) must be labeled as such ("not client data").
 
