@@ -1167,8 +1167,8 @@
     content: var(--tw-content);
     color: var(--color-burgundy);
   }
-  .before\:content-\[\'—\'\]::before {
-    --tw-content: '—';
+  .before\:content-\[\'–\'\]::before {
+    --tw-content: '–';
     content: var(--tw-content);
   }
   @media (hover: hover) {
@@ -1659,7 +1659,7 @@
     max-width: 66ch;
   }
   .article ul li::before {
-    content: "—";
+    content: "–";
     position: absolute;
     left: 0;
     color: var(--color-burgundy);
