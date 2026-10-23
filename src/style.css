@@ -4,7 +4,7 @@
 @source "./partials";
 @source "../public/script.js";
 
-/* Design tokens — BRAND.md §2. The only source of color/font/radius values. */
+/* Design tokens (BRAND.md §2). The only source of color/font/radius values. */
 @theme {
   --color-paper: #FAF8F5;
   --color-card: #FFFFFF;
@@ -31,7 +31,7 @@
   --color-success-tint: #E8F2EC;
 }
 
-/* Basin product accent — BRAND.md §2.1 exception. Only for showing Basin's own
+/* Basin product accent: BRAND.md §2.1 exception. Only for showing Basin's own
    identity (its mark) on /basin. Never for text, buttons, or Full Clear UI. */
 @theme {
   --color-basin-teal: #0A766D;
@@ -54,7 +54,7 @@
     letter-spacing: -0.01em;
     line-height: 1.2;
   }
-  /* Quality floor — visible keyboard focus everywhere (BRAND.md §6) */
+  /* Quality floor: visible keyboard focus everywhere (BRAND.md §6) */
   :focus-visible {
     outline: 2px solid var(--color-slate);
     outline-offset: 3px;
@@ -333,7 +333,7 @@
     max-width: 66ch;
   }
   .article ul li::before {
-    content: "—";
+    content: "–";
     position: absolute;
     left: 0;
     color: var(--color-burgundy);

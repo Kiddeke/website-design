@@ -5,6 +5,7 @@
 - Display name is **"Full Clear"** — "Full Clear Solutions" (legal name) appears only in the footer copyright line, the privacy page, and JSON-LD `legalName`.
 - CTAs site-wide: primary **"Book an assessment"**, secondary **"See capabilities"**. No "Get Started" / "Learn More". One audience-specific exception: `/partners` (for SIs, consulting firms and staffing partners) uses **"Send a role"** → `./contact#form`, with **"Capability statement (PDF)"** as its secondary.
 - Services are always **Implement / Optimize / Rescue**, in that order.
+- **No em dashes** anywhere on the site (no `—`, `&mdash;`, or ` -- `): use a comma, colon, parentheses or a period. Page titles use `Page | Full Clear`. En dashes only for list markers and ranges (`2024 &ndash; present`).
 - The site contains **no client stats or testimonials** — never add invented results or quotes. Illustrative visuals (e.g. the hero ledger) must be labeled as such ("not client data").
 
 ## Architecture

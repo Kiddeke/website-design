@@ -46,6 +46,7 @@ post means these steps, all of which must stay in sync:
 - **SEO lengths**: keep the `<title>` at 60 characters or fewer (drop the " — Full Clear"
   suffix if needed, and shorten the headline for the title tag if it's still too long) and the
   meta/og/twitter descriptions at 160 characters or fewer, or Google truncates them.
+- **No em dashes**: never write `—`, `&mdash;`, or ` -- ` in a post, its title, meta descriptions or `blog-posts.json`. Use a comma, colon, parentheses or a period. Title tags end with ` | Full Clear` if a suffix is used.
 - Tone: professional, concise, practical — written for finance/EPM leaders, matching the
   existing posts. 300–600 words. End with an "Our Take" `<h3>` section that connects the news
   to practical implications for OneStream customers. No prices, promises, or invented claims

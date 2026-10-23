@@ -114,6 +114,7 @@ Quality floor: responsive to 360px, visible keyboard focus everywhere, reduced m
 
 ## 7. Voice & copy
 
+- No em dashes (owner's rule): use a comma, colon, parentheses or a period instead. Title separator is " | ". En dashes only as list markers and in ranges.
 - Plain verbs, sentence case, no filler. "Book an assessment," not "Get Started" or "Learn More."
 - Candid-advisor tone: "no discovery theater, no 40-slide deck." Confidence through specificity (close days, cycle times), never through superlatives ("world-class," "leading," "cutting-edge" are banned).
 - Finance vocabulary, used correctly: close, consolidation, intercompany eliminations, FX translation, cube views, workflows, planning, reporting.
