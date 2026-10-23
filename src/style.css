@@ -59,6 +59,10 @@
     outline: 2px solid var(--color-slate);
     outline-offset: 3px;
   }
+  /* On ink bands slate is too faint for a focus ring (WCAG 1.4.11) */
+  .on-dark :focus-visible {
+    outline-color: var(--color-ondark);
+  }
   @media (prefers-reduced-motion: reduce) {
     html {
       scroll-behavior: auto;
