@@ -2,6 +2,23 @@
   "_readme": "Machine-readable index of blog posts, newest first. Used by the automated OneStream news publisher to avoid duplicate posts: before publishing, compare candidate news against every entry's title, topics, and source URLs. Keep in sync with src/pages/blog.html. See BLOG_PUBLISHING.md for the full workflow.",
   "posts": [
     {
+      "title": "OneStream Ranked No. 1 in Three 2026 ISG Buyers Guides",
+      "date": "2026-11-04",
+      "page": "blogpost19",
+      "category": "Industry news",
+      "summary": "ISG Research ranks OneStream first overall, with Exemplary ratings, across its Record to Report, Financial Close and Financial Consolidation guides.",
+      "topics": [
+        "ISG Buyers Guides",
+        "analyst recognition",
+        "Record to Report",
+        "financial close",
+        "financial consolidation"
+      ],
+      "sources": [
+        "https://www.prnewswire.com/news-releases/onestream-named-leader-and-ranked-number-one-overall-in-the-2026-isg-buyers-guides-for-record-to-report-financial-close-and-financial-consolidation-302928481.html"
+      ]
+    },
+    {
       "title": "What Building a Consolidation Engine Taught Us About the Close",
       "date": "2026-10-19",
       "page": "blogpost18",
