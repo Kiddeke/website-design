@@ -2,6 +2,23 @@
   "_readme": "Machine-readable index of blog posts, newest first. Used by the automated OneStream news publisher to avoid duplicate posts: before publishing, compare candidate news against every entry's title, topics, and source URLs. Keep in sync with src/pages/blog.html. See BLOG_PUBLISHING.md for the full workflow.",
   "posts": [
     {
+      "title": "OneStream Passes 600 EMEA Customers, Triples Finance AI Base",
+      "date": "2026-11-06",
+      "page": "blogpost20",
+      "category": "Industry news",
+      "summary": "OneStream says it passed 600 EMEA customers and tripled its regional Finance AI customer base since the end of 2025, ahead of Web Summit in Lisbon.",
+      "topics": [
+        "EMEA",
+        "customer growth",
+        "Finance AI",
+        "Web Summit",
+        "Tom Shea"
+      ],
+      "sources": [
+        "https://www.investing.com/news/company-news/onestream-surpasses-600-emea-customers-triples-ai-adoption-93CH-5008459"
+      ]
+    },
+    {
       "title": "OneStream Ranked No. 1 in Three 2026 ISG Buyers Guides",
       "date": "2026-11-04",
       "page": "blogpost19",
